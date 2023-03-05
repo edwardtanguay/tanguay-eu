@@ -9,8 +9,8 @@ function Header() {
 	return (
 		<>
 			<div className="headerArea">
-				<h1 className="text-yellow-400 text-3xl font-bold mb-4">
-				Edward's tech site	
+				<h1 className="text-yellow-300 text-3xl font-bold mb-4">
+				Edward's Tech Site	
 				</h1>
 			</div>
 			<nav className="bg-neutral-800 py-1 px-2 mb-4">
