@@ -7,13 +7,13 @@ function Welcome() {
 	return (
 		<div className="page pageWelcome">
 			<ul>
+				<li>this site is made with <b>Next.js</b></li>
 				<li>
 					this site is part of my{' '}
 					<a href="https://onespace.pages.dev/forays?id=257">
 						2023 Datapod Projects
 					</a>
 				</li>
-				<li>made with Next.js</li>
 				<li>
 					much of the content for this site is currently available at
 					other sites:
