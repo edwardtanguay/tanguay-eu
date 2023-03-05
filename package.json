@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"scripts": {
-		"dev": "next dev -p 4011",
+		"dev": "next dev -p 7001",
 		"build": "next build",
 		"start": "next start -p 4011",
 		"setup": "npm i && pm2 start --name et001-nextjs-usecontext npm -- start --update-env --time && pm2 save",

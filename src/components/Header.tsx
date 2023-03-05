@@ -9,9 +9,8 @@ function Header() {
 	return (
 		<>
 			<div className="headerArea">
-				<img src="images/info-icon.png" />
 				<h1 className="text-yellow-400 text-3xl font-bold mb-4">
-					Info Site - Next.js 13
+				Edward's tech site	
 				</h1>
 			</div>
 			<nav className="bg-neutral-800 py-1 px-2 mb-4">
