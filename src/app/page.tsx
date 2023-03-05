@@ -8,7 +8,7 @@ function Welcome() {
 		<div className="page pageWelcome">
 			<ul>
 				<li className="main">
-					I am in the process of moving all my tech content to this site. Until then, you can find it here:
+					I am in the process of moving all my tech content to this site. Until then, here is where to find most of it:
 					<ul>
 						<li>
 							<a href="https://edwardtanguay.vercel.app/howtos">

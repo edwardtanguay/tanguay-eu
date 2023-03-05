@@ -12,9 +12,7 @@ function About() {
 					) which currently contains these three sites, each which auto-generate their respective framework:
 					<ul>
 						<li>
-							<a href="https://tanguay-eu.vercel.app">
-								Edward's Tech Site
-							</a>
+								<b>Edward's Tech Site</b> (this site)
 							<ul>
 								<li>
 									<i>
@@ -24,7 +22,7 @@ function About() {
 									</i>
 								</li>
 								<li>
-									made with <b>Next.js</b>
+									built with <b>Next.js 13</b>
 								</li>
 								<li>
 									auto-generates my <b>Datapod-for-Next.js</b>{' '}
@@ -33,7 +31,7 @@ function About() {
 							</ul>
 						</li>
 						<li>
-							<a href="https://datapod-tanguay-eu.vercel.app">
+							<a href="https://datapod-tanguay-eu.vercel.app/about">
 								Datapod Project
 							</a>
 							<ul>
@@ -45,7 +43,7 @@ function About() {
 									</i>
 								</li>
 								<li>
-									made with <b>Vue 3</b>
+									built with <b>Vue 3</b>
 								</li>
 								<li>
 									auto-generates my <b>Datapod-for-Vue.js</b>{' '}
@@ -54,7 +52,7 @@ function About() {
 							</ul>
 						</li>
 						<li>
-							<a href="https://edward-tanguay-eu.vercel.app">
+							<a href="https://edward-tanguay-eu.vercel.app/about">
 								Edward Tanguay
 							</a>
 							<ul>
@@ -66,7 +64,7 @@ function About() {
 									</i>
 								</li>
 								<li>
-									made with <b>Angular 15</b>
+									built with <b>Angular 15</b>
 								</li>
 								<li>
 									auto-generates my <b>Datapod-for-Angular</b>{' '}
