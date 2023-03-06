@@ -12,7 +12,6 @@ function Header() {
 				<h1>
 				Edward's Tech Site	
 				</h1>
-				<h2>Built with Next.js 13</h2>
 			</div>
 			<nav className="bg-neutral-800 py-1 px-2 mb-4">
 				<Link
