@@ -1,41 +1,34 @@
-# Next.js Site with Menu and useContext
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This is a simple Next.js site that has Typescript, Sass and Tailwind installed. It uses the new Next.js 13 app folder and so the files and folders in the app folder are automatically URL routes, i.e. no need for React Router. It also has useContext implemented with an example of loading both static and API data in useContext and using these state variables on two separate pages. It has an image that is loaded from `public/images` and has a custom 404 page. I deployed it at both Vercel and Netlify choosing all default choices.
+## Getting Started
 
-![grafik](https://starters.tanguay.eu/images/starters/blankViteDarkMenuUsecontextNextjs.png)
+First, run the development server:
 
-## features
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-- built with **create-next-app**
-- uses the new **Next.js 13 app folder** and so has automatic URL routing
-- **TypeScript** and **ES6 modules**
-- a mixture of **Tailwind** and **Sass**, they work nicely together, for each styling task you can choose whichever you want
-- custom 404 page
-- **useContext** is implemented
-- uses Next.js's server-side-rendering and so has **good SEO** and you can make **custom social-media previews** with title, description and image for each page
-- fetches data from an **external API via axios**
-- **displays image** which is located in the `public/images` directory and accessed with the <img> tag
-- deploys at **Vercel** and **Netlify** by default
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## install
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- go to your projects directory
-  - e.g. `cd ~/projects`
-- in your projects directory, create your new site e.g. **site001** by cloning this project 
-  - `git clone git@github.com:edwardtanguay/et001-nextjs-usecontext.git site001`
-- open your newly created site in VSCode
-  - `code site001`
-- inside VSCode, open the VSCode terminal
-  - **CTRL-`**
-- delete the connection to this repository by deleting the Git repository
-  - `rm -rf .git`
-- create a new local Git repository
-  - `git init -b main`
-- install node_modules
-  - `npm i`
-- start your site and click given link to view website
-  - `npm run dev`
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## more starters, templates and frameworks 
+## Learn More
 
-https://starters.tanguay.eu
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

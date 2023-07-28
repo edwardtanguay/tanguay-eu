@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	a {
+		@apply border-b border-slate-500
+	}
+}
