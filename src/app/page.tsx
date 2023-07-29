@@ -8,11 +8,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: pageTitle,
 		description: 'These are my 650+ code examples available by search.',
-		images: [
-			{
-				url: 'https://tanguay-eu.vercel.app/images/tempsiteicon.png'
-			}
-		]
+		images: ['https://tanguay-eu.vercel.app/images/tempsiteicon.png']
 	}
 };
 
