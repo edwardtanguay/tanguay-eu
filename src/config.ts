@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.011 headers';
+	return '0.012 vite image';
 }

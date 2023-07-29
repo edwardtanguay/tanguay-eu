@@ -1,12 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Metadata } from 'next';
 
-// const pageTitle = "Edward's Tech Site";
-
-// export const metadata: Metadata = {
-// 	title: pageTitle,
-// };
-
 export default function Home() {
 	return (
 		<main>
