@@ -1,13 +1,15 @@
-- todo
+- ..  
 
-	- get SEO image to work in Slack
-		- seems to be the same as this, which works: view-source:https://vitest.dev
-		- see seo.html
-		- main reason:
-			- works on Whatsapp
-			- works at: 
-			- Slack does not load: https://tanguay-eu.vercel.app/images/tempsiteicon.png
-			- but Slack does load: https://vitest.dev/og.png
-		- it seems that Slack now blocks images from Vercel and Netlify
-			- but you can link images from tanguay.eu
-		- solution: built a process which simply uses the tanguay.eu link
+- get SEO image to work in Slack
+	- seems to be the same as this, which works: view-source:https://vitest.dev
+	- see seo.html
+	- main reason:
+		- works on Whatsapp
+		- works at: 
+		- Slack does not load: https://tanguay-eu.vercel.app/images/tempsiteicon.png
+		- but Slack does load: https://vitest.dev/og.png
+	- it seems that Slack now blocks images from Vercel and Netlify
+		- but you can link images from tanguay.eu
+	- solution: built a process which simply uses the tanguay.eu link
+		- even then it seems it won't work
+		- I can only get a tanguay.eu image to work from: https://et041-ogimagecheck.vercel.app

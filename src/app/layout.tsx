@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: pageTitle,
 		description: 'This is where I keep all code, links and information about web development.',
-		images: ['https://starters.tanguay.eu/images/starters/siteicon3.png']
+		images: ['https://vitest.dev/og.png']
 	}
 }
 
