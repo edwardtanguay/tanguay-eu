@@ -19,7 +19,9 @@ export default function Howtos() {
 
 	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const _searchText = e.target.value;
-		const _howtos = howtos.filter(m => m.title.includes(_searchText))
+		const _howtos = initialHowtos.filter((m) =>
+			m.title.toLowerCase().includes(_searchText.toLowerCase())
+		);
 
 		setHowtos(_howtos);
 		setSearchText(_searchText);
