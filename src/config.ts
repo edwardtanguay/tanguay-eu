@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.006';
+	return '0.007 icon';
 }
