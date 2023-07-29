@@ -4,14 +4,18 @@
 import howtos from '../../data/itemtype_howtos.json';
 import { Metadata } from 'next';
 
+const pageTitle = "Edward's Howtos 222";
+
 export const metadata: Metadata = {
-  title: "Edward's Howtos",
-  description: 'These are my 600+ code examples available by search.',
-//   images: 'https://edwardtanguay.vercel.app/share/images/user-icons/icon-1.jpg'
-}
+	title: pageTitle,
+	openGraph: {
+		title: pageTitle,
+		description: 'These are my 650+ code examples available by search.'
+	}
+	//   images: 'https://edwardtanguay.vercel.app/share/images/user-icons/icon-1.jpg'
+};
 
 export default function About() {
-	
 	return (
 		<>
 			<p className="text-3xl mb-3">{howtos.length} Howtos</p>
