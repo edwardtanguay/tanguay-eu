@@ -1,4 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Metadata } from 'next';
+
+const pageTitle = "Edward's Tech Site";
+
+export const metadata: Metadata = {
+	title: pageTitle,
+	openGraph: {
+		title: pageTitle,
+		description: 'These are my 650+ code examples available by search.',
+		images: [
+			{
+				url: 'https://edwardtanguay.vercel.app/share/images/user-icons/icon-1.jpg'
+			}
+		]
+	}
+};
 
 export default function Home() {
 	return (
