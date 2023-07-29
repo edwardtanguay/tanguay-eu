@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.015 using vitest';
+	return '0.016 with sizes';
 }
