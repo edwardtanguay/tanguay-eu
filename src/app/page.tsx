@@ -1,16 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Metadata } from 'next';
 
-const pageTitle = "Edward's Tech Site";
+// const pageTitle = "Edward's Tech Site";
 
-export const metadata: Metadata = {
-	title: pageTitle,
-	openGraph: {
-		title: pageTitle,
-		description: 'This is where I keep all code, links and information about web development.',
-		images: ['https://tanguay-eu.vercel.app/images/tempsiteicon.png']
-	}
-};
+// export const metadata: Metadata = {
+// 	title: pageTitle,
+// };
 
 export default function Home() {
 	return (
