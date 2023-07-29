@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.018 my';
+	return '0.019 howtos image';
 }
