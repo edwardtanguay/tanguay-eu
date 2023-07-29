@@ -1,9 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
 export default function Page({ params }: { params: { id: string } }) {
 	const { id } = params;
 	return (
 		<>
-			<title>Edward's Howtos</title>
+			<title>Info Site - Info</title>
 			<meta
 				name="viewport"
 				content="width=device-width, initial-scale=1.0"
@@ -12,11 +11,11 @@ export default function Page({ params }: { params: { id: string } }) {
 				name="viewport"
 				content="width=device-width, initial-scale=1.0"
 			/>
-         <meta property="og:title" content={`The text page with id=${id}`} />
+         <meta property="og:title" content="Edward's Tech Site" />
 			<meta property="og:type" content="site" />
 			<meta
 				property="og:description"
-				content="This is a test page for howtos."
+				content="This is where I keep all my tech code and information."
 			/>
 			<meta
 				property="og:image"

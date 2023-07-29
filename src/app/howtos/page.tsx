@@ -1,16 +1,27 @@
-'use client';
-import { useState } from 'react';
+/* eslint-disable react/no-unescaped-entities */
+// 'use client';
+// import { useState } from 'react';
 import howtos from '../../data/itemtype_howtos.json';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Edward's Howtos",
+  description: 'These are my 600+ code examples available by search.',
+}
 
 export default function About() {
-	const [searchText, setSearchText] = useState('nnn');
+	
 	return (
 		<>
 			<p className="text-3xl mb-3">{howtos.length} Howtos</p>
-			<input className='text-3xl placeholder-slate-300 text-slate-500 rounded p-1 mb-3 ' autoFocus placeholder='search howtos'/>
+			<input
+				className="text-3xl placeholder-slate-300 text-slate-500 rounded p-1 mb-3 "
+				autoFocus
+				placeholder="search howtos"
+			/>
 			{howtos.map((howto) => {
 				return <div key={howto.id}>{howto.title}</div>;
 			})}
 		</>
 	);
-};
+}

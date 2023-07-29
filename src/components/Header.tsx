@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
+import * as config from '../config';
 
 /* eslint-disable react/no-unescaped-entities */
 export const Header = () => {
@@ -10,7 +11,7 @@ export const Header = () => {
 		<div>
 			<div className='flex justify-between'>
 				<h1 className="text-4xl mb-3">Edward's Tech Site</h1>
-				<div className='text-slate-500'>Version 0.2</div>
+				<div className='text-slate-500'>Version {config.appVersion()}</div>
 			</div>
 			<nav className="bg-slate-900 p-2 mb-3">
 				<ul className="flex gap-3">
