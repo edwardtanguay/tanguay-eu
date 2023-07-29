@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.3';
+	return '0.4';
 }

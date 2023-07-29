@@ -7,6 +7,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "Edward's Howtos",
   description: 'These are my 600+ code examples available by search.',
+//   images: 'https://edwardtanguay.vercel.app/share/images/user-icons/icon-1.jpg'
 }
 
 export default function About() {
