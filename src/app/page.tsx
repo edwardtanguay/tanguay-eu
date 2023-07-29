@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 		description: 'These are my 650+ code examples available by search.',
 		images: [
 			{
-				url: 'https://edwardtanguay.vercel.app/share/images/user-icons/icon-1.jpg'
+				url: 'https://tanguay-eu.vercel.app/images/tempsiteicon.png'
 			}
 		]
 	}
