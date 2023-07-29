@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 
@@ -8,21 +8,43 @@ export const Header = () => {
 
 	return (
 		<div>
-			<h1 className="text-4xl mb-3">Edward's Tech Site</h1>
+			<div className='flex justify-between'>
+				<h1 className="text-4xl mb-3">Edward's Tech Site</h1>
+				<div className='text-slate-500'>Version 0.2</div>
+			</div>
 			<nav className="bg-slate-900 p-2 mb-3">
 				<ul className="flex gap-3">
 					<li>
-						<Link href="/" className={`border-0 ${activeSegment === null ? 'text-yellow-200' : ''}`}>
+						<Link
+							href="/"
+							className={`border-0 ${
+								activeSegment === null ? 'text-yellow-200' : ''
+							}`}
+						>
 							Welcome
 						</Link>
 					</li>
 					<li>
-						<Link href="/howtos" className={`border-0 ${activeSegment === 'howtos' ? 'text-yellow-200' : ''}`}>
+						<Link
+							href="/howtos"
+							className={`border-0 ${
+								activeSegment === 'howtos'
+									? 'text-yellow-200'
+									: ''
+							}`}
+						>
 							Howtos
 						</Link>
 					</li>
 					<li>
-						<Link href="/about" className={`border-0 ${activeSegment === 'about' ? 'text-yellow-200' : ''}`}>
+						<Link
+							href="/about"
+							className={`border-0 ${
+								activeSegment === 'about'
+									? 'text-yellow-200'
+									: ''
+							}`}
+						>
 							About
 						</Link>
 					</li>

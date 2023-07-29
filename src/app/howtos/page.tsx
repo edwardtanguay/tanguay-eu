@@ -1,6 +1,9 @@
+'use client';
+import { useState } from 'react';
 import howtos from '../../data/itemtype_howtos.json';
 
 export default function About() {
+	const [searchText, setSearchText] = useState('nnn');
 	return (
 		<>
 			<p className="text-3xl mb-3">{howtos.length} Howtos</p>
