@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.008 image simple';
+	return '0.009 new description';
 }

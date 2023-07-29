@@ -1,0 +1,4 @@
+- todo
+	- get SEO image to work in Slack
+		- seems to be the same as this, which works: view-source:https://vitest.dev
+		- see seo.html
