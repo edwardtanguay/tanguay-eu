@@ -17,6 +17,11 @@ export const Header = () => {
 						</Link>
 					</li>
 					<li>
+						<Link href="/howtos" className={`border-0 ${activeSegment === 'howtos' ? 'text-yellow-200' : ''}`}>
+							Howtos
+						</Link>
+					</li>
+					<li>
 						<Link href="/about" className={`border-0 ${activeSegment === 'about' ? 'text-yellow-200' : ''}`}>
 							About
 						</Link>

@@ -1,17 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import howtos from '../data/itemtype_howtos.json';
 
 export default function Home() {
 	return (
 		<main>
-			<h1 className='text-3xl'>Howtos</h1>
-			<p className='mb-3'>There are {howtos.length} howtos loaded.</p>
-			{howtos.map(howto => {
-				return (
-					<div key={howto.id}>{howto.title}</div>
-				)
-			})}
-			
 			<ul>
 				<li className="main">
 					<p className="mb-3">
