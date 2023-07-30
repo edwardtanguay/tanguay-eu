@@ -74,7 +74,7 @@ export default function Howtos() {
 			<input
 				value={searchText}
 				onChange={(e) => handleSearchTextChange(e)}
-				className="text-3xl placeholder-slate-300 text-slate-500 rounded p-1 mb-5 w-full"
+				className="text-3xl placeholder-slate-300 text-slate-500 rounded p-1 mb-5 sm:w-full lg:w-[30rem] "
 				autoFocus
 				ref={searchTextRef}
 				disabled={!howtosAreReady()}

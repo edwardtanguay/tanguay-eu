@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.022 responsive input';
+	return '0.023 fixed responsive';
 }
