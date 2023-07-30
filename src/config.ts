@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.021 searches multisearch';
+	return '0.022 responsive input';
 }

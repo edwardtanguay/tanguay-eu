@@ -51,7 +51,7 @@ export const Header = () => {
 				</ul>
 			</nav>
 			<div className='text-right'>
-			<div className="text-slate-500">Version {config.appVersion()}</div>
+			<div className="text-slate-500 invisible lg:visible">Version {config.appVersion()}</div>
 			</div>
 		</div>
 	);

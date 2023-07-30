@@ -10,7 +10,8 @@
 		- x set focus after spinner
 		- x then show those in body
 		- x search on category as well
-		- .. enable multiple words
+		- x enable multiple words
+		- .. responsive
 		- show hightlight
 
 - keep in URL and respond to URLs for permalinks

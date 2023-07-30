@@ -35,14 +35,7 @@ export default function Howtos() {
 		const titleMatchHowtos = initialHowtos.filter((m) => {
 			const bulkSearch = m.category + '|' + m.title + '|' + m.body;
 			return qstr.textContainsAllTerms(bulkSearch, _searchText);
-			// return bulkSearch.toLowerCase().includes(_searchText.toLowerCase());
 		});
-		// const restMatchHowtos = initialHowtos.filter(
-		// 	(m) =>
-		// 		qstr.textContainsAllTerms(m.body, _searchText) &&
-		// 		!m.title.toLowerCase().includes(_searchText.toLowerCase())
-		// );
-		// let _howtos = [...titleMatchHowtos, ...restMatchHowtos];
 		let _howtos = [...titleMatchHowtos];
 
 		setHowtos(_howtos);
@@ -81,7 +74,7 @@ export default function Howtos() {
 			<input
 				value={searchText}
 				onChange={(e) => handleSearchTextChange(e)}
-				className="text-3xl placeholder-slate-300 text-slate-500 rounded p-1 mb-5 "
+				className="text-3xl placeholder-slate-300 text-slate-500 rounded p-1 mb-5 w-full"
 				autoFocus
 				ref={searchTextRef}
 				disabled={!howtosAreReady()}
