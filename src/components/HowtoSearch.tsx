@@ -49,7 +49,7 @@ export default function Howtos() {
 		setHowtos(initialHowtos);
 	}, []);
 
-	// focuses cursor after waiting graphic
+	// focuses cursor after loading graphic
 	useEffect(() => {
 		if (howtos.length > 0) {
 			setTimeout(() => {
