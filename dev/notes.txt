@@ -21,6 +21,7 @@
 		- x link
 		- x show title
 		- .. get howtos from module
+			- .. interfaces in own file
 		- display with all styles
 	- build in search UX again so that you can search/check/research etc.
 	- enable permalinks

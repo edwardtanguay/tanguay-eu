@@ -6,18 +6,8 @@ import * as qstr from '../qtools/qstr';
 import { FaSpinner } from 'react-icons/fa';
 import Link from 'next/link';
 
-interface IHowto {
-	id: number;
-	category: string;
-	title: string;
-	body: string;
-	systemWhenCreated: string;
-	selectedForSearch: boolean;
-	styledTitle: string;
-	styledCategory: string;
-}
-
 let initialHowtos: IHowto[] = [];
+
 for (const rawHowto of rawHowtos) {
 	const howto: IHowto = {
 		id: rawHowto.id,
