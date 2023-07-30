@@ -4,9 +4,13 @@
 	- x switch to dayjs
 	- .. smart search so it works as original site
 		- x show those in title first
-		- .. fix hydration error
-			- .. trying useEffect
-		- then show those in body
+		- x fix hydration error
+			- x trying useEffect
+		- x spinner
+		- x set focus after spinner
+		- x then show those in body
+		- search on category as well
+		- enable multiple words
 		- show hightlight
 
 - keep in URL and respond to URLs for permalinks

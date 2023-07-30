@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import rawHowtos from '../data/itemtype_howtos.json';
 import * as qdat from '../qtools/qdat';
 import { FaSpinner } from 'react-icons/fa';
@@ -27,6 +27,7 @@ for (const rawHowto of rawHowtos) {
 export default function Howtos() {
 	const [searchText, setSearchText] = useState('');
 	const [howtos, setHowtos] = useState<IHowto[]>([]);
+	const searchTextRef = useRef<HTMLInputElement>(null);
 
 	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const _searchText = e.target.value;
@@ -51,22 +52,35 @@ export default function Howtos() {
 		setHowtos(initialHowtos);
 	}, []);
 
-	const howtosAreReady = () => howtos.length > 0;
+	useEffect(() => {
+		if (howtos.length > 0) {
+			setTimeout(() => {
+				if (searchTextRef.current) {
+					searchTextRef.current.focus();
+				}
+			}, 10);
+		}
+	}, [howtos]);
+
+	const howtosAreReady = () => howtos.length > 0 || searchText.trim() !== '';
 
 	return (
 		<>
 			{howtosAreReady() ? (
 				<p className="text-3xl mb-3">{howtos.length} Howtos</p>
 			) : (
-				<p className="text-3xl mb-3 flex gap-1"><FaSpinner className="loaderIcon"/> Howtos</p>
+				<p className="text-3xl mb-3 flex gap-1">
+					<FaSpinner className="loaderIcon" /> Howtos
+				</p>
 			)}
 			<input
 				value={searchText}
 				onChange={(e) => handleSearchTextChange(e)}
 				className="text-3xl placeholder-slate-300 text-slate-500 rounded p-1 mb-5 "
 				autoFocus
+				ref={searchTextRef}
 				disabled={!howtosAreReady()}
-				placeholder={howtosAreReady() ? "search howtos" : ''}
+				placeholder={howtosAreReady() ? 'search howtos' : ''}
 			/>
 			{howtos.map((howto) => {
 				return (
