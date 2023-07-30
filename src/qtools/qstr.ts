@@ -20,7 +20,7 @@ export const textContainsAllTerms = (text: string, searchText:string) => {
  * 
  * qstr.wrapFoundSearchWordsWithClassElement('Build a Next.js site with app router, TypeScript, and Tailwind', 'next tailwind');
  * 
- *
+ * Build a <span class="searchHighlight">Next.js</span> site with app router, TypeScript, and Tailwind
  */
 export const wrapFoundSearchWordsWithClassElement = (text: string, searchText: string, className: string = 'searchHighlight') => {
 	// searchText = "regex vue"

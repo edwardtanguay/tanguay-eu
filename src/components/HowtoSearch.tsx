@@ -32,12 +32,16 @@ export default function Howtos() {
 
 	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const _searchText = e.target.value;
+		const primaryHowtos = initialHowtos.filter((m) => {
+			const bulkSearch = m.category + '|' + m.title + '|' + m.body;
+			return qstr.textContainsAllTerms(bulkSearch, _searchText);
+		});
 		const _howtos = initialHowtos.filter((m) => {
 			const bulkSearch = m.category + '|' + m.title + '|' + m.body;
 			return qstr.textContainsAllTerms(bulkSearch, _searchText);
 		});
 		for (const _howto of _howtos) {
-			_howto.title = qstr.wrapFoundSearchWordsWithClassElement()
+			_howto.title = qstr.wrapFoundSearchWordsWithClassElement(_howto.title, _searchText);
 		}
 		setHowtos(_howtos);
 		setSearchText(_searchText);

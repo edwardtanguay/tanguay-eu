@@ -15,6 +15,7 @@
 		- x allow uppper case
 		- x fix order
 		- .. show highlight
+			- .. fix to be titles first again
 	- show single howtos
 	- enable permalinks
 
