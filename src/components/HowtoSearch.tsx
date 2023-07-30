@@ -44,7 +44,7 @@ export default function Howtos() {
 
 	useEffect(() => {
 		initialHowtos = initialHowtos.sort((a, b) =>
-			a.systemWhenCreated < b.systemWhenCreated ? 1 : 0
+			a.systemWhenCreated < b.systemWhenCreated ? 1 : -1
 		);
 		setHowtos(initialHowtos);
 	}, []);

@@ -12,7 +12,8 @@
 		- x search on category as well
 		- x enable multiple words
 		- x responsive
-		- .. allow uppper case
+		- x allow uppper case
+		- .. fix order
 		- show hightlight
 
 - keep in URL and respond to URLs for permalinks
