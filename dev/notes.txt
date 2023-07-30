@@ -11,7 +11,8 @@
 		- x then show those in body
 		- x search on category as well
 		- x enable multiple words
-		- .. responsive
+		- x responsive
+		- .. allow uppper case
 		- show hightlight
 
 - keep in URL and respond to URLs for permalinks

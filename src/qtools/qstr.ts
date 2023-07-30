@@ -8,7 +8,7 @@
 export const textContainsAllTerms = (text: string, searchText:string) => {
 	const terms = searchText.split(' ');
 	for (const term of terms) {
-		if (!text.toLowerCase().includes(term)) {
+		if (!text.toLowerCase().includes(term.toLowerCase())) {
 			return false;
 		}
 	}

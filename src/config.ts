@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.023 fixed responsive';
+	return '0.024 fixed uppercase';
 }
