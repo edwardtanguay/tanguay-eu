@@ -1,7 +1,9 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { useRouter } from "next/navigation";
 import rawHowtos from '../data/itemtype_howtos.json';
 import * as qdat from '../qtools/qdat';
+
 
 interface IHowto {
 	id: number;
@@ -24,8 +26,11 @@ for (const rawHowto of rawHowtos) {
 }
 
 export default function Howtos() {
+	const router = useRouter();
 	const [searchText, setSearchText] = useState('');
-	const [howtos, setHowtos] = useState<IHowto[]>([]);
+	const [howtos, setHowtos] = useState<IHowto[]>(initialHowtos);
+
+	router.refresh();
 
 	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const _searchText = e.target.value;
@@ -48,6 +53,8 @@ export default function Howtos() {
 			a.systemWhenCreated < b.systemWhenCreated ? 1 : 0
 		);
 		setHowtos(initialHowtos);
+		console.log('use Effect fired');
+		console.log(initialHowtos[0].systemWhenCreated);
 	}, []);
 
 	return (
