@@ -34,19 +34,37 @@ export default function Howtos() {
 
 	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const _searchText = e.target.value;
-		const primaryHowtos = initialHowtos.filter((m) => {
-			const bulkSearch = m.category + '|' + m.title;
-			return qstr.textContainsAllTerms(bulkSearch, _searchText);
-		});
-		const secondaryHowtos = initialHowtos.filter((m) => {
-			const bulkSearch = m.body;
-			return qstr.textContainsAllTerms(bulkSearch, _searchText);
-		});
+
+		const _howtos: IHowto[] = [];
+
+		initialHowtos.forEach(m => m.selectedForSearch = false);
+
+		// primary result group
+		for (const initialHowto of initialHowtos) {
+			const bulkSearch = initialHowto.category + '|' + initialHowto.title;
+			if (qstr.textContainsAllTerms(bulkSearch, _searchText)) {
+				console.log('primary')
+				_howtos.push(initialHowto);
+				initialHowto.selectedForSearch = true;
+			}
+		}
+		// secondary result group
+		for (const initialHowto of initialHowtos) {
+			const bulkSearch = initialHowto.category + '|' + initialHowto.title + '|' + initialHowto.body;
+			if (qstr.textContainsAllTerms(bulkSearch, _searchText)) {
+				console.log('secondary')
+				console.log(initialHowto.selectedForSearch)
+				if (!initialHowto.selectedForSearch) {
+					_howtos.push(initialHowto);
+					initialHowto.selectedForSearch = true;
+				}
+			}
+		}
+
 		// for (const _howto of _howtos) {
 		// 	_howto.title = qstr.wrapFoundSearchWordsWithClassElement(_howto.title, _searchText);
 		// }
 
-		const _howtos = [...primaryHowtos, ...secondaryHowtos];
 		setHowtos(_howtos);
 		setSearchText(_searchText);
 	};
