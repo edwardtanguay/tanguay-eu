@@ -11,6 +11,7 @@ interface IHowto {
 	title: string;
 	body: string;
 	systemWhenCreated: string;
+	selectedForSearch: boolean;
 }
 
 let initialHowtos: IHowto[] = [];
@@ -20,7 +21,8 @@ for (const rawHowto of rawHowtos) {
 		category: rawHowto.category,
 		title: rawHowto.title,
 		body: rawHowto.body,
-		systemWhenCreated: rawHowto.systemWhenCreated
+		systemWhenCreated: rawHowto.systemWhenCreated,
+		selectedForSearch: false
 	};
 	initialHowtos.push(howto);
 }
@@ -33,16 +35,18 @@ export default function Howtos() {
 	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const _searchText = e.target.value;
 		const primaryHowtos = initialHowtos.filter((m) => {
-			const bulkSearch = m.category + '|' + m.title + '|' + m.body;
+			const bulkSearch = m.category + '|' + m.title;
 			return qstr.textContainsAllTerms(bulkSearch, _searchText);
 		});
-		const _howtos = initialHowtos.filter((m) => {
-			const bulkSearch = m.category + '|' + m.title + '|' + m.body;
+		const secondaryHowtos = initialHowtos.filter((m) => {
+			const bulkSearch = m.body;
 			return qstr.textContainsAllTerms(bulkSearch, _searchText);
 		});
-		for (const _howto of _howtos) {
-			_howto.title = qstr.wrapFoundSearchWordsWithClassElement(_howto.title, _searchText);
-		}
+		// for (const _howto of _howtos) {
+		// 	_howto.title = qstr.wrapFoundSearchWordsWithClassElement(_howto.title, _searchText);
+		// }
+
+		const _howtos = [...primaryHowtos, ...secondaryHowtos];
 		setHowtos(_howtos);
 		setSearchText(_searchText);
 	};
