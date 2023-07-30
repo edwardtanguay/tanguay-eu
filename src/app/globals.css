@@ -11,7 +11,6 @@
 		font-variant: small-caps;
 	}
 
-
 	.loaderIcon {
 		margin-right: 7px;
 		top: 2px;
@@ -26,5 +25,10 @@
 		to {
 			transform: scale(1) rotate(360deg);
 		}
+	}
+
+	.searchHighlight {
+		color: orange;
+		text-shadow: 2px 2px 15px black, 2px 2px 15px yellow;
 	}
 }

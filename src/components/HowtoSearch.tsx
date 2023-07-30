@@ -12,6 +12,7 @@ interface IHowto {
 	body: string;
 	systemWhenCreated: string;
 	selectedForSearch: boolean;
+	styledTitle: string;
 }
 
 let initialHowtos: IHowto[] = [];
@@ -22,7 +23,8 @@ for (const rawHowto of rawHowtos) {
 		title: rawHowto.title,
 		body: rawHowto.body,
 		systemWhenCreated: rawHowto.systemWhenCreated,
-		selectedForSearch: false
+		selectedForSearch: false,
+		styledTitle: rawHowto.title
 	};
 	initialHowtos.push(howto);
 }
@@ -43,7 +45,6 @@ export default function Howtos() {
 		for (const initialHowto of initialHowtos) {
 			const bulkSearch = initialHowto.category + '|' + initialHowto.title;
 			if (qstr.textContainsAllTerms(bulkSearch, _searchText)) {
-				console.log('primary')
 				_howtos.push(initialHowto);
 				initialHowto.selectedForSearch = true;
 			}
@@ -52,8 +53,6 @@ export default function Howtos() {
 		for (const initialHowto of initialHowtos) {
 			const bulkSearch = initialHowto.category + '|' + initialHowto.title + '|' + initialHowto.body;
 			if (qstr.textContainsAllTerms(bulkSearch, _searchText)) {
-				console.log('secondary')
-				console.log(initialHowto.selectedForSearch)
 				if (!initialHowto.selectedForSearch) {
 					_howtos.push(initialHowto);
 					initialHowto.selectedForSearch = true;
@@ -61,9 +60,9 @@ export default function Howtos() {
 			}
 		}
 
-		// for (const _howto of _howtos) {
-		// 	_howto.title = qstr.wrapFoundSearchWordsWithClassElement(_howto.title, _searchText);
-		// }
+		for (const _howto of _howtos) {
+			_howto.styledTitle = qstr.wrapFoundSearchWordsWithClassElement(_howto.title, _searchText);
+		}
 
 		setHowtos(_howtos);
 		setSearchText(_searchText);
@@ -114,9 +113,8 @@ export default function Howtos() {
 							{qdat.smartDateWithYear(howto.systemWhenCreated)} -{' '}
 							{howto.category}
 						</div>
-						<div className="text-slate-50 text-xl">
-							{howto.title}
-						</div>
+						<div><span className="searchHighlight"></span></div>
+						<div className="text-slate-50 text-xl" dangerouslySetInnerHTML={{__html: howto.styledTitle}}></div>
 					</div>
 				);
 			})}
