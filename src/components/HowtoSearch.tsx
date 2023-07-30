@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import initialHowtos from '../data/itemtype_howtos.json';
+import * as qdat from '../qtools/qdat';
 
 export default function Howtos() {
 	const [searchText, setSearchText] = useState('');
@@ -29,7 +30,7 @@ export default function Howtos() {
 			{howtos.map((howto) => {
 				return (
 					<div key={howto.id} className='mb-3'>
-						<div className='text-yellow-400 smallcaps text-sm text-opacity-70'>{howto.systemWhenCreated} - {howto.category}</div>
+						<div className='text-yellow-400 smallcaps text-sm text-opacity-70'>{qdat.smartDateWithYear(howto.systemWhenCreated)} - {howto.category}</div>
 						<div className='text-slate-50 text-xl'>{howto.title}</div>
 					</div>
 				);

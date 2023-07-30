@@ -1,7 +1,8 @@
 - .. make look like current list 
-	- .. import all date tools
-	- get working with moment
+	- x import all date tools
+	- .. get working with moment
 	- switch to dayjs
+	- smart search
 
 
 - show each one on click
