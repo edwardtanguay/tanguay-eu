@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import rawHowtos from '../data/itemtype_howtos.json';
 import * as qdat from '../qtools/qdat';
+import * as qstr from '../qtools/qstr';
 import { FaSpinner } from 'react-icons/fa';
 
 interface IHowto {
@@ -32,16 +33,17 @@ export default function Howtos() {
 	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const _searchText = e.target.value;
 		const titleMatchHowtos = initialHowtos.filter((m) => {
-			const bulkSearch = m.category + '|' + m.title;
-			return bulkSearch.toLowerCase().includes(_searchText.toLowerCase());
+			const bulkSearch = m.category + '|' + m.title + '|' + m.body;
+			return qstr.textContainsAllTerms(bulkSearch, _searchText);
+			// return bulkSearch.toLowerCase().includes(_searchText.toLowerCase());
 		});
-		const restMatchHowtos = initialHowtos.filter(
-			(m) =>
-				m.body.toLowerCase().includes(_searchText.toLowerCase()) &&
-				!m.title.toLowerCase().includes(_searchText.toLowerCase())
-		);
-		let _howtos = [...titleMatchHowtos, ...restMatchHowtos];
-		console.log(_howtos.length);
+		// const restMatchHowtos = initialHowtos.filter(
+		// 	(m) =>
+		// 		qstr.textContainsAllTerms(m.body, _searchText) &&
+		// 		!m.title.toLowerCase().includes(_searchText.toLowerCase())
+		// );
+		// let _howtos = [...titleMatchHowtos, ...restMatchHowtos];
+		let _howtos = [...titleMatchHowtos];
 
 		setHowtos(_howtos);
 		setSearchText(_searchText);
@@ -54,6 +56,7 @@ export default function Howtos() {
 		setHowtos(initialHowtos);
 	}, []);
 
+	// focuses cursor after waiting graphic
 	useEffect(() => {
 		if (howtos.length > 0) {
 			setTimeout(() => {

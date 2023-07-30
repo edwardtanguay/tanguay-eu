@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.020 searches config';
+	return '0.021 searches multisearch';
 }
