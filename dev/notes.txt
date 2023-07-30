@@ -4,7 +4,8 @@
 	- x switch to dayjs
 	- .. smart search so it works as original site
 		- x show those in title first
-		- 
+		- .. fix hydration error
+			- .. trying useEffect
 		- then show those in body
 		- show hightlight
 
