@@ -25,7 +25,7 @@ for (const rawHowto of rawHowtos) {
 
 export default function Howtos() {
 	const [searchText, setSearchText] = useState('');
-	const [howtos, setHowtos] = useState<IHowto[]>(initialHowtos);
+	const [howtos, setHowtos] = useState<IHowto[]>([]);
 
 	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const _searchText = e.target.value;
@@ -47,6 +47,7 @@ export default function Howtos() {
 		initialHowtos = initialHowtos.sort((a, b) =>
 			a.systemWhenCreated < b.systemWhenCreated ? 1 : 0
 		);
+		setHowtos(initialHowtos);
 	}, []);
 
 	return (
