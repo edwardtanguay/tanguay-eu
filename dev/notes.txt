@@ -14,10 +14,10 @@
 		- x responsive
 		- x allow uppper case
 		- x fix order
-		- .. show highlight
+		- x show highlight
 			- x fix to be titles first again
-			- .. categories
-	- show single howtos
+			- x categories
+	- .. show single howtos
 	- enable permalinks
 
 - perhaps split into two components

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+$highlightShadowColor:yellow;
+
 @layer components {
 	a {
 		@apply border-b border-slate-500
@@ -28,7 +30,7 @@
 	}
 
 	.searchHighlight {
-		color: lightgreen;
-		text-shadow: 8px 8px 15px black, -8px -8px 15px black;
+		color: yellow;
+		text-shadow: 8px 8px 15px $highlightShadowColor, -8px 8px 15px $highlightShadowColor, 8px -8px 15px $highlightShadowColor, -8px -8px 15px $highlightShadowColor;
 	}
 }

@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.025 fixed sort';
+	return '0.026 search highlight';
 }
