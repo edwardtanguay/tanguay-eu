@@ -1,12 +1,21 @@
 - .. make look like current list 
 	- x import all date tools
-	- .. get working with moment
-	- switch to dayjs
-	- smart search
+	- x get working with moment
+	- x switch to dayjs
+	- .. smart search so it works as original site
+		- x show those in title first
+		- 
+		- then show those in body
+		- show hightlight
 
+- keep in URL and respond to URLs for permalinks
 
 - show each one on click
 - split into two components
+
+
+- don't show "1 Howtos"
+- show "made with Next.js 13.4"
 
 - implement unit testing for qtools
 

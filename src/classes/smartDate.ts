@@ -1,13 +1,14 @@
 // import * as moment from "moment";
+import dayjs from 'dayjs';
 
-const moment = require("moment");
+// const moment = require("moment");
 
 class SmartDate {
 
 	baseDateMoment: any = null;
 
 	constructor(flexDate: any) {
-		this.baseDateMoment = moment(new Date(flexDate));
+		this.baseDateMoment = dayjs(new Date(flexDate));
 	}
 
 	getIsoDate() {

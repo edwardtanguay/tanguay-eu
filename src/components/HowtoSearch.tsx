@@ -3,7 +3,7 @@ import { useState } from 'react';
 import _initialHowtos from '../data/itemtype_howtos.json';
 import * as qdat from '../qtools/qdat';
 
-const initialHowtos = _initialHowtos.reverse();
+const initialHowtos = _initialHowtos.sort((a, b) => a.systemWhenCreated < b.systemWhenCreated ? 1 : 0);
 
 export default function Howtos() {
 	const [searchText, setSearchText] = useState('');
@@ -11,9 +11,13 @@ export default function Howtos() {
 
 	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const _searchText = e.target.value;
-		const _howtos = initialHowtos.filter((m) =>
+		const titleMatchHowtos = initialHowtos.filter((m) =>
 			m.title.toLowerCase().includes(_searchText.toLowerCase())
 		);
+		const restMatchHowtos = initialHowtos.filter((m) =>
+			m.body.toLowerCase().includes(_searchText.toLowerCase()) && !m.title.toLowerCase().includes(_searchText.toLowerCase())
+		);
+		let _howtos = [...titleMatchHowtos, ...restMatchHowtos];
 
 		setHowtos(_howtos);
 		setSearchText(_searchText);
