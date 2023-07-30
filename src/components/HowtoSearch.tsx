@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import rawHowtos from '../data/itemtype_howtos.json';
 import * as qdat from '../qtools/qdat';
-
+import { FaSpinner } from 'react-icons/fa';
 
 interface IHowto {
 	id: number;
@@ -49,19 +49,24 @@ export default function Howtos() {
 			a.systemWhenCreated < b.systemWhenCreated ? 1 : 0
 		);
 		setHowtos(initialHowtos);
-		console.log('use Effect fired');
-		console.log(initialHowtos[0].systemWhenCreated);
 	}, []);
+
+	const howtosAreReady = () => howtos.length > 0;
 
 	return (
 		<>
-			<p className="text-3xl mb-3">{howtos.length} Howtos</p>
+			{howtosAreReady() ? (
+				<p className="text-3xl mb-3">{howtos.length} Howtos</p>
+			) : (
+				<p className="text-3xl mb-3 flex gap-1"><FaSpinner className="loaderIcon"/> Howtos</p>
+			)}
 			<input
 				value={searchText}
 				onChange={(e) => handleSearchTextChange(e)}
 				className="text-3xl placeholder-slate-300 text-slate-500 rounded p-1 mb-5 "
 				autoFocus
-				placeholder="search howtos"
+				disabled={!howtosAreReady()}
+				placeholder={howtosAreReady() ? "search howtos" : ''}
 			/>
 			{howtos.map((howto) => {
 				return (
