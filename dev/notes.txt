@@ -13,20 +13,21 @@
 		- x enable multiple words
 		- x responsive
 		- x allow uppper case
-		- .. fix order
-		- show hightlight
+		- x fix order
+		- .. show highlight
+	- show single howtos
+	- enable permalinks
 
-- keep in URL and respond to URLs for permalinks
-
-- show each one on click
-- split into two components
-
-
+- perhaps split into two components
 - don't show "1 Howtos"
 - show "made with Next.js 13.4"
 
-- implement unit testing for qtools
 
+
+==================================
+
+
+- implement unit testing for qtools
 - get SEO image to work in Slack
 	- seems to be the same as this, which works: view-source:https://vitest.dev
 	- see seo.html

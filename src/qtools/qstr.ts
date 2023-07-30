@@ -14,3 +14,28 @@ export const textContainsAllTerms = (text: string, searchText:string) => {
 	}
 	return true;
 }
+
+/**
+ * Encloses search words in a class so that they can be shown as highlighted
+ * 
+ * qstr.wrapFoundSearchWordsWithClassElement('Build a Next.js site with app router, TypeScript, and Tailwind', 'next tailwind');
+ * 
+ *
+ */
+export const wrapFoundSearchWordsWithClassElement = (text: string, searchText: string, className: string = 'searchHighlight') => {
+	// searchText = "regex vue"
+	// regexString = "(regex)|(vue)"
+	// regexReplaceString = "$1$2";
+	const escapedSearchText = searchText.replace(/[-[\]{}()*+?.,\\^$|]/g, "\\$&");
+	const searchWords = escapedSearchText.split(' ').filter(word => word.length >= 3);
+	if (searchWords.length > 0) {
+		const regexSearchString = searchWords.map(word => `(${word})`).join('|');
+		const regexReplaceString = searchWords.map((_m, i) => '$' + String(i + 1)).join('');
+		const re = new RegExp(regexSearchString, "ig");
+		const result = text.replace(re, `<span class="${className}">${regexReplaceString}</span>`)
+		return result === undefined ? text : result;
+	} else {
+		return text;
+	}
+}
+
