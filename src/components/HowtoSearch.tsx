@@ -1,7 +1,9 @@
 'use client';
 import { useState } from 'react';
-import initialHowtos from '../data/itemtype_howtos.json';
+import _initialHowtos from '../data/itemtype_howtos.json';
 import * as qdat from '../qtools/qdat';
+
+const initialHowtos = _initialHowtos.reverse();
 
 export default function Howtos() {
 	const [searchText, setSearchText] = useState('');
