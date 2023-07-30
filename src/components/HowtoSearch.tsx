@@ -31,15 +31,17 @@ export default function Howtos() {
 
 	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const _searchText = e.target.value;
-		const titleMatchHowtos = initialHowtos.filter((m) =>
-			m.title.toLowerCase().includes(_searchText.toLowerCase())
-		);
+		const titleMatchHowtos = initialHowtos.filter((m) => {
+			const bulkSearch = m.category + '|' + m.title;
+			return bulkSearch.toLowerCase().includes(_searchText.toLowerCase());
+		});
 		const restMatchHowtos = initialHowtos.filter(
 			(m) =>
 				m.body.toLowerCase().includes(_searchText.toLowerCase()) &&
 				!m.title.toLowerCase().includes(_searchText.toLowerCase())
 		);
 		let _howtos = [...titleMatchHowtos, ...restMatchHowtos];
+		console.log(_howtos.length);
 
 		setHowtos(_howtos);
 		setSearchText(_searchText);
@@ -82,9 +84,9 @@ export default function Howtos() {
 				disabled={!howtosAreReady()}
 				placeholder={howtosAreReady() ? 'search howtos' : ''}
 			/>
-			{howtos.map((howto) => {
+			{howtos.map((howto, index) => {
 				return (
-					<div key={howto.id} className="mb-3">
+					<div key={index} className="mb-3">
 						<div className="text-yellow-400 smallcaps text-sm text-opacity-70">
 							{qdat.smartDateWithYear(howto.systemWhenCreated)} -{' '}
 							{howto.category}

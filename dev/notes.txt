@@ -9,7 +9,7 @@
 		- x spinner
 		- x set focus after spinner
 		- x then show those in body
-		- search on category as well
+		- .. search on category as well
 		- enable multiple words
 		- show hightlight
 
