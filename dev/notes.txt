@@ -1,4 +1,13 @@
-- ..  
+- .. make look like current list 
+	- .. import all date tools
+	- get working with moment
+	- switch to dayjs
+
+
+- show each one on click
+- split into two components
+
+- implement unit testing for qtools
 
 - get SEO image to work in Slack
 	- seems to be the same as this, which works: view-source:https://vitest.dev

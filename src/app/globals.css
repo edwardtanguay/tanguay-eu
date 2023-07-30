@@ -6,4 +6,7 @@
 	a {
 		@apply border-b border-slate-500
 	}
+	.smallcaps {
+		font-variant: small-caps;
+	}
 }

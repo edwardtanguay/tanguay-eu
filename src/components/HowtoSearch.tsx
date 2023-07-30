@@ -22,14 +22,18 @@ export default function Howtos() {
 			<input
 				value={searchText}
 				onChange={(e) => handleSearchTextChange(e)}
-				className="text-3xl placeholder-slate-300 text-slate-500 rounded p-1 mb-3 "
+				className="text-3xl placeholder-slate-300 text-slate-500 rounded p-1 mb-5 "
 				autoFocus
 				placeholder="search howtos"
 			/>
 			{howtos.map((howto) => {
-				return <div key={howto.id}>{howto.title}</div>;
+				return (
+					<div key={howto.id} className='mb-3'>
+						<div className='text-yellow-400 smallcaps text-sm text-opacity-70'>{howto.systemWhenCreated} - {howto.category}</div>
+						<div className='text-slate-50 text-xl'>{howto.title}</div>
+					</div>
+				);
 			})}
 		</>
 	);
 }
-
