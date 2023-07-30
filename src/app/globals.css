@@ -28,7 +28,7 @@
 	}
 
 	.searchHighlight {
-		color: orange;
-		text-shadow: 2px 2px 15px black, 2px 2px 15px yellow;
+		color: lightgreen;
+		text-shadow: 8px 8px 15px black, -8px -8px 15px black;
 	}
 }

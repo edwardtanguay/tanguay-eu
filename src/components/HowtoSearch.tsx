@@ -13,6 +13,7 @@ interface IHowto {
 	systemWhenCreated: string;
 	selectedForSearch: boolean;
 	styledTitle: string;
+	styledCategory: string;
 }
 
 let initialHowtos: IHowto[] = [];
@@ -24,7 +25,8 @@ for (const rawHowto of rawHowtos) {
 		body: rawHowto.body,
 		systemWhenCreated: rawHowto.systemWhenCreated,
 		selectedForSearch: false,
-		styledTitle: rawHowto.title
+		styledTitle: rawHowto.title,
+		styledCategory: rawHowto.category
 	};
 	initialHowtos.push(howto);
 }
@@ -62,6 +64,7 @@ export default function Howtos() {
 
 		for (const _howto of _howtos) {
 			_howto.styledTitle = qstr.wrapFoundSearchWordsWithClassElement(_howto.title, _searchText);
+			_howto.styledCategory = qstr.wrapFoundSearchWordsWithClassElement(_howto.category, _searchText);
 		}
 
 		setHowtos(_howtos);
@@ -107,16 +110,16 @@ export default function Howtos() {
 				placeholder={howtosAreReady() ? 'search howtos' : ''}
 			/>
 			{howtos.map((howto, index) => {
-				return (
-					<div key={index} className="mb-3">
-						<div className="text-yellow-400 smallcaps text-sm text-opacity-70">
-							{qdat.smartDateWithYear(howto.systemWhenCreated)} -{' '}
-							{howto.category}
+					return (
+						<div key={index} className="mb-3">
+							<div className="text-yellow-400 smallcaps text-sm text-opacity-70">
+								{qdat.smartDateWithYear(howto.systemWhenCreated)} -{' '}
+								<span dangerouslySetInnerHTML={{__html: howto.styledCategory}}></span>
+							</div>
+							<div><span className="searchHighlight"></span></div>
+							<div className="text-slate-50 text-xl" dangerouslySetInnerHTML={{__html: howto.styledTitle}}></div>
 						</div>
-						<div><span className="searchHighlight"></span></div>
-						<div className="text-slate-50 text-xl" dangerouslySetInnerHTML={{__html: howto.styledTitle}}></div>
-					</div>
-				);
+					);
 			})}
 		</>
 	);
