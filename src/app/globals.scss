@@ -6,7 +6,11 @@ $highlightShadowColor:yellow;
 
 @layer components {
 	a {
-		@apply border-b border-slate-500
+		@apply border-b border-slate-500;
+	}
+
+	a.howtoLink {
+		@apply border-b-0;
 	}
 
 	.smallcaps {
@@ -33,4 +37,11 @@ $highlightShadowColor:yellow;
 		color: yellow;
 		text-shadow: 8px 8px 15px $highlightShadowColor, -8px 8px 15px $highlightShadowColor, 8px -8px 15px $highlightShadowColor, -8px -8px 15px $highlightShadowColor;
 	}
+
+	a.howtoLink:hover span {
+		color: #fff;
+		// text-decoration: underline;
+		border-bottom: 1px dotted #aaa;
+	}
+
 }

@@ -18,6 +18,11 @@
 			- x fix to be titles first again
 			- x categories
 	- .. show single howtos
+		- .. link
+		- show title
+		- get howtos from module
+		- display with all styles
+	- build in search UX again so that you can search/check/research etc.
 	- enable permalinks
 
 - perhaps split into two components

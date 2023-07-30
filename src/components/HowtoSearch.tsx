@@ -4,6 +4,7 @@ import rawHowtos from '../data/itemtype_howtos.json';
 import * as qdat from '../qtools/qdat';
 import * as qstr from '../qtools/qstr';
 import { FaSpinner } from 'react-icons/fa';
+import Link from 'next/link';
 
 interface IHowto {
 	id: number;
@@ -117,7 +118,9 @@ export default function Howtos() {
 								<span dangerouslySetInnerHTML={{__html: howto.styledCategory}}></span>
 							</div>
 							<div><span className="searchHighlight"></span></div>
-							<div className="text-slate-50 text-xl" dangerouslySetInnerHTML={{__html: howto.styledTitle}}></div>
+							<Link href={`/howtos/${howto.id}`} className='howtoLink'>
+							<span className="text-slate-50 text-xl" dangerouslySetInnerHTML={{__html: howto.styledTitle}}></span>
+							</Link>
 						</div>
 					);
 			})}
