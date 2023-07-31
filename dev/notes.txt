@@ -22,7 +22,8 @@
 		- x show title
 		- x get howtos from module
 			- x interfaces in own file
-		- .. get appContext working with one variable
+		- x get appContext working with one variable
+		- .. put searchText in AppContext
 		- display with all styles
 	- build in search UX again so that you can search/check/research etc.
 	- enable permalinks

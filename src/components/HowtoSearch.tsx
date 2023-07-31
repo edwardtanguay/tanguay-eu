@@ -25,10 +25,9 @@ for (const rawHowto of rawHowtos) {
 }
 
 export default function Howtos() {
-	const [searchText, setSearchText] = useState('');
 	const [howtos, setHowtos] = useState<IHowto[]>([]);
 	const searchTextRef = useRef<HTMLInputElement>(null);
-	const { message } = useContext(AppContext);
+	const { searchText, setSearchText } = useContext(AppContext);
 
 	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const _searchText = e.target.value;
@@ -87,7 +86,6 @@ export default function Howtos() {
 
 	return (
 		<>
-			<div className="text-6xl text-red-700">{message}</div>
 			{howtosAreReady() ? (
 				<p className="text-3xl mb-3">{howtos.length} Howtos</p>
 			) : (

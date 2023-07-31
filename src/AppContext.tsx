@@ -1,8 +1,10 @@
 "use client";
+import { useState} from 'react';
 import { createContext } from 'react';
 
 interface IAppContext {
-	message: string;
+	searchText: string;
+	setSearchText: (searchText: string) => void;
 }
 
 interface IAppProvider {
@@ -12,12 +14,13 @@ interface IAppProvider {
 export const AppContext = createContext<IAppContext>({} as IAppContext);
 
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
-	const message = 'this is a variable from AppContext';
+	const [searchText, setSearchText] = useState('');
 
 	return (
 		<AppContext.Provider
 			value={{
-				message
+				searchText,
+				setSearchText
 			}}
 		>
 			{children}
