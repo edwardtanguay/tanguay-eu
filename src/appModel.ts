@@ -1,4 +1,5 @@
 import rawHowtos from './data/itemtype_howtos.json';
+import * as qstr from './qtools/qstr';
 
 const buildHowtos = () => {
 	let _howtos: IHowto[] = [];
@@ -8,7 +9,7 @@ const buildHowtos = () => {
 			category: rawHowto.category,
 			title: rawHowto.title,
 			body: rawHowto.body,
-			bodyHtml: 'this is a <b>bold test</b> of <span class="searchHighlight">highlight test</span> for testing',
+			bodyHtml:qstr.buildOutlineHtml(rawHowto.body),
 			systemWhenCreated: rawHowto.systemWhenCreated,
 			selectedForSearch: false,
 			styledTitle: rawHowto.title,
