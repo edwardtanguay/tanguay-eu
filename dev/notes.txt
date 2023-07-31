@@ -31,13 +31,16 @@
 		- x appcontext load raw howtos
 		- x reset when empty
 		- x get data from dataModel
-		- .. display body with all styles
+		- x display body with all styles
 			- x show single as on current howto site but with BODY
 			- x in appModel, create bodyHtml with HTML that gets parsed
-			- .. implement buildOutlineHtml
-				- .. add styles
-				- .. add images
-				- responsive
+			- x implement buildOutlineHtml
+				- x add styles
+				- x add images
+		- x only ten
+		- .. click and react
+		- .. responsive
+
 
 				
 

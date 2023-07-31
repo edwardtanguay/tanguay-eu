@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.044 with images';
+	return '0.045 smoother clicking'
 }

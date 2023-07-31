@@ -8,7 +8,7 @@ div.dp-outline {
 }
 
 div.outlineWrapper {
-	margin: 20px 0 0 0;
+	margin: 20px 0 20px 0;
 
 	ul.ul-outline {
 		list-style: disc;
@@ -26,7 +26,7 @@ div.outlineWrapper {
 		}
 
 		strong {
-			color: rgb(204, 133, 2);
+			color: rgb(221, 192, 65);
 		}
 
 		li {
@@ -38,7 +38,7 @@ div.outlineWrapper {
 
 		li code {
 			color: $code-color;
-			background-color: $code-background;
+			background-color: #30323b;
 			font-weight: bold;
 			font-family: 'Courier New', Courier, monospace;
 			padding: .3rem .5rem;
