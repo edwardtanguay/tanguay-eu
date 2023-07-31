@@ -32,6 +32,7 @@
 - perhaps split into two components
 - don't show "1 Howtos"
 - show "made with Next.js 13.4"
+- only search on third letter and after
 - replace all imports with @
 
 

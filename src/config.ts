@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.027 interaces.ts in';
+	return '0.028 took out layout metadata';
 }
