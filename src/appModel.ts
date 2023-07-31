@@ -9,7 +9,7 @@ const buildHowtos = () => {
 			category: rawHowto.category,
 			title: rawHowto.title,
 			body: rawHowto.body,
-			bodyHtml:qstr.buildOutlineHtml(rawHowto.body),
+			bodyHtml: qstr.buildOutlineHtml(rawHowto.body),
 			systemWhenCreated: rawHowto.systemWhenCreated,
 			selectedForSearch: false,
 			styledTitle: rawHowto.title,

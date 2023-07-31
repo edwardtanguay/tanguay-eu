@@ -1,6 +1,6 @@
 import * as appModel from '../../../appModel';
 import * as qdat from '../../../qtools/qdat';
-
+import '../../outline.scss';
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
    const { id } = params;
@@ -32,7 +32,7 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <div className='text-2xl'>{howto.title}</div>
                </div>
                <div className='bg-slate-900 p-3 border-r border-b border-l border-slate-600'>
-                     <span dangerouslySetInnerHTML={{ __html: howto.bodyHtml }}></span>
+                  <div dangerouslySetInnerHTML={{ __html: howto.bodyHtml }}></div>
                </div>
             </>
          )}

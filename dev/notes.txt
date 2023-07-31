@@ -35,7 +35,12 @@
 			- x show single as on current howto site but with BODY
 			- x in appModel, create bodyHtml with HTML that gets parsed
 			- .. implement buildOutlineHtml
-			- 
+				- .. add styles
+				- .. add images
+				- responsive
+
+				
+
 
 
 

@@ -129,9 +129,9 @@ class TextParserLine {
 
 		const numberOfIndents = qstr.getNumberOfPrecedingTabs(this.line, true);
 		if (this.lineNumber === 1) {
-			this.preHtml += '<ul class="outline">';
+			this.preHtml += '<ul class="ul-outline">';
 		} else if (this.lastNumberOfIndents < numberOfIndents) {
-			this.preHtml += '<ul class="outline">';
+			this.preHtml += '<ul class="ul-outline">';
 		} else if (this.lastNumberOfIndents > numberOfIndents) {
 			for (let x = 1; x <= this.lastNumberOfIndents - numberOfIndents; x += 1) {
 				this.preHtml += '</ul>';
