@@ -1,22 +1,23 @@
-import rawHowtos from '../../../data/itemtype_howtos.json';
+import * as appModel from '../../../appModel';
 import * as qdat from '../../../qtools/qdat';
 
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
    const { id } = params;
-   const title = `Howto #${id} is showing on this page`;
+   const howto = appModel.howtos.find(m => String(m.id) === id);
+   const title = howto === undefined ? 'UNKNOWN' : `HOWTO: ${howto.title}`;
    return {
       title,
       openGraph: {
          title,
-         description: 'This will be data from the body of the Howto.'
+         description: `This is one of Edward's howtos, the body of the howto will be displayed here later.`
       }
    }
 }
 
 export default async function Page({ params }: { params: { id: string } }) {
    const { id } = params;
-   const howto = rawHowtos.find(m => String(m.id) === id);
+   const howto = appModel.howtos.find(m => String(m.id) === id);
 
    return (
       <>

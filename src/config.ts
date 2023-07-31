@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.036 showing body';
+	return '0.037 opengraph';
 }
