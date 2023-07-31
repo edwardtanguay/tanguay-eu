@@ -1,12 +1,12 @@
 "use client";
-import { useState} from 'react';
+import { useState } from 'react';
 import { createContext } from 'react';
 
 interface IAppContext {
 	searchText: string;
 	setSearchText: (searchText: string) => void;
-	showingHowtos: IHowto[];
-	setShowingHowtos: (howtos: IHowto[]) => void;
+	filteredHowtos: IHowto[];
+	setFilteredHowtos: (howtos: IHowto[]) => void;
 }
 
 interface IAppProvider {
@@ -17,15 +17,15 @@ export const AppContext = createContext<IAppContext>({} as IAppContext);
 
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [searchText, setSearchText] = useState('');
-	const [showingHowtos, setShowingHowtos] = useState<IHowto[]>([]);
+	const [filteredHowtos, setFilteredHowtos] = useState<IHowto[]>([]);
 
 	return (
 		<AppContext.Provider
 			value={{
 				searchText,
 				setSearchText,
-				showingHowtos: showingHowtos,
-				setShowingHowtos: setShowingHowtos
+				filteredHowtos,
+				setFilteredHowtos
 			}}
 		>
 			{children}
