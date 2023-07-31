@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.028 took out layout metadata';
+	return '0.029 added async in single page';
 }

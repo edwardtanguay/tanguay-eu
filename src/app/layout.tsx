@@ -8,14 +8,14 @@ const inter = Inter({ subsets: ['latin'] })
 
 const pageTitle = "Edward's Tech Site";
 
-// export const metadata: Metadata = {
-//   title: pageTitle,
-//   openGraph: {
-//     title: pageTitle,
-//     description: 'This is where I keep all my code, links and information about web development.',
-//     images: ['https://tanguay-eu.vercel.app/images/siteIcon.png']
-//   }
-// }
+export const metadata: Metadata = {
+  title: pageTitle,
+  openGraph: {
+    title: pageTitle,
+    description: 'This is where I keep all my code, links and information about web development.',
+    images: ['https://tanguay-eu.vercel.app/images/siteIcon.png']
+  }
+}
 
 export default function RootLayout({
   children,

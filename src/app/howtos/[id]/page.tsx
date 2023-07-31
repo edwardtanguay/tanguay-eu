@@ -4,11 +4,11 @@ import HowtoSearch from '@/components/HowtoSearch';
 export async function generateMetadata({ params }: { params: { id: string } }) {
    const { id } = params;
    return {
-      title: `This is the howto with id=${id}`
+      title: `Howto #${id} is showing on this page`
    }
 }
 
-export default function Page({ params }: { params: { id: string } }) {
+export default async function Page({ params }: { params: { id: string } }) {
    const { id } = params;
    const howto = rawHowtos.find(m => String(m.id) === id);
 
