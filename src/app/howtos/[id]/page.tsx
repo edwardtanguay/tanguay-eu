@@ -18,6 +18,10 @@ export default async function Page({ params }: { params: { id: string } }) {
    const howto = rawHowtos.find(m => String(m.id) === id);
 
    return (
-      <HowtoSearch />
+      <>
+         {howto && (
+            <div className='text-3xl'>{howto.title}</div>
+         )}
+      </>
    )
 }
