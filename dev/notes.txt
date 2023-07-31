@@ -27,7 +27,16 @@
 		- x on single page, show title with serach component, and SEO meta info
 		- x only search on third letter and after
 		- x put howtos in appContext
-		- .. change howtos to base variable
+		- x change howtos to base variable
+		- .. appcontext load raw howtos
+
+
+		howtos = howtos.sort((a, b) =>
+			a.systemWhenCreated < b.systemWhenCreated ? 1 : -1
+		);
+
+
+		
 		- .. get data from dataModel
 		- display body with all styles
 	- build in search UX again so that you can search/check/research etc.

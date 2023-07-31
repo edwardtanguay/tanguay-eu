@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useRef } from 'react';
-import rawHowtos from '../data/itemtype_howtos.json';
 import * as qdat from '../qtools/qdat';
 import * as qstr from '../qtools/qstr';
 import { FaSpinner } from 'react-icons/fa';
@@ -8,48 +7,32 @@ import Link from 'next/link';
 import { useContext } from 'react';
 import { AppContext } from '../AppContext';
 
-let initialHowtos: IHowto[] = [];
-
-for (const rawHowto of rawHowtos) {
-	const howto: IHowto = {
-		id: rawHowto.id,
-		category: rawHowto.category,
-		title: rawHowto.title,
-		body: rawHowto.body,
-		systemWhenCreated: rawHowto.systemWhenCreated,
-		selectedForSearch: false,
-		styledTitle: rawHowto.title,
-		styledCategory: rawHowto.category
-	};
-	initialHowtos.push(howto);
-}
-
 export default function HowtoSearch() {
 	const searchTextRef = useRef<HTMLInputElement>(null);
-	const { searchText, setSearchText, filteredHowtos, setFilteredHowtos} = useContext(AppContext);
+	const { searchText, setSearchText, filteredHowtos, setFilteredHowtos, howtos} = useContext(AppContext);
 
 	const handleSearchTextChange = (_searchText: string) => {
 		if (_searchText.length >= 3) {
 
 			const _howtos: IHowto[] = [];
 
-			initialHowtos.forEach(m => m.selectedForSearch = false);
+			howtos.forEach(m => m.selectedForSearch = false);
 
 			// primary result group
-			for (const initialHowto of initialHowtos) {
-				const bulkSearch = initialHowto.category + '|' + initialHowto.title;
+			for (const howto of howtos) {
+				const bulkSearch = howto.category + '|' + howto.title;
 				if (qstr.textContainsAllTerms(bulkSearch, _searchText)) {
-					_howtos.push(initialHowto);
-					initialHowto.selectedForSearch = true;
+					_howtos.push(howto);
+					howto.selectedForSearch = true;
 				}
 			}
 			// secondary result group
-			for (const initialHowto of initialHowtos) {
-				const bulkSearch = initialHowto.category + '|' + initialHowto.title + '|' + initialHowto.body;
+			for (const howto of howtos) {
+				const bulkSearch = howto.category + '|' + howto.title + '|' + howto.body;
 				if (qstr.textContainsAllTerms(bulkSearch, _searchText)) {
-					if (!initialHowto.selectedForSearch) {
-						_howtos.push(initialHowto);
-						initialHowto.selectedForSearch = true;
+					if (!howto.selectedForSearch) {
+						_howtos.push(howto);
+						howto.selectedForSearch = true;
 					}
 				}
 			}
@@ -70,10 +53,7 @@ export default function HowtoSearch() {
 	};
 
 	useEffect(() => {
-		initialHowtos = initialHowtos.sort((a, b) =>
-			a.systemWhenCreated < b.systemWhenCreated ? 1 : -1
-		);
-		setFilteredHowtos(initialHowtos);
+		setFilteredHowtos(howtos);
 		handleSearchTextChange(searchText);
 	}, []);
 
