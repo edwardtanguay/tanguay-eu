@@ -27,15 +27,14 @@
 		- x on single page, show title with serach component, and SEO meta info
 		- x only search on third letter and after
 		- x put howtos in appContext
-		- research howtos	
-		- get data from appModel
+		- .. get data from dataModel
 		- display body with all styles
 	- build in search UX again so that you can search/check/research etc.
 	- enable permalinks
 
-- fix search so all in title are first, e.g. "build"
+- show piece of text in body that was found
 - perhaps split into two components
-- don't show "1 Howtos"
+- show "1 Howto"
 - show "made with Next.js 13.4"
 - replace all imports with @
 

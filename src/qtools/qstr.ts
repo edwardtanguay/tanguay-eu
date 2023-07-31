@@ -22,12 +22,12 @@ export const textContainsAllTerms = (text: string, searchText:string) => {
  * 
  * Build a <span class="searchHighlight">Next.js</span> site with app router, TypeScript, and Tailwind
  */
-export const wrapFoundSearchWordsWithClassElement = (text: string, searchText: string, className: string = 'searchHighlight') => {
+export const wrapFoundSearchWordsWithClassElement = (text: string, searchText: string, minimum: number = 3, className: string = 'searchHighlight') => {
 	// searchText = "regex vue"
 	// regexString = "(regex)|(vue)"
 	// regexReplaceString = "$1$2";
 	const escapedSearchText = searchText.replace(/[-[\]{}()*+?.,\\^$|]/g, "\\$&");
-	const searchWords = escapedSearchText.split(' ').filter(word => word.length >= 3);
+	const searchWords = escapedSearchText.split(' ').filter(word => word.length >= minimum);
 	if (searchWords.length > 0) {
 		const regexSearchString = searchWords.map(word => `(${word})`).join('|');
 		const regexReplaceString = searchWords.map((_m, i) => '$' + String(i + 1)).join('');

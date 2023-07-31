@@ -60,6 +60,11 @@ export default function HowtoSearch() {
 			}
 
 			setHowtos(_howtos);
+		} else {
+			for (const howto of howtos) {
+				howto.styledTitle = qstr.wrapFoundSearchWordsWithClassElement(howto.title, _searchText);
+				howto.styledCategory = qstr.wrapFoundSearchWordsWithClassElement(howto.category, _searchText);
+			}
 		}
 		setSearchText(_searchText);
 	};
