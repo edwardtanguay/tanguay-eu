@@ -32,8 +32,8 @@
 		- x reset when empty
 		- x get data from dataModel
 		- .. display body with all styles
-			- .. show single as on current howto site but with BODY
-			- in appModel, create bodyHtml with HTML that gets parsed
+			- x show single as on current howto site but with BODY
+			- .. in appModel, create bodyHtml with HTML that gets parsed
 			- implement buildOutlineHtml
 			- 
 

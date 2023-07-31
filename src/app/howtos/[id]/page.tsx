@@ -32,7 +32,7 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <div className='text-2xl'>{howto.title}</div>
                </div>
                <div className='bg-slate-900 p-3 border-r border-b border-l border-slate-600'>
-                  BODY
+                     <span dangerouslySetInnerHTML={{ __html: howto.bodyHtml }}></span>
                </div>
             </>
          )}

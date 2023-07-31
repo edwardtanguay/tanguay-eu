@@ -4,6 +4,7 @@ interface IHowto {
 	category: string;
 	title: string;
 	body: string;
+	bodyHtml: string;
 	systemWhenCreated: string;
 	selectedForSearch: boolean;
 	styledTitle: string;

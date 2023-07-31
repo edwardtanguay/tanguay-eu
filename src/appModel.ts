@@ -8,6 +8,7 @@ const buildHowtos = () => {
 			category: rawHowto.category,
 			title: rawHowto.title,
 			body: rawHowto.body,
+			bodyHtml: 'this is a <b>bold test</b> of <span class="searchHighlight">highlight test</span> for testing',
 			systemWhenCreated: rawHowto.systemWhenCreated,
 			selectedForSearch: false,
 			styledTitle: rawHowto.title,
