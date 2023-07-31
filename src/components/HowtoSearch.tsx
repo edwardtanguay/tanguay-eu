@@ -28,9 +28,7 @@ export default function HowtoSearch() {
 	const searchTextRef = useRef<HTMLInputElement>(null);
 	const { searchText, setSearchText, howtos, setHowtos } = useContext(AppContext);
 
-	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const _searchText = e.target.value;
-
+	const handleSearchTextChange = (_searchText: string) => {
 		if (_searchText.length >= 3) {
 
 			const _howtos: IHowto[] = [];
@@ -71,6 +69,7 @@ export default function HowtoSearch() {
 			a.systemWhenCreated < b.systemWhenCreated ? 1 : -1
 		);
 		setHowtos(initialHowtos);
+		handleSearchTextChange(searchText);
 	}, []);
 
 	// focuses cursor after loading graphic
@@ -97,7 +96,7 @@ export default function HowtoSearch() {
 			)}
 			<input
 				value={searchText}
-				onChange={(e) => handleSearchTextChange(e)}
+				onChange={(e) => handleSearchTextChange(e.target.value)}
 				className="text-3xl placeholder-slate-300 text-slate-500 rounded p-1 mb-5 sm:w-full lg:w-[30rem] "
 				autoFocus
 				ref={searchTextRef}

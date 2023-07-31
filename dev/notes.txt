@@ -26,9 +26,10 @@
 		- x put searchText in AppContext
 		- x on single page, show title with serach component, and SEO meta info
 		- x only search on third letter and after
-		- .. only show HowtoSearch but switch to one if only one
-			- x put howtos in appContext
-		- display with all styles
+		- x put howtos in appContext
+		- research howtos	
+		- get data from appModel
+		- display body with all styles
 	- build in search UX again so that you can search/check/research etc.
 	- enable permalinks
 
