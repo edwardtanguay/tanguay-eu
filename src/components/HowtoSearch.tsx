@@ -26,7 +26,7 @@ for (const rawHowto of rawHowtos) {
 
 export default function HowtoSearch() {
 	const searchTextRef = useRef<HTMLInputElement>(null);
-	const { searchText, setSearchText, howtos, setHowtos } = useContext(AppContext);
+	const { searchText, setSearchText, showingHowtos, setShowingHowtos } = useContext(AppContext);
 
 	const handleSearchTextChange = (_searchText: string) => {
 		if (_searchText.length >= 3) {
@@ -59,9 +59,9 @@ export default function HowtoSearch() {
 				_howto.styledCategory = qstr.wrapFoundSearchWordsWithClassElement(_howto.category, _searchText);
 			}
 
-			setHowtos(_howtos);
+			setShowingHowtos(_howtos);
 		} else {
-			for (const howto of howtos) {
+			for (const howto of showingHowtos) {
 				howto.styledTitle = qstr.wrapFoundSearchWordsWithClassElement(howto.title, _searchText);
 				howto.styledCategory = qstr.wrapFoundSearchWordsWithClassElement(howto.category, _searchText);
 			}
@@ -73,27 +73,27 @@ export default function HowtoSearch() {
 		initialHowtos = initialHowtos.sort((a, b) =>
 			a.systemWhenCreated < b.systemWhenCreated ? 1 : -1
 		);
-		setHowtos(initialHowtos);
+		setShowingHowtos(initialHowtos);
 		handleSearchTextChange(searchText);
 	}, []);
 
 	// focuses cursor after loading graphic
 	useEffect(() => {
-		if (howtos.length > 0) {
+		if (showingHowtos.length > 0) {
 			setTimeout(() => {
 				if (searchTextRef.current) {
 					searchTextRef.current.focus();
 				}
 			}, 10);
 		}
-	}, [howtos]);
+	}, [showingHowtos]);
 
-	const howtosAreReady = () => howtos.length > 0 || searchText.trim() !== '';
+	const howtosAreReady = () => showingHowtos.length > 0 || searchText.trim() !== '';
 
 	return (
 		<>
 			{howtosAreReady() ? (
-				<p className="text-3xl mb-3">{howtos.length} Howtos</p>
+				<p className="text-3xl mb-3">{showingHowtos.length} Howtos</p>
 			) : (
 				<p className="text-3xl mb-3 flex gap-1">
 					<FaSpinner className="loaderIcon" /> Howtos
@@ -108,16 +108,16 @@ export default function HowtoSearch() {
 				disabled={!howtosAreReady()}
 				placeholder={howtosAreReady() ? 'search howtos' : ''}
 			/>
-			{howtos.map((howto, index) => {
+			{showingHowtos.map((showingHowto, index: number) => {
 				return (
 					<div key={index} className="mb-3">
 						<div className="text-yellow-400 smallcaps text-sm text-opacity-70">
-							{qdat.smartDateWithYear(howto.systemWhenCreated)} -{' '}
-							<span dangerouslySetInnerHTML={{ __html: howto.styledCategory }}></span>
+							{qdat.smartDateWithYear(showingHowto.systemWhenCreated)} -{' '}
+							<span dangerouslySetInnerHTML={{ __html: showingHowto.styledCategory }}></span>
 						</div>
 						<div><span className="searchHighlight"></span></div>
-						<Link href={`/howtos/${howto.id}`} className='howtoLink'>
-							<span className="text-slate-50 text-xl" dangerouslySetInnerHTML={{ __html: howto.styledTitle }}></span>
+						<Link href={`/howtos/${showingHowto.id}`} className='howtoLink'>
+							<span className="text-slate-50 text-xl" dangerouslySetInnerHTML={{ __html: showingHowto.styledTitle }}></span>
 						</Link>
 					</div>
 				);
