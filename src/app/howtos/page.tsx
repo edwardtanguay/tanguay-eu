@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import HowtoSearch from '@/components/HowtoSearch';
 import howtos from '../../data/itemtype_howtos.json';
-
 import { Metadata } from 'next';
 
 const pageTitle = "Edward's Howtos";

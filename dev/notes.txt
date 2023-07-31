@@ -23,7 +23,8 @@
 		- x get howtos from module
 			- x interfaces in own file
 		- x get appContext working with one variable
-		- .. put searchText in AppContext
+		- x put searchText in AppContext
+		- .. on single page, show title with serach component, and SEO meta info
 		- display with all styles
 	- build in search UX again so that you can search/check/research etc.
 	- enable permalinks
@@ -31,6 +32,7 @@
 - perhaps split into two components
 - don't show "1 Howtos"
 - show "made with Next.js 13.4"
+- replace all imports with @
 
 
 
