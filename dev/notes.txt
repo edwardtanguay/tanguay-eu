@@ -20,8 +20,9 @@
 	- .. show single howtos
 		- x link
 		- x show title
-		- .. get howtos from module
-			- .. interfaces in own file
+		- x get howtos from module
+			- x interfaces in own file
+		- .. get appContext working with one variable
 		- display with all styles
 	- build in search UX again so that you can search/check/research etc.
 	- enable permalinks
