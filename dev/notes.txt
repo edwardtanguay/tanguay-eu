@@ -30,8 +30,15 @@
 		- x change howtos to base variable
 		- x appcontext load raw howtos
 		- x reset when empty
-		- .. get data from dataModel
-		- display body with all styles
+		- x get data from dataModel
+		- .. display body with all styles
+			- .. show single as on current howto site but with BODY
+			- in appModel, create bodyHtml with HTML that gets parsed
+			- implement buildOutlineHtml
+			- 
+
+
+
 	- build in search UX again so that you can search/check/research etc.
 	- enable permalinks
 

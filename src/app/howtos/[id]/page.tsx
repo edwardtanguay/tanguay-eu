@@ -1,5 +1,6 @@
 import rawHowtos from '../../../data/itemtype_howtos.json';
-import HowtoSearch from '@/components/HowtoSearch';
+import * as qdat from '../../../qtools/qdat';
+
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
    const { id } = params;
@@ -20,7 +21,13 @@ export default async function Page({ params }: { params: { id: string } }) {
    return (
       <>
          {howto && (
-            <div className='text-3xl'>{howto.title}</div>
+            <div className='border-slate-500 bg-gray-950 border p-3 mt-6'>
+						<div className="text-yellow-400 smallcaps text-md text-opacity-70">
+							{qdat.smartDateWithYear(howto.systemWhenCreated)} -{' '}
+							<span dangerouslySetInnerHTML={{ __html: howto.category }}></span>
+						</div>
+               <div className='text-2xl'>{howto.title}</div>
+            </div>
          )}
       </>
    )
