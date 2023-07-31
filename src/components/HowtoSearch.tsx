@@ -44,12 +44,17 @@ export default function HowtoSearch() {
 
 			setFilteredHowtos(_howtos);
 		} else {
-			for (const howto of filteredHowtos) {
-				howto.styledTitle = qstr.wrapFoundSearchWordsWithClassElement(howto.title, _searchText);
-				howto.styledCategory = qstr.wrapFoundSearchWordsWithClassElement(howto.category, _searchText);
-			}
 			if (_searchText.trim().length === 0) {
 				setFilteredHowtos(howtos);
+				for (const howto of filteredHowtos) {
+					howto.styledTitle = howto.title;
+					howto.styledCategory = howto.category;
+				}
+			} else {
+				for (const howto of filteredHowtos) {
+					howto.styledTitle = qstr.wrapFoundSearchWordsWithClassElement(howto.title, _searchText);
+					howto.styledCategory = qstr.wrapFoundSearchWordsWithClassElement(howto.category, _searchText);
+				}
 			}
 		}
 		setSearchText(_searchText);

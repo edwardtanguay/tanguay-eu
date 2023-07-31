@@ -1,26 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { createContext } from 'react';
-import rawHowtos from './data/itemtype_howtos.json';
-
-let initialHowtos: IHowto[] = [];
-for (const rawHowto of rawHowtos) {
-	const howto: IHowto = {
-		id: rawHowto.id,
-		category: rawHowto.category,
-		title: rawHowto.title,
-		body: rawHowto.body,
-		systemWhenCreated: rawHowto.systemWhenCreated,
-		selectedForSearch: false,
-		styledTitle: rawHowto.title,
-		styledCategory: rawHowto.category
-	};
-	initialHowtos.push(howto);
-}
-
-initialHowtos.sort((a, b) =>
-	a.systemWhenCreated < b.systemWhenCreated ? 1 : -1
-);
+import * as appModel from './appModel';
 
 interface IAppContext {
 	searchText: string;
@@ -43,8 +24,8 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [howtos, setHowtos] = useState<IHowto[]>([]);
 
 	useEffect(() => {
-		setHowtos(initialHowtos);
-		setFilteredHowtos(initialHowtos);
+		setHowtos(appModel.howtos);
+		setFilteredHowtos(appModel.howtos);
 	}, []);
 
 	return (
