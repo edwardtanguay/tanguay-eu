@@ -5,12 +5,13 @@ import * as qdat from '../../../qtools/qdat';
 export async function generateMetadata({ params }: { params: { id: string } }) {
    const { id } = params;
    const howto = appModel.howtos.find(m => String(m.id) === id);
-   const title = howto === undefined ? 'UNKNOWN' : `HOWTO: ${howto.title}`;
+   const title = howto === undefined ? 'UNKNOWN' : `${howto.title}`;
    return {
       title,
       openGraph: {
          title,
-         description: `This is one of Edward's howtos, the body of the howto will be displayed here later.`
+         description: `This is one of Edward's howtos, the body of the howto will be displayed here later.`,
+         images: ['https://tanguay-eu.vercel.app/images/siteIcon.png']
       }
    }
 }

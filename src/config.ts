@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.038 thin';
+	return '0.039 with image'
 }
