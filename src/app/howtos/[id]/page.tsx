@@ -24,7 +24,7 @@ export default async function Page({ params }: { params: { id: string } }) {
       <>
          {howto && (
             <>
-               <div className='border-slate-600 bg-gray-950 border p-3 mt-6'>
+               <div className='border-slate-600 bg-gray-950 border p-5 mt-6'>
                   <div className="text-yellow-400 smallcaps text-md text-opacity-70">
                      {qdat.smartDateWithYear(howto.systemWhenCreated)} -{' '}
                      <span dangerouslySetInnerHTML={{ __html: howto.category }}></span>

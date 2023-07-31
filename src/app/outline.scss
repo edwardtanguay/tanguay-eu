@@ -1,4 +1,4 @@
-$code-background: rgb(0, 0, 0);
+$code-background:#111;
 $code-color: #eee;
 
 div.dp-outline {
@@ -8,7 +8,7 @@ div.dp-outline {
 }
 
 div.outlineWrapper {
-	margin: 20px 0 20px 0;
+	margin: 20px 0 30px 0;
 
 	ul.ul-outline {
 		list-style: disc;
@@ -72,6 +72,7 @@ div.outlineWrapper {
 				white-space: -o-pre-wrap;
 				/* Opera 7 */
 				word-wrap: break-word;
+				padding: .6rem;
 			}
 		}
 
