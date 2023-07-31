@@ -17,9 +17,8 @@ export const Header = () => {
 					<li>
 						<Link
 							href="/"
-							className={`border-0 ${
-								activeSegment === null ? 'text-yellow-200' : ''
-							}`}
+							className={`border-0 ${activeSegment === null ? 'text-yellow-200' : ''
+								}`}
 						>
 							Welcome
 						</Link>
@@ -27,11 +26,10 @@ export const Header = () => {
 					<li>
 						<Link
 							href="/howtos"
-							className={`border-0 ${
-								activeSegment === 'howtos'
+							className={`border-0 ${activeSegment === 'howtos'
 									? 'text-yellow-200'
 									: ''
-							}`}
+								}`}
 						>
 							Howtos
 						</Link>
@@ -39,19 +37,18 @@ export const Header = () => {
 					<li>
 						<Link
 							href="/about"
-							className={`border-0 ${
-								activeSegment === 'about'
+							className={`border-0 ${activeSegment === 'about'
 									? 'text-yellow-200'
 									: ''
-							}`}
+								}`}
 						>
 							About
 						</Link>
 					</li>
 				</ul>
 			</nav>
-			<div className='text-right'>
-			<div className="text-slate-500 invisible lg:visible">Version {config.appVersion()}</div>
+			<div className='devInfo text-right'>
+				<div className="text-slate-500">Version {config.appVersion()}</div>
 			</div>
 		</div>
 	);

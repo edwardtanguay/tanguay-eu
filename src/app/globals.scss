@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-$highlightShadowColor:rgb(128, 128, 80);
+$highlightShadowColor: rgb(128, 128, 80);
 $highlightBlur: 15px;
 
 @layer components {
@@ -35,7 +35,7 @@ $highlightBlur: 15px;
 	}
 
 	.searchHighlight {
-		color:rgb(233, 233, 38);
+		color: rgb(233, 233, 38);
 		text-shadow: 8px 8px $highlightBlur $highlightShadowColor, -8px 8px $highlightBlur $highlightShadowColor, 8px -8px $highlightBlur $highlightShadowColor, -8px -8px $highlightBlur $highlightShadowColor;
 	}
 
@@ -43,5 +43,15 @@ $highlightBlur: 15px;
 		// text-decoration: underline;
 		border-bottom: 1px dotted #aaa;
 	}
+
+	@media (max-width: 530px) {
+		.devInfo {
+			display: none;
+			div {
+				color: red !important;
+			}
+		}
+	}
+
 
 }

@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.040 bodyhtml test';
+	return '0.041 responsive info hidden';
 }
