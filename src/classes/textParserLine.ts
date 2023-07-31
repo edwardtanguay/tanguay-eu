@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable prefer-destructuring */
+import { collectGenerateParams } from "next/dist/build/utils";
 import * as qstr from "../qtools/qstr";
 // const qfil = require('../qtools/qfil');
 
@@ -185,8 +186,26 @@ class TextParserLine {
 		r += this.getHtmlForVideo();
 		r += this.getHtmlForAnimation();
 		r += this.postHtml;
+		r = this.shortenLongUrls(r);
 
 		return r;
+	}
+
+	shortenLongUrls(line: string) {
+		if (line.includes('>http')) {
+			const url = qstr.getUrlOutOfString(line);
+			const regex = />http.*?</g;
+			let replacement = '';
+			if (url) {
+				replacement = '../' + qstr.shortenUrlText(url);
+			} else {
+				replacement = '';
+			}
+			// line = line.replace(regex, replacement);
+			line = qstr.replaceAll(line, url, replacement);
+			console.log(line);
+		}
+		return line;
 	}
 
 	maskTheLine(line: string) {
@@ -237,7 +256,7 @@ class TextParserLine {
 				suppressParagraphMarks: true, suppressOrderedListElements: true
 			});
 			// if (this.options.httpHighlightInCode) {
-				// r = qstr.convertUrlsToLinkableUrls(r);
+			// r = qstr.convertUrlsToLinkableUrls(r);
 			// }
 			// r = qstr.linkify(r);
 		} else {

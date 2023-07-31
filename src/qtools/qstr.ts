@@ -9,7 +9,7 @@ import { marked } from 'marked';
  * 
  * true
  */
-export const textContainsAllTerms = (text: string, searchText:string) => {
+export const textContainsAllTerms = (text: string, searchText: string) => {
 	const terms = searchText.split(' ');
 	for (const term of terms) {
 		if (!text.toLowerCase().includes(term.toLowerCase())) {
@@ -141,10 +141,10 @@ export const parseMarkDown = (markdownText: string, options = { suppressParagrap
 	// if (options.suppressOrderedListElements) {
 	// 	r = qstr.unmaskText(r);
 	// }
-	
+
 	// was getting </p> a the end of all output that didn't have a \n
 	if (!r.startsWith('<p>') && r.endsWith('</p>\n')) {
-		r = qstr.chopRight(r, '</p>\n');	
+		r = qstr.chopRight(r, '</p>\n');
 	}
 
 	return r;
@@ -290,4 +290,65 @@ export const trimBeginningLinesOfBlanks = (lines: string[]) => {
 		}
 	});
 	return newLines;
+}
+
+export const shortenUrlText = (url: string) => {
+	// https://github.com/edwardtanguay/et002-nextjs-todo-app	
+	const parts = qstr.breakIntoParts(url, '/');
+	const index = parts.length - 1;
+	return parts[index];
+}
+
+export const breakIntoParts = (main: string, delimiter: string = ',', maximumNumberOfParts: number = 0) => {
+	const escapedDelimiter = `\\${delimiter}`;
+	const mask = '@@@MASK@@@';
+	if (qstr.isEmpty(main)) {
+		return [];
+	}
+
+	const maskedMain: string = qstr.replaceAll(main, escapedDelimiter, mask);
+	const roughParts: string[] = maskedMain.split(delimiter);
+	let parts: string[] = [];
+	roughParts.forEach((part: string) => {
+		let newPart: string = part;
+		newPart = newPart.trim();
+		parts.push(newPart);
+	});
+	if (maximumNumberOfParts !== 0 && maximumNumberOfParts < parts.length) {
+		const consolidatedParts: string[] = [];
+		parts.forEach((part, index) => {
+			if (index < maximumNumberOfParts - 1) {
+				consolidatedParts.push(part);
+			} else {
+				const current: string = consolidatedParts[maximumNumberOfParts - 1];
+				let prefix: string = '';
+				if (current !== undefined) {
+					prefix = `${current};`;
+				}
+				consolidatedParts[maximumNumberOfParts - 1] = prefix + part;
+			}
+		});
+		parts = consolidatedParts;
+	}
+
+	// unmask
+	const unmaskedParts = [];
+	for (const part of parts) {
+		const unmaskedPart = qstr.replaceAll(part, mask, delimiter);
+		unmaskedParts.push(unmaskedPart);
+	}
+	parts = unmaskedParts;
+
+	return parts;
+}
+
+export const getUrlOutOfString = (line: string) => {
+	const regex = /(>https?:\/\/\S+)/;
+	const match = line.match(regex);
+	let r = match ? match[1] : null;
+	r = r ? r : '';
+	r = qstr.chopLeft(r, '>');
+	const parts = qstr.breakIntoParts(r, '</a>');
+	r = parts[0];
+	return r;
 }
