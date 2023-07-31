@@ -38,6 +38,7 @@
 				- x add styles
 				- x add images
 		- x only ten
+		- .. 706, 598, 698 large images
 		- .. click and react
 		- .. responsive
 
