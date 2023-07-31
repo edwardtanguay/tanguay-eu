@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.053 test red code text'
+	return '0.054 no red text'
 }
