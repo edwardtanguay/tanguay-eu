@@ -45,6 +45,9 @@ $highlightBlur: 15px;
 	}
 
 	@media (max-width: 530px) {
+		nav.mainnav {
+			margin-bottom: 1rem;
+		}
 		.devInfo {
 			display: none;
 			div {

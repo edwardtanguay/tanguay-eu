@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.041 responsive info hidden';
+	return '0.042 margin fixed';
 }

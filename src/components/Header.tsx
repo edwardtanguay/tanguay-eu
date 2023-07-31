@@ -12,7 +12,7 @@ export const Header = () => {
 			<div className="flex justify-between">
 				<h1 className="text-4xl mb-3">Edward's Tech Site</h1>
 			</div>
-			<nav className="bg-slate-900 p-2">
+			<nav className="bg-slate-900 p-2 mainnav">
 				<ul className="flex gap-3">
 					<li>
 						<Link
