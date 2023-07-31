@@ -202,8 +202,9 @@ class TextParserLine {
 				replacement = '';
 			}
 			// line = line.replace(regex, replacement);
-			line = qstr.replaceAll(line, url, replacement);
-			console.log(line);
+			line = qstr.replaceAll(line, '>' + url, '>' + replacement);
+			console.log(111,url)
+			console.log(222, line);
 		}
 		return line;
 	}
