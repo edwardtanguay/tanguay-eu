@@ -28,21 +28,21 @@
 		- x only search on third letter and after
 		- x put howtos in appContext
 		- x change howtos to base variable
-		- .. appcontext load raw howtos
+		- x appcontext load raw howtos
+		- x reset when empty
 
 
-		howtos = howtos.sort((a, b) =>
-			a.systemWhenCreated < b.systemWhenCreated ? 1 : -1
-		);
 
 
-		
+
 		- .. get data from dataModel
 		- display body with all styles
 	- build in search UX again so that you can search/check/research etc.
 	- enable permalinks
 
-- show piece of text in body that was found
+- optimize search and highlights
+	- show those with text found in title first
+	- show piece of text in body that was found
 - perhaps split into two components
 - show "1 Howto"
 - show "made with Next.js 13.4"

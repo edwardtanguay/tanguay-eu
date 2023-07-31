@@ -18,6 +18,10 @@ for (const rawHowto of rawHowtos) {
 	initialHowtos.push(howto);
 }
 
+initialHowtos.sort((a, b) =>
+	a.systemWhenCreated < b.systemWhenCreated ? 1 : -1
+);
+
 interface IAppContext {
 	searchText: string;
 	setSearchText: (searchText: string) => void;

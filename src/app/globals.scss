@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-$highlightShadowColor:yellow;
+$highlightShadowColor:rgb(128, 128, 80);
+$highlightBlur: 15px;
 
 @layer components {
 	a {
@@ -34,8 +35,8 @@ $highlightShadowColor:yellow;
 	}
 
 	.searchHighlight {
-		color: yellow;
-		text-shadow: 8px 8px 15px $highlightShadowColor, -8px 8px 15px $highlightShadowColor, 8px -8px 15px $highlightShadowColor, -8px -8px 15px $highlightShadowColor;
+		color:rgb(233, 233, 38);
+		text-shadow: 8px 8px $highlightBlur $highlightShadowColor, -8px 8px $highlightBlur $highlightShadowColor, 8px -8px $highlightBlur $highlightShadowColor, -8px -8px $highlightBlur $highlightShadowColor;
 	}
 
 	a.howtoLink:hover span {

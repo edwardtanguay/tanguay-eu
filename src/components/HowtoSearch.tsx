@@ -9,7 +9,7 @@ import { AppContext } from '../AppContext';
 
 export default function HowtoSearch() {
 	const searchTextRef = useRef<HTMLInputElement>(null);
-	const { searchText, setSearchText, filteredHowtos, setFilteredHowtos, howtos} = useContext(AppContext);
+	const { searchText, setSearchText, filteredHowtos, setFilteredHowtos, howtos } = useContext(AppContext);
 
 	const handleSearchTextChange = (_searchText: string) => {
 		if (_searchText.length >= 3) {
@@ -47,6 +47,9 @@ export default function HowtoSearch() {
 			for (const howto of filteredHowtos) {
 				howto.styledTitle = qstr.wrapFoundSearchWordsWithClassElement(howto.title, _searchText);
 				howto.styledCategory = qstr.wrapFoundSearchWordsWithClassElement(howto.category, _searchText);
+			}
+			if (_searchText.trim().length === 0) {
+				setFilteredHowtos(howtos);
 			}
 		}
 		setSearchText(_searchText);
