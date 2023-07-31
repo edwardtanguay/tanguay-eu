@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.033 appModel in'
+	return '0.034 clears all';
 }

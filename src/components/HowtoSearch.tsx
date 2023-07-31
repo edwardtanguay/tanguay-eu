@@ -45,15 +45,16 @@ export default function HowtoSearch() {
 			setFilteredHowtos(_howtos);
 		} else {
 			if (_searchText.trim().length === 0) {
-				setFilteredHowtos(howtos);
-				for (const howto of filteredHowtos) {
-					howto.styledTitle = howto.title;
-					howto.styledCategory = howto.category;
+				const _howtos = [...howtos];
+				for (const _howto of _howtos) {
+					_howto.styledTitle = _howto.title;
+					_howto.styledCategory = _howto.category;
 				}
+				setFilteredHowtos(_howtos);
 			} else {
-				for (const howto of filteredHowtos) {
-					howto.styledTitle = qstr.wrapFoundSearchWordsWithClassElement(howto.title, _searchText);
-					howto.styledCategory = qstr.wrapFoundSearchWordsWithClassElement(howto.category, _searchText);
+				for (const filteredHowto of filteredHowtos) {
+					filteredHowto.styledTitle = qstr.wrapFoundSearchWordsWithClassElement(filteredHowto.title, _searchText);
+					filteredHowto.styledCategory = qstr.wrapFoundSearchWordsWithClassElement(filteredHowto.category, _searchText);
 				}
 			}
 		}
