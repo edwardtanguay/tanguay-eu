@@ -43,7 +43,7 @@ class TextParserLine {
 		this.lineNumber = lineNumber;
 		this.lastNumberOfIndents = lastNumberOfIndents;
 		this.totalNumberOfLines = totalNumberOfLines;
-		this.relativePublicImageDirectory = 'images/outline';
+		this.relativePublicImageDirectory = '../images/outline';
 		this.rawLine = line;
 		this.numberOfIndents = qstr.getNumberOfPrecedingTabs(line, true);
 		this.imageIdCode = '';
