@@ -3,8 +3,13 @@ import HowtoSearch from '@/components/HowtoSearch';
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
    const { id } = params;
+   const title = `Howto #${id} is showing on this page`;
    return {
-      title: `Howto #${id} is showing on this page`
+      title,
+	openGraph: {
+		title,
+		description: 'This will be data from the body of the Howto.'
+	}
    }
 }
 
