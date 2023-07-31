@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.034 clears all';
+	return '0.035 no white out';
 }
