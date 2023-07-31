@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.050 shortened again';
+	return '0.051 responsive fixed'
 }
