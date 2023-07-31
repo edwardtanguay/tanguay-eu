@@ -5,6 +5,8 @@ import { createContext } from 'react';
 interface IAppContext {
 	searchText: string;
 	setSearchText: (searchText: string) => void;
+	howtos: IHowto[];
+	setHowtos: (howtos: IHowto[]) => void;
 }
 
 interface IAppProvider {
@@ -15,12 +17,15 @@ export const AppContext = createContext<IAppContext>({} as IAppContext);
 
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [searchText, setSearchText] = useState('');
+	const [howtos, setHowtos] = useState<IHowto[]>([]);
 
 	return (
 		<AppContext.Provider
 			value={{
 				searchText,
-				setSearchText
+				setSearchText,
+				howtos,
+				setHowtos
 			}}
 		>
 			{children}

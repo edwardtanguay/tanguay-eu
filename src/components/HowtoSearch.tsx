@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import rawHowtos from '../data/itemtype_howtos.json';
 import * as qdat from '../qtools/qdat';
 import * as qstr from '../qtools/qstr';
@@ -24,43 +24,45 @@ for (const rawHowto of rawHowtos) {
 	initialHowtos.push(howto);
 }
 
-export default function Howtos() {
-	const [howtos, setHowtos] = useState<IHowto[]>([]);
+export default function HowtoSearch() {
 	const searchTextRef = useRef<HTMLInputElement>(null);
-	const { searchText, setSearchText } = useContext(AppContext);
+	const { searchText, setSearchText, howtos, setHowtos } = useContext(AppContext);
 
 	const handleSearchTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const _searchText = e.target.value;
 
-		const _howtos: IHowto[] = [];
+		if (_searchText.length >= 3) {
 
-		initialHowtos.forEach(m => m.selectedForSearch = false);
+			const _howtos: IHowto[] = [];
 
-		// primary result group
-		for (const initialHowto of initialHowtos) {
-			const bulkSearch = initialHowto.category + '|' + initialHowto.title;
-			if (qstr.textContainsAllTerms(bulkSearch, _searchText)) {
-				_howtos.push(initialHowto);
-				initialHowto.selectedForSearch = true;
-			}
-		}
-		// secondary result group
-		for (const initialHowto of initialHowtos) {
-			const bulkSearch = initialHowto.category + '|' + initialHowto.title + '|' + initialHowto.body;
-			if (qstr.textContainsAllTerms(bulkSearch, _searchText)) {
-				if (!initialHowto.selectedForSearch) {
+			initialHowtos.forEach(m => m.selectedForSearch = false);
+
+			// primary result group
+			for (const initialHowto of initialHowtos) {
+				const bulkSearch = initialHowto.category + '|' + initialHowto.title;
+				if (qstr.textContainsAllTerms(bulkSearch, _searchText)) {
 					_howtos.push(initialHowto);
 					initialHowto.selectedForSearch = true;
 				}
 			}
-		}
+			// secondary result group
+			for (const initialHowto of initialHowtos) {
+				const bulkSearch = initialHowto.category + '|' + initialHowto.title + '|' + initialHowto.body;
+				if (qstr.textContainsAllTerms(bulkSearch, _searchText)) {
+					if (!initialHowto.selectedForSearch) {
+						_howtos.push(initialHowto);
+						initialHowto.selectedForSearch = true;
+					}
+				}
+			}
 
-		for (const _howto of _howtos) {
-			_howto.styledTitle = qstr.wrapFoundSearchWordsWithClassElement(_howto.title, _searchText);
-			_howto.styledCategory = qstr.wrapFoundSearchWordsWithClassElement(_howto.category, _searchText);
-		}
+			for (const _howto of _howtos) {
+				_howto.styledTitle = qstr.wrapFoundSearchWordsWithClassElement(_howto.title, _searchText);
+				_howto.styledCategory = qstr.wrapFoundSearchWordsWithClassElement(_howto.category, _searchText);
+			}
 
-		setHowtos(_howtos);
+			setHowtos(_howtos);
+		}
 		setSearchText(_searchText);
 	};
 
@@ -103,18 +105,18 @@ export default function Howtos() {
 				placeholder={howtosAreReady() ? 'search howtos' : ''}
 			/>
 			{howtos.map((howto, index) => {
-					return (
-						<div key={index} className="mb-3">
-							<div className="text-yellow-400 smallcaps text-sm text-opacity-70">
-								{qdat.smartDateWithYear(howto.systemWhenCreated)} -{' '}
-								<span dangerouslySetInnerHTML={{__html: howto.styledCategory}}></span>
-							</div>
-							<div><span className="searchHighlight"></span></div>
-							<Link href={`/howtos/${howto.id}`} className='howtoLink'>
-							<span className="text-slate-50 text-xl" dangerouslySetInnerHTML={{__html: howto.styledTitle}}></span>
-							</Link>
+				return (
+					<div key={index} className="mb-3">
+						<div className="text-yellow-400 smallcaps text-sm text-opacity-70">
+							{qdat.smartDateWithYear(howto.systemWhenCreated)} -{' '}
+							<span dangerouslySetInnerHTML={{ __html: howto.styledCategory }}></span>
 						</div>
-					);
+						<div><span className="searchHighlight"></span></div>
+						<Link href={`/howtos/${howto.id}`} className='howtoLink'>
+							<span className="text-slate-50 text-xl" dangerouslySetInnerHTML={{ __html: howto.styledTitle }}></span>
+						</Link>
+					</div>
+				);
 			})}
 		</>
 	);

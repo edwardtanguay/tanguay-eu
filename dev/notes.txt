@@ -24,15 +24,18 @@
 			- x interfaces in own file
 		- x get appContext working with one variable
 		- x put searchText in AppContext
-		- .. on single page, show title with serach component, and SEO meta info
+		- x on single page, show title with serach component, and SEO meta info
+		- x only search on third letter and after
+		- .. only show HowtoSearch but switch to one if only one
+			- x put howtos in appContext
 		- display with all styles
 	- build in search UX again so that you can search/check/research etc.
 	- enable permalinks
 
+- fix search so all in title are first, e.g. "build"
 - perhaps split into two components
 - don't show "1 Howtos"
 - show "made with Next.js 13.4"
-- only search on third letter and after
 - replace all imports with @
 
 
