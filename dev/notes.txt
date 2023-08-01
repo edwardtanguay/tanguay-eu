@@ -41,8 +41,9 @@
 		- x 706, 598, 698 large images
 		- x click and react
 		- x responsive
-		- .. description from body
-			- .. long text test
+		- x description from body
+			- x long text test
+		- .. fix line-height on responsive
 
 
 

@@ -60,7 +60,7 @@ div.outlineWrapper {
 
 		li.codeBlock {
 			list-style: none;
-			width: 50%;
+			width: 65%;
 
 			pre {
 				white-space: pre-wrap;
@@ -120,7 +120,7 @@ div.outlineWrapper {
 	}
 }
 
-@media (max-width: 530px) {
+@media (max-width: 630px) {
 
 	div.outlineWrapper {
 		margin: 5px 5px 35px 0;
@@ -133,6 +133,7 @@ div.outlineWrapper {
 			li.codeBlock {
 				pre {
 					font-size: .6rem;
+					line-height: .8rem;
 				}
 
 				width: 96%;
