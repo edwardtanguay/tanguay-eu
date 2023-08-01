@@ -1,23 +1,5 @@
-- .. add forays
-	- x import them
-	- .. copy all code over, show titles, and record all steps in notes.txt
+- .. change color
 
-
-- to create new item
-	- data file 
-		- e.g. src\data\itemtype_howtos.json
-	- interfaces.ts
-		- add interface
-	- appModel
-		- add
-	- appContext
-		- add
-	- menu item
-		- Header.tsx
-			- new li
-		- app folder copy and customize
-	- components
-		- create ForaySearch
 
 
 - main site: show latest of all items: forays and howtos
@@ -44,3 +26,19 @@
 	- solution: built a process which simply uses the tanguay.eu link
 		- even then it seems it won't work
 		- I can only get a tanguay.eu image to work from: https://et041-ogimagecheck.vercel.app
+
+- *** to create new item
+	- data file 
+		- e.g. src\data\itemtype_howtos.json
+	- interfaces.ts
+		- add interface
+	- appModel
+		- add
+	- appContext
+		- add
+	- menu item
+		- Header.tsx
+			- new li
+		- app folder copy and customize
+	- components
+		- create ForaySearch

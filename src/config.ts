@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.061 added images'
+	return '0.062 new format'
 }
