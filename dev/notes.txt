@@ -1,51 +1,4 @@
-- .. make look like current list 
-	- x import all date tools
-	- x get working with moment
-	- x switch to dayjs
-	- .. smart search so it works as original site
-		- x show those in title first
-		- x fix hydration error
-			- x trying useEffect
-		- x spinner
-		- x set focus after spinner
-		- x then show those in body
-		- x search on category as well
-		- x enable multiple words
-		- x responsive
-		- x allow uppper case
-		- x fix order
-		- x show highlight
-			- x fix to be titles first again
-			- x categories
-	- .. show single howtos
-		- x link
-		- x show title
-		- x get howtos from module
-			- x interfaces in own file
-		- x get appContext working with one variable
-		- x put searchText in AppContext
-		- x on single page, show title with serach component, and SEO meta info
-		- x only search on third letter and after
-		- x put howtos in appContext
-		- x change howtos to base variable
-		- x appcontext load raw howtos
-		- x reset when empty
-		- x get data from dataModel
-		- x display body with all styles
-			- x show single as on current howto site but with BODY
-			- x in appModel, create bodyHtml with HTML that gets parsed
-			- x implement buildOutlineHtml
-				- x add styles
-				- x add images
-		- x only ten
-		- x 706, 598, 698 large images
-		- x click and react
-		- x responsive
-		- x description from body
-			- x long text test
-		- .. fix line-height on responsive
-
-
+- .. show "1 Howto"
 
 
 				
@@ -59,8 +12,6 @@
 - optimize search and highlights
 	- show those with text found in title first
 	- show piece of text in body that was found
-- perhaps split into two components
-- show "1 Howto"
 - show "made with Next.js 13.4"
 - replace all imports with @
 

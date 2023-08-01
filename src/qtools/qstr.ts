@@ -368,3 +368,11 @@ export const extractDescriptionFromOutline = (outlineText: string) => {
 	}
 	return bits.join(' - ');
 }
+
+export const smartPlural = (number: number, singularNoun: string, pluralNoun: string = '') => {
+	let r = '';
+	if (pluralNoun === '') pluralNoun = singularNoun + 's';
+	r += number + ' ';
+	r += number === 1 ? singularNoun : pluralNoun;
+	return r;
+}

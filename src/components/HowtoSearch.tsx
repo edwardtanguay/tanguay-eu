@@ -91,7 +91,7 @@ export default function HowtoSearch() {
 			) : (
 				<>
 					{howtosAreReady() ? (
-						<p className="text-3xl mb-3">{filteredHowtos.length} Howtos</p>
+						<p className="text-3xl mb-3">{qstr.smartPlural(filteredHowtos.length, 'Howto')}</p>
 					) : (
 						<p className="text-3xl mb-3 flex gap-1">
 							<FaSpinner className="loaderIcon" /> Howtos
