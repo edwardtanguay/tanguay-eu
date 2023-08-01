@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.059 line-height'
+	return '0.060 forays without images'
 }

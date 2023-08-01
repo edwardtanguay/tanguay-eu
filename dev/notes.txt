@@ -1,23 +1,34 @@
-- .. show "1 Howto"
+- .. add forays
+	- x import them
+	- .. copy all code over, show titles, and record all steps in notes.txt
 
 
-				
+- to create new item
+	- data file 
+		- e.g. src\data\itemtype_howtos.json
+	- interfaces.ts
+		- add interface
+	- appModel
+		- add
+	- appContext
+		- add
+	- menu item
+		- Header.tsx
+			- new li
+		- app folder copy and customize
+	- components
+		- create ForaySearch
 
 
+- main site: show latest of all items: forays and howtos
 
 
-	- build in search UX again so that you can search/check/research etc.
-	- enable permalinks
+==================================
 
 - optimize search and highlights
 	- show those with text found in title first
 	- show piece of text in body that was found
-- show "made with Next.js 13.4"
 - replace all imports with @
-
-
-
-==================================
 
 - implement unit testing for qtools
 - get SEO image to work in Slack

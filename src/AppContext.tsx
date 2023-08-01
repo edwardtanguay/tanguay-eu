@@ -6,10 +6,14 @@ import * as appModel from './appModel';
 interface IAppContext {
 	searchText: string;
 	setSearchText: (searchText: string) => void;
-	filteredHowtos: IHowto[];
-	setFilteredHowtos: (howtos: IHowto[]) => void;
 	howtos: IHowto[];
 	setHowtos: (howtos: IHowto[]) => void;
+	filteredHowtos: IHowto[];
+	setFilteredHowtos: (howtos: IHowto[]) => void;
+	forays: IForay[];
+	setForays: (forays: IForay[]) => void;
+	filteredForays: IForay[];
+	setFilteredForays: (forays: IForay[]) => void;
 }
 
 interface IAppProvider {
@@ -20,12 +24,16 @@ export const AppContext = createContext<IAppContext>({} as IAppContext);
 
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [searchText, setSearchText] = useState('');
-	const [filteredHowtos, setFilteredHowtos] = useState<IHowto[]>([]);
 	const [howtos, setHowtos] = useState<IHowto[]>([]);
+	const [filteredHowtos, setFilteredHowtos] = useState<IHowto[]>([]);
+	const [forays, setForays] = useState<IForay[]>([]);
+	const [filteredForays, setFilteredForays] = useState<IForay[]>([]);
 
 	useEffect(() => {
 		setHowtos(appModel.howtos);
 		setFilteredHowtos(appModel.howtos);
+		setForays(appModel.forays);
+		setFilteredForays(appModel.forays);
 	}, []);
 
 	return (
@@ -33,10 +41,14 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 			value={{
 				searchText,
 				setSearchText,
+				howtos,
+				setHowtos,
 				filteredHowtos,
 				setFilteredHowtos,
-				howtos,
-				setHowtos
+				forays,
+				setForays,
+				filteredForays,
+				setFilteredForays
 			}}
 		>
 			{children}
