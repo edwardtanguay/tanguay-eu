@@ -1,4 +1,6 @@
-- .. change color
+- .. see if extra infos are quick
+
+- 
 
 
 

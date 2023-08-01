@@ -26,7 +26,7 @@ div.outlineWrapper {
 		}
 
 		strong {
-			color: rgb(221, 192, 65);
+			color: rgb(150, 136, 76);
 		}
 
 		li {
@@ -38,7 +38,7 @@ div.outlineWrapper {
 
 		li code {
 			color: $code-color;
-			background-color: #30323b;
+			background-color: #303035;
 			font-weight: bold;
 			font-family: 'Courier New', Courier, monospace;
 			padding: .3rem .5rem;
@@ -47,8 +47,13 @@ div.outlineWrapper {
 		}
 
 		li a {
-			color: rgb(208, 187, 125);
-			border-bottom: 0px solid black;
+			color: rgb(75, 99, 233);
+			// border-bottom: 0px solid black;
+			border-bottom: 1px dotted rgb(75, 99, 233);;
+
+			&:hover {
+				border-bottom: 1px dotted rgb(216, 216, 104);
+			}
 		}
 
 		img {
@@ -62,19 +67,24 @@ div.outlineWrapper {
 			list-style: none;
 			width: 65%;
 
-			pre {
-				white-space: pre-wrap;
-				/* css-3 */
-				white-space: -moz-pre-wrap;
-				/* Mozilla, since 1999 */
-				white-space: -pre-wrap;
-				/* Opera 4-6 */
-				white-space: -o-pre-wrap;
-				/* Opera 7 */
-				word-wrap: break-word;
-				padding: .6rem;
-				font-size: .8rem;
-				line-height: 1.1rem;
+			div.codeBlock {
+				border: 1px solid #292929;
+				box-shadow: 1px 1px 7px #292929;
+
+				pre {
+					white-space: pre-wrap;
+					/* css-3 */
+					white-space: -moz-pre-wrap;
+					/* Mozilla, since 1999 */
+					white-space: -pre-wrap;
+					/* Opera 4-6 */
+					white-space: -o-pre-wrap;
+					/* Opera 7 */
+					word-wrap: break-word;
+					padding: .6rem;
+					font-size: .8rem;
+					line-height: 1.1rem;
+				}
 			}
 		}
 
@@ -119,6 +129,15 @@ div.outlineWrapper {
 		}
 
 	}
+}
+
+.itemForay {
+
+	div.codeBlock {
+		border: 1px solid #444 !important;
+		box-shadow: 1px 1px 7px #333 !important;
+	}
+
 }
 
 @media (max-width: 630px) {
