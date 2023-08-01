@@ -352,3 +352,19 @@ export const getUrlOutOfString = (line: string) => {
 	r = parts[0];
 	return r;
 }
+
+export const extractDescriptionFromOutline = (outlineText: string) => {
+	const lines = qstr.convertStringBlockToLines(outlineText);
+	let lineCount = 1;
+	const bits = [];
+	for (const line of lines) {
+		let r = qstr.chopLeft(line, '- ');
+		r = qstr.replaceAll(r, '**', '');
+		bits.push(r);
+		lineCount++;
+		if (lineCount > 10) {
+			break;
+		}
+	}
+	return bits.join(' - ');
+}
