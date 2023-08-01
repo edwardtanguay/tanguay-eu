@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
       title,
       openGraph: {
          title,
-         description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vel accusantium officia voluptatum labore quis earum molestiae porro tenetur harum repellendus magni omnis suscipit temporibus eius, nisi voluptatibus! Quaerat, saepe! Quae ducimus perspiciatis voluptatibus non totam cumque, animi quia ipsam, ullam labore voluptates hic aliquid, minus quo repudiandae eos placeat velit soluta mollitia quas cum unde sed. Praesentium, voluptatibus facere?  Maxime optio ducimus accusamus quam suscipit ex impedit tempora aliquid numquam obcaecati quidem, tenetur minus, officiis, commodi rerum? Pariatur quam molestiae possimus laboriosam, et odit? Ab possimus ipsum voluptas deserunt!  Culpa nesciunt, sed recusandae sint accusamus non quam assumenda, consequuntur quisquam adipisci ipsa quae dolores architecto iure delectus perferendis alias distinctio ad quidem in dignissimos voluptate suscipit. Aliquam, cumque praesentium. The end.`,
+         description: howto?.bodyDescription,
          images: ['https://tanguay-eu.vercel.app/images/siteIcon.png']
       }
    }
