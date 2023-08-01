@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.060 forays without images'
+	return '0.061 added images'
 }
