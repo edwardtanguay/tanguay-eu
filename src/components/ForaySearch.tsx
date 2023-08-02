@@ -114,6 +114,7 @@ export default function ForaySearch() {
 									{qdat.smartDateWithYear(filteredForay.systemWhenCreated)} -{' '}
 									<span dangerouslySetInnerHTML={{ __html: filteredForay.styledCategory }}></span>
 								</div>
+								<div className='text-green-500'>{filteredForay.progressIdCode}</div>
 								<div><span className="searchHighlight"></span></div>
 								<Link href={`/forays/${filteredForay.id}`} className='forayLink' onClick={(e) => { userUxLoadSinglePage() }}>
 									<span className="text-slate-50 text-xl" dangerouslySetInnerHTML={{ __html: filteredForay.styledTitle }}></span>
