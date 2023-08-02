@@ -20,7 +20,8 @@ class ForayBuilder {
 
 		this.createLines();
 
-		this.foray.progressIdCode = this.getProgressIdCode();
+		const progressData = this.processProgress();
+		// this.foray.progressIdCode = progressData.
 		this.foray.bodyHtml = qstr.buildOutlineHtml(rawForay.body);
 		this.foray.bodyDescription = qstr.extractDescriptionFromOutline(rawForay.body);
 	}
@@ -29,14 +30,17 @@ class ForayBuilder {
 		this.lines = qstr.convertStringBlockToLines(this.foray.body);
 	}
 
-	getProgressIdCode() {
-		let r = '';
+	processProgress() {
+		let progressMessage = '';
+		let progressIdCode = '';
 		for (const line of this.lines) {
 			if (line.startsWith('- ..')) {
-				r = line;
+				progressMessage = qstr.chopLeft(line, '- ..');
+				progressIdCode = 'doing';
 			}
 		}
-		return r;
+		this.foray.progressIdCode = progressIdCode;
+		this.foray.progressMessage = progressMessage;
 	}
 
 	getForay() {

@@ -2,15 +2,16 @@
 	- x make models, appModel in as model
 	- x make howtoModel
 	- x make forayModel
-	- .. make inside ForayBuilder class
-		- make simple progressIdCode
-			- doing
-			- checking
-			- todoNext
-			- failed
-			- succeeded
-			- parked
-			- unknown
+	- x make inside ForayBuilder class
+	- .. make simple progressIdCode
+		- .. doing
+			- .. only text
+		- checking
+		- todoNext
+		- failed
+		- succeeded
+		- parked
+		- unknown
 
 
 - main site: show latest of all items: forays and howtos
