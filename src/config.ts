@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.064 forays in class'
+	return '0.065 fixed build errors'
 }

@@ -6,6 +6,7 @@ import { FaSpinner } from 'react-icons/fa';
 import Link from 'next/link';
 import { useContext } from 'react';
 import { AppContext } from '../AppContext';
+import { IHowto } from '../interfaces';
 
 export default function HowtoSearch() {
 	const searchTextRef = useRef<HTMLInputElement>(null);

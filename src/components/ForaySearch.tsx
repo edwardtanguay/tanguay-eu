@@ -6,6 +6,7 @@ import { FaSpinner } from 'react-icons/fa';
 import Link from 'next/link';
 import { useContext } from 'react';
 import { AppContext } from '../AppContext';
+import { IForay } from '../interfaces';
 
 export default function ForaySearch() {
 	const searchTextRef = useRef<HTMLInputElement>(null);
