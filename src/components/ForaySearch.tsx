@@ -97,7 +97,7 @@ export default function ForaySearch() {
 				<FaSpinner className="loaderIcon text-9xl text-slate-600" />
 			) : (
 				<>
-						[siteMode = '{siteMode}']
+						[siteMode = [{siteMode}]]
 					{foraysAreReady() ? (
 						<>
 							<p className='mb-4'><span className='text-yellow-200'>foray n.</span> <span>a sudden incursion into a tool or technology, especially to obtain knowledge or skills; a learning raid</span></p>
