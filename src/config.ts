@@ -1,3 +1,3 @@
 export const appVersion = () => {
-	return '0.063 fixed images'
+	return '0.064 forays in class'
 }
