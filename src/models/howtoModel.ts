@@ -1,3 +1,4 @@
+import { IHowto } from '@/interfaces';
 import rawHowtos from '../data/itemtype_howtos.json';
 import * as qstr from '../qtools/qstr';
 

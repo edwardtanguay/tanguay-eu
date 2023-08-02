@@ -1,5 +1,5 @@
 
-interface IHowto {
+export interface IHowto {
 	id: number;
 	category: string;
 	title: string;
@@ -12,11 +12,11 @@ interface IHowto {
 	styledCategory: string;
 }
 
-interface IForay {
+export interface IForay {
 	id: number;
 	category: string;
 	title: string;
-	rank: string;
+	rank: number;
 	body: string;
 	bodyHtml: string;
 	bodyDescription: string;
@@ -25,3 +25,18 @@ interface IForay {
 	styledTitle: string;
 	styledCategory: string;
 }
+
+export const blankForay = {
+	id: 0,
+	category: '',
+	title: '',
+	rank: 0,
+	body: '',
+	bodyHtml: '',
+	bodyDescription: '',
+	systemWhenCreated: '',
+	selectedForSearch: false,
+	styledTitle: '',
+	styledCategory: ''
+}
+
