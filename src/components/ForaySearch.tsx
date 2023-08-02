@@ -93,7 +93,10 @@ export default function ForaySearch() {
 			) : (
 				<>
 					{foraysAreReady() ? (
-						<p className="text-3xl mb-3">{qstr.smartPlural(filteredForays.length, 'Foray')}</p>
+						<>
+							<p className='mb-4'><span className='text-yellow-200'>foray n.</span> <span>a sudden incursion into a tool or technology, especially to obtain knowledge or skills; a learning raid</span></p>
+							<p className="text-3xl mb-3">{qstr.smartPlural(filteredForays.length, 'Foray')}</p>
+						</>
 					) : (
 						<p className="text-3xl mb-3 flex gap-1">
 							<FaSpinner className="loaderIcon" /> Forays
