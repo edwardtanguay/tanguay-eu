@@ -15,6 +15,11 @@
 		- parked
 		- unknown
 
+	- categories    
+		- most recently added
+		- most recently worked on
+		- unstarted forays
+		- best forays
 
 - main site: show latest of all items: forays and howtos
 
