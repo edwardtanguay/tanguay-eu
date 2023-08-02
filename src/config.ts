@@ -3,6 +3,6 @@ export const appVersion = () => {
 }
 
 export const siteMode = () => { 
-	const url = 'nnn'; // = String(window.location);
+	const url = String(window.location);
 	return url.startsWith('http://localhost') ? 'development' : 'production';
 }
