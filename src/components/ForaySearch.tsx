@@ -119,11 +119,20 @@ export default function ForaySearch() {
 								<Link href={`/forays/${filteredForay.id}`} className='forayLink' onClick={(e) => { userUxLoadSinglePage() }}>
 									<span className="text-slate-50 text-xl" dangerouslySetInnerHTML={{ __html: filteredForay.styledTitle }}></span>
 								</Link>
-								<div className='text-green-500 text-sm flex items-start gap-1 italic'>
+								<div className='flex items-start gap-1 '>
 									{filteredForay.progressIdCode === 'doing' && (
-										<BiSolidCircle className="mt-1 progressDoing" />
+										<>
+											<BiSolidCircle className="progressDoing progressIcon" />
+											<span className='progressDoing' dangerouslySetInnerHTML={{ __html: filteredForay.progressMessage }}></span>
+										</>
 									)}
-									{filteredForay.progressMessage}</div>
+									{filteredForay.progressIdCode === 'nextStep' && (
+										<>
+											<BiSolidCircle className="progressNextStep progressIcon" />
+											<span className='progressNextStep' dangerouslySetInnerHTML={{ __html: filteredForay.progressMessage }}></span>
+										</>
+									)}
+								</div>
 							</div>
 						);
 					})}

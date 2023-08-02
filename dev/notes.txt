@@ -6,8 +6,9 @@
 	- .. make simple progressIdCode
 		- .. doing
 			- .. only text
+		- .. nextStep
+			- .. 
 		- checking
-		- todoNext
 		- failed
 		- succeeded
 		- parked

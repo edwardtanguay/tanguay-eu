@@ -6,12 +6,23 @@ $highlightShadowColor: rgb(128, 128, 80);
 $highlightBlur: 15px;
 
 @layer components {
+	.progressIcon {
+		@apply flex-shrink-0 text-xl mt-[.2rem];
+	}
 	.progressDoing {
-		@apply text-green-500;
+		@apply text-green-400 italic;
+	}
+
+	.progressNextStep {
+		@apply text-green-600;
 	}
 
 	a {
-		@apply border-b border-slate-500;
+		@apply border-dotted border-b border-slate-500;
+	}
+
+	a:hover {
+		@apply border-solid border-b border-slate-500;
 	}
 
 	a.howtoLink {

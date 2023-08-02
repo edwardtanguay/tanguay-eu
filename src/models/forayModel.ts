@@ -35,12 +35,16 @@ class ForayBuilder {
 		let progressIdCode = '';
 		for (const line of this.lines) {
 			if (line.startsWith('- ..')) {
-				progressMessage = qstr.chopLeft(line, '- ..');
+				progressMessage = qstr.chopLeft(line, '- ..') + '...';
 				progressIdCode = 'doing';
+			}
+			if (line.startsWith('- ))')) {
+				progressMessage = qstr.chopLeft(line, '- ))');
+				progressIdCode = 'nextStep';
 			}
 		}
 		this.foray.progressIdCode = progressIdCode;
-		this.foray.progressMessage = progressMessage;
+		this.foray.progressMessage = qstr.parseMarkDown(progressMessage);
 	}
 
 	getForay() {
