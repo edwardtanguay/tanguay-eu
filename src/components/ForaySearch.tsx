@@ -97,7 +97,6 @@ export default function ForaySearch() {
 				<FaSpinner className="loaderIcon text-9xl text-slate-600" />
 			) : (
 				<>
-						[siteMode = [{siteMode}]]
 					{foraysAreReady() ? (
 						<>
 							<p className='mb-4'><span className='text-yellow-200'>foray n.</span> <span>a sudden incursion into a tool or technology, especially to obtain knowledge or skills; a learning raid</span></p>
@@ -123,6 +122,9 @@ export default function ForaySearch() {
 								<div className="text-yellow-400 smallcaps text-sm text-opacity-70">
 									{qdat.smartDateWithYear(filteredForay.systemWhenCreated)} -{' '}
 									<span dangerouslySetInnerHTML={{ __html: filteredForay.styledCategory }}></span>
+									{siteMode === 'development' && (
+									<span> - <a target="_blank" href={`http://localhost:29900/manageForay?returnUrl=forays%C2%A7openItemIds=${filteredForay.id}|id=${filteredForay.id}&command=edit&id=${filteredForay.id}`}>EDIT</a></span>
+									)}
 								</div>
 								<div><span className="searchHighlight"></span></div>
 								<Link href={`/forays/${filteredForay.id}`} className='forayLink' onClick={(e) => { userUxLoadSinglePage() }}>

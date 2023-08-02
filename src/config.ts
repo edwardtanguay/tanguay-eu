@@ -1,5 +1,5 @@
 export const appVersion = () => {
-	return '0.067 added siteMode'
+	return '0.068 has edit'
 }
 
 export const siteMode = () => { 
