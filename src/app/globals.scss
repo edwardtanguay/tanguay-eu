@@ -6,6 +6,10 @@ $highlightShadowColor: rgb(128, 128, 80);
 $highlightBlur: 15px;
 
 @layer components {
+	.progressDoing {
+		@apply text-green-500;
+	}
+
 	a {
 		@apply border-b border-slate-500;
 	}

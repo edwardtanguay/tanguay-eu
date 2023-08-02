@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { useContext } from 'react';
 import { AppContext } from '../AppContext';
 import { IForay } from '../interfaces';
+import { BiSolidCircle } from 'react-icons/bi';
 
 export default function ForaySearch() {
 	const searchTextRef = useRef<HTMLInputElement>(null);
@@ -118,7 +119,11 @@ export default function ForaySearch() {
 								<Link href={`/forays/${filteredForay.id}`} className='forayLink' onClick={(e) => { userUxLoadSinglePage() }}>
 									<span className="text-slate-50 text-xl" dangerouslySetInnerHTML={{ __html: filteredForay.styledTitle }}></span>
 								</Link>
-								<div className='text-green-500 text-sm'>{filteredForay.progressIdCode}: {filteredForay.progressMessage}</div>
+								<div className='text-green-500 text-sm flex items-start gap-1 italic'>
+									{filteredForay.progressIdCode === 'doing' && (
+										<BiSolidCircle className="mt-1 progressDoing" />
+									)}
+									{filteredForay.progressMessage}</div>
 							</div>
 						);
 					})}
