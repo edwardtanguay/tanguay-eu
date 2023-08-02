@@ -8,6 +8,10 @@ import { useContext } from 'react';
 import { AppContext } from '../AppContext';
 import { IForay } from '../interfaces';
 import { BiSolidCircle } from 'react-icons/bi';
+import { BiSolidRightArrow } from 'react-icons/bi';
+import * as config from '../config';
+
+let siteMode = '';
 
 export default function ForaySearch() {
 	const searchTextRef = useRef<HTMLInputElement>(null);
@@ -67,6 +71,7 @@ export default function ForaySearch() {
 	useEffect(() => {
 		setFilteredForays(forays);
 		handleSearchTextChange(searchText);
+		siteMode = config.siteMode();
 	}, []);
 
 	// focuses cursor after loading graphic
@@ -92,6 +97,7 @@ export default function ForaySearch() {
 				<FaSpinner className="loaderIcon text-9xl text-slate-600" />
 			) : (
 				<>
+						[siteMode = '{siteMode}']
 					{foraysAreReady() ? (
 						<>
 							<p className='mb-4'><span className='text-yellow-200'>foray n.</span> <span>a sudden incursion into a tool or technology, especially to obtain knowledge or skills; a learning raid</span></p>
@@ -123,6 +129,12 @@ export default function ForaySearch() {
 									<span className="text-slate-50 text-xl" dangerouslySetInnerHTML={{ __html: filteredForay.styledTitle }}></span>
 								</Link>
 								<div className='flex items-start gap-1 '>
+									{filteredForay.progressIdCode === 'unstarted' && (
+										<>
+											<BiSolidRightArrow className="progressUnstarted progressIcon" />
+											<span className='progressUnstarted' dangerouslySetInnerHTML={{ __html: filteredForay.progressMessage }}></span>
+										</>
+									)}
 									{filteredForay.progressIdCode === 'doing' && (
 										<>
 											<BiSolidCircle className="progressDoing progressIcon" />

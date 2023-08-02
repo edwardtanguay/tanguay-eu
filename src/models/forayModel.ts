@@ -34,6 +34,10 @@ class ForayBuilder {
 		let progressMessage = '';
 		let progressIdCode = '';
 		for (const line of this.lines) {
+			if (line.startsWith('- >>')) {
+				progressMessage = qstr.chopLeft(line, '- >>');
+				progressIdCode = 'unstarted';
+			}
 			if (line.startsWith('- ..')) {
 				progressMessage = qstr.chopLeft(line, '- ..') + '...';
 				progressIdCode = 'doing';

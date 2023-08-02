@@ -3,6 +3,7 @@
 	- x make howtoModel
 	- x make forayModel
 	- x make inside ForayBuilder class
+	- .. link if local
 	- .. make simple progressIdCode
 		- .. doing
 			- .. only text

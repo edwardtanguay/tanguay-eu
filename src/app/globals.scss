@@ -9,12 +9,16 @@ $highlightBlur: 15px;
 	.progressIcon {
 		@apply flex-shrink-0 text-xl mt-[.2rem];
 	}
-	.progressDoing {
+	.progressUnstarted {
 		@apply text-green-400 italic;
 	}
 
+	.progressDoing {
+		@apply text-blue-600 italic;
+	}
+
 	.progressNextStep {
-		@apply text-green-600;
+		@apply text-blue-900;
 	}
 
 	a {
