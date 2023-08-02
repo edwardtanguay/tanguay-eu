@@ -1,6 +1,6 @@
-import rawHowtos from './data/itemtype_howtos.json';
-import rawForays from './data/itemtype_forays.json';
-import * as qstr from './qtools/qstr';
+import rawHowtos from '../data/itemtype_howtos.json';
+import rawForays from '../data/itemtype_forays.json';
+import * as qstr from '../qtools/qstr';
 
 const buildHowtos = () => {
 	let _howtos: IHowto[] = [];

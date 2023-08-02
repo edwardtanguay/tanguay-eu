@@ -1,4 +1,4 @@
-import * as appModel from '../../../appModel';
+import * as appModel from '../../../models/model';
 import * as qdat from '../../../qtools/qdat';
 import '../../outline.scss';
 
@@ -26,7 +26,7 @@ export default async function Page({ params }: { params: { id: string } }) {
             <>
                <div className='border-slate-600 bg-[#222] border p-5 mt-6 font-mono'>
                   <div className="text-yellow-700 smallcaps text-md">
-                     FORAY:{' '} 
+                     FORAY:{' '}
                      {qdat.smartDateWithYear(foray.systemWhenCreated)} -{' '}
                      <span dangerouslySetInnerHTML={{ __html: foray.category }}></span>
                   </div>

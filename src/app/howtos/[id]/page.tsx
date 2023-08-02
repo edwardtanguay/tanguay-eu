@@ -1,4 +1,4 @@
-import * as appModel from '../../../appModel';
+import * as appModel from '../../../models/model';
 import * as qdat from '../../../qtools/qdat';
 import '../../outline.scss';
 
@@ -26,7 +26,7 @@ export default async function Page({ params }: { params: { id: string } }) {
             <>
                <div className='border-slate-600 bg-gray-950 border p-5 mt-6'>
                   <div className="text-yellow-400 smallcaps text-md text-opacity-70">
-                     HOWTO:{' '} 
+                     HOWTO:{' '}
                      {qdat.smartDateWithYear(howto.systemWhenCreated)} -{' '}
                      <span dangerouslySetInnerHTML={{ __html: howto.category }}></span>
                   </div>

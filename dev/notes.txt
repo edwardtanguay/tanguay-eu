@@ -1,12 +1,22 @@
-- .. see if extra infos are quick
-
-- 
-
-
+- .. finish forays
+	- .. make models, appModel in as model
+	- .. make howtoModel
+	- .. make forayModel
+		- make inside ForayBuilder class
+			- make simple progressIdCode
+				- doing
+				- checking
+				- todoNext
+				- failed
+				- succeeded
+				- parked
+				- unknown
+				
 
 - main site: show latest of all items: forays and howtos
 
-
+- foray: https://nextra.site
+- foray: https://mdxjs.com/
 ==================================
 
 - optimize search and highlights
