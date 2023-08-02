@@ -1,7 +1,6 @@
 import { IForay, blankForay } from '@/interfaces';
 import rawForays from '../data/itemtype_forays.json';
 import * as qstr from '../qtools/qstr';
-import { collectGenerateParams } from 'next/dist/build/utils';
 
 class ForayBuilder {
 

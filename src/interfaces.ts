@@ -24,6 +24,7 @@ export interface IForay {
 	selectedForSearch: boolean;
 	styledTitle: string;
 	styledCategory: string;
+	progressIdCode: string;
 }
 
 export const blankForay = {
@@ -37,6 +38,7 @@ export const blankForay = {
 	systemWhenCreated: '',
 	selectedForSearch: false,
 	styledTitle: '',
-	styledCategory: ''
+	styledCategory: '',
+	progressIdCode: ''
 }
 

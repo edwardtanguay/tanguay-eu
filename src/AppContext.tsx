@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { createContext } from 'react';
+import { IHowto, IForay } from './interfaces';
 import * as appModel from './models/model';
 
 interface IAppContext {
