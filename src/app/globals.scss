@@ -9,24 +9,38 @@ $highlightBlur: 15px;
 	.progressIcon {
 		@apply flex-shrink-0 text-xl mt-[.2rem];
 	}
+
+	.progressUnstartedIcon {
+		@apply text-yellow-400;
+	}
+
 	.progressUnstarted {
-		@apply text-green-400 italic;
+		@apply text-green-400;
+	}
+
+
+	.progressDoingIcon {
+		@apply text-green-300 italic;
 	}
 
 	.progressDoing {
-		@apply text-blue-600 italic;
+		@apply text-green-400 italic;
+	}
+
+	.progressNextStepIcon {
+		@apply text-green-300;
 	}
 
 	.progressNextStep {
-		@apply text-blue-900;
+		@apply text-green-400;
 	}
 
 	a {
 		@apply border-dotted border-b border-slate-500;
-	}
 
-	a:hover {
-		@apply border-solid border-b border-slate-500;
+		&:hover {
+			@apply border-solid border-b border-slate-500;
+		}
 	}
 
 	a.howtoLink {
@@ -58,11 +72,6 @@ $highlightBlur: 15px;
 		text-shadow: 8px 8px $highlightBlur $highlightShadowColor, -8px 8px $highlightBlur $highlightShadowColor, 8px -8px $highlightBlur $highlightShadowColor, -8px -8px $highlightBlur $highlightShadowColor;
 	}
 
-	a.howtoLink:hover span {
-		// text-decoration: underline;
-		border-bottom: 1px dotted #aaa;
-	}
-
 	@media (max-width: 530px) {
 		nav.mainnav {
 			margin-bottom: 1rem;
@@ -74,6 +83,11 @@ $highlightBlur: 15px;
 			div {
 				color: red !important;
 			}
+		}
+
+		.forayItem {
+			margin-top: .5rem !important;
+			margin-bottom: 2rem !important;
 		}
 	}
 }

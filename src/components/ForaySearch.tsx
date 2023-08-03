@@ -118,13 +118,15 @@ export default function ForaySearch() {
 					/>
 					{filteredForays.map((filteredForay, index: number) => {
 						return (
-							<div key={index} className="mb-3">
+							<div key={index} className="forayItem mb-3">
 								<div className="text-yellow-400 smallcaps text-sm text-opacity-70">
 									{qdat.smartDateWithYear(filteredForay.systemWhenCreated)} -{' '}
-									<span dangerouslySetInnerHTML={{ __html: filteredForay.styledCategory }}></span>
+
 									{siteMode === 'development' && (
-									<span> - <a target="_blank" href={`http://localhost:29900/manageForay?returnUrl=forays%C2%A7openItemIds=${filteredForay.id}|id=${filteredForay.id}&command=edit&id=${filteredForay.id}`}>EDIT</a></span>
+										<span> <a target="_blank" href={`http://localhost:29900/manageForay?returnUrl=forays%C2%A7openItemIds=${filteredForay.id}|id=${filteredForay.id}&command=edit&id=${filteredForay.id}`}>EDIT</a> - </span>
 									)}
+									<span dangerouslySetInnerHTML={{ __html: filteredForay.styledCategory }}></span>
+									<span> - {filteredForay.rank} stars</span>
 								</div>
 								<div><span className="searchHighlight"></span></div>
 								<Link href={`/forays/${filteredForay.id}`} className='forayLink' onClick={(e) => { userUxLoadSinglePage() }}>
@@ -133,19 +135,19 @@ export default function ForaySearch() {
 								<div className='flex items-start gap-1 '>
 									{filteredForay.progressIdCode === 'unstarted' && (
 										<>
-											<BiSolidRightArrow className="progressUnstarted progressIcon" />
-											<span className='progressUnstarted' dangerouslySetInnerHTML={{ __html: filteredForay.progressMessage }}></span>
+											<BiSolidRightArrow className="progressUnstartedIcon progressIcon" />
+												<span className='progressUnstarted' dangerouslySetInnerHTML={{ __html: filteredForay.progressMessage }}></span>
 										</>
 									)}
 									{filteredForay.progressIdCode === 'doing' && (
 										<>
-											<BiSolidCircle className="progressDoing progressIcon" />
+											<BiSolidRightArrow className="progressDoingIcon progressIcon" />
 											<span className='progressDoing' dangerouslySetInnerHTML={{ __html: filteredForay.progressMessage }}></span>
 										</>
 									)}
 									{filteredForay.progressIdCode === 'nextStep' && (
 										<>
-											<BiSolidCircle className="progressNextStep progressIcon" />
+											<BiSolidRightArrow className="progressNextStepIcon progressIcon" />
 											<span className='progressNextStep' dangerouslySetInnerHTML={{ __html: filteredForay.progressMessage }}></span>
 										</>
 									)}

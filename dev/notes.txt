@@ -3,7 +3,14 @@
 	- x make howtoModel
 	- x make forayModel
 	- x make inside ForayBuilder class
-	- .. link if local
+	- x edit on title
+	- x link if local
+	- .. update each on and all 240
+		- x nextStep/doing green
+		- x new yellow
+		- x stars
+		- .. with word
+
 	- .. make simple progressIdCode
 		- .. doing
 			- .. only text
