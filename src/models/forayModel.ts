@@ -39,12 +39,20 @@ class ForayBuilder {
 				progressIdCode = 'unstarted';
 			}
 			if (line.startsWith('- ..')) {
-				progressMessage = qstr.chopLeft(line, '- ..') + '...';
+				progressMessage = '<span class="progressDoingIcon">DOING: </span>' + qstr.chopLeft(line, '- ..') + '...';
 				progressIdCode = 'doing';
 			}
 			if (line.startsWith('- ))')) {
-				progressMessage = qstr.chopLeft(line, '- ))');
+				progressMessage = '<span class="progressNextStepIcon">CONTINUE: </span>' + qstr.chopLeft(line, '- ))');
 				progressIdCode = 'nextStep';
+			}
+			if (line.startsWith('- ]]')) {
+				progressMessage = '<span class="progressParkedIcon">PARKED: </span>' + qstr.chopLeft(line, '- ]]');
+				progressIdCode = 'parked';
+			}
+			if (line.startsWith('- %%')) {
+				progressMessage = '<span class="progressSucceededIcon">SUCCEEDED: </span>' + qstr.chopLeft(line, '- %%');
+				progressIdCode = 'succeeded';
 			}
 		}
 		this.foray.progressIdCode = progressIdCode;

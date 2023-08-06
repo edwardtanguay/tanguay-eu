@@ -1,3 +1,13 @@
+- make links long for computer-size, short for responsive
+- categories    
+	- most interesting to do next
+	- most recently added
+	- most recently worked on
+	- forays ideas not yet started
+
+
+
+
 - .. finish forays
 	- x make models, appModel in as model
 	- x make howtoModel
@@ -23,12 +33,6 @@
 		- unknown
 
 	- show key as click-in
-
-	- categories    
-		- most recently added
-		- most recently worked on
-		- unstarted forays
-		- best forays
 
 - main site: show latest of all items: forays and howtos
 

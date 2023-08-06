@@ -7,8 +7,7 @@ import Link from 'next/link';
 import { useContext } from 'react';
 import { AppContext } from '../AppContext';
 import { IForay } from '../interfaces';
-import { BiSolidCircle } from 'react-icons/bi';
-import { BiSolidRightArrow } from 'react-icons/bi';
+import { BiSolidCircle, BiSolidRightArrow, BiSolidSquare } from 'react-icons/bi';
 import * as config from '../config';
 
 let siteMode = '';
@@ -132,7 +131,7 @@ export default function ForaySearch() {
 								<Link href={`/forays/${filteredForay.id}`} className='forayLink' onClick={(e) => { userUxLoadSinglePage() }}>
 									<span className="text-slate-50 text-xl" dangerouslySetInnerHTML={{ __html: filteredForay.styledTitle }}></span>
 								</Link>
-								<div className='flex items-start gap-1 '>
+								<div className='flex items-start gap-1'>
 									{filteredForay.progressIdCode === 'unstarted' && (
 										<>
 											<BiSolidRightArrow className="progressUnstartedIcon progressIcon" />
@@ -149,6 +148,18 @@ export default function ForaySearch() {
 										<>
 											<BiSolidRightArrow className="progressNextStepIcon progressIcon" />
 											<span className='progressNextStep' dangerouslySetInnerHTML={{ __html: filteredForay.progressMessage }}></span>
+										</>
+									)}
+									{filteredForay.progressIdCode === 'parked' && (
+										<>
+											<BiSolidSquare className="progressParkedIcon progressIcon" />
+											<span className='progressParked' dangerouslySetInnerHTML={{ __html: filteredForay.progressMessage }}></span>
+										</>
+									)}
+									{filteredForay.progressIdCode === 'succeeded' && (
+										<>
+											<BiSolidCircle className="progressSucceededIcon progressIcon" />
+											<span className='progressSucceeded' dangerouslySetInnerHTML={{ __html: filteredForay.progressMessage }}></span>
 										</>
 									)}
 								</div>

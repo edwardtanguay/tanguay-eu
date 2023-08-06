@@ -28,6 +28,7 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <div className="text-yellow-700 smallcaps text-md">
                      FORAY:{' '}
                      {qdat.smartDateWithYear(foray.systemWhenCreated)} -{' '}
+										<span> <a target="_blank" href={`http://localhost:29900/manageForay?returnUrl=forays%C2%A7openItemIds=${foray.id}|id=${foray.id}&command=edit&id=${foray.id}`}>EDIT</a> - </span>
                      <span dangerouslySetInnerHTML={{ __html: foray.category }}></span>
                   </div>
                   <div className='text-2xl'>{foray.title}</div>
