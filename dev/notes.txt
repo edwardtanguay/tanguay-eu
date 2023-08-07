@@ -1,5 +1,6 @@
-[..] hid online edit on Foray page
-	- make .env file
+[2023-08-07 21:13:25] hide online edit on Foray page
+[] show full URLs when in computer-width mode
+[] replace, config.siteMode with environment variable
 ==================
 - make links long for computer-size, short for responsive
 - categories    

@@ -25,7 +25,6 @@ export default async function Page({ params }: { params: { id: string } }) {
 
    return (
       <>
-      [{siteMode}]
          {foray && (
             <>
                <div className='border-slate-600 bg-[#222] border p-5 mt-6 font-mono'>
