@@ -1,10 +1,9 @@
-import { useEffect } from 'react';
 import * as appModel from '../../../models/model';
 import * as qdat from '../../../qtools/qdat';
 import '../../outline.scss';
-import * as config from '../../../config';
 
-let siteMode = '';
+let siteMode = process.env.SITE_MODE;
+console.log(siteMode);
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
    const { id } = params;
@@ -24,12 +23,9 @@ export default async function Page({ params }: { params: { id: string } }) {
    const { id } = params;
    const foray = appModel.forays.find(m => String(m.id) === id);
 
-   useEffect(() => {
-      siteMode = config.siteMode();
-   }, []);
-
    return (
       <>
+      [{siteMode}]
          {foray && (
             <>
                <div className='border-slate-600 bg-[#222] border p-5 mt-6 font-mono'>
