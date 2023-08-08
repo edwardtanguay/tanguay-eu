@@ -3,7 +3,6 @@ import * as qdat from '../../../qtools/qdat';
 import '../../outline.scss';
 
 let siteMode = process.env.SITE_MODE;
-console.log(siteMode);
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
    const { id } = params;

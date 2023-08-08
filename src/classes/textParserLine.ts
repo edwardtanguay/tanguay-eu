@@ -194,10 +194,10 @@ class TextParserLine {
 	shortenLongUrls(line: string) {
 		if (line.includes('>http')) {
 			const url = qstr.getUrlOutOfString(line);
-			const regex = />http.*?</g;
+			// const regex = />http.*?</g;
 			let replacement = '';
 			if (url) {
-				replacement = '../' + qstr.shortenUrlText(url);
+				replacement = '<span class="urlSmartphone">../' + qstr.shortenUrlText(url) + '</span><span class="urlComputer">' + url + '</span>';
 			} else {
 				replacement = '';
 			}

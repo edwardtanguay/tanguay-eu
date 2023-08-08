@@ -49,11 +49,13 @@ div.outlineWrapper {
 		li a {
 			color: rgb(75, 99, 233);
 			// border-bottom: 0px solid black;
-			border-bottom: 1px dotted rgb(75, 99, 233);;
+			border-bottom: 1px dotted rgb(75, 99, 233);
+			;
 
 			&:hover {
 				border-bottom: 1px dotted rgb(216, 216, 104);
 			}
+
 		}
 
 		img {
@@ -158,6 +160,29 @@ div.outlineWrapper {
 
 				width: 96%;
 			}
+
+			li a {
+				span.urlSmartphone {
+					display: inline;
+				}
+
+				span.urlComputer {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+
+@media (min-width: 631px) {
+	li a {
+		span.urlSmartphone {
+			display: none;
+		}
+
+		span.urlComputer {
+			display: inline;
 		}
 	}
 }
