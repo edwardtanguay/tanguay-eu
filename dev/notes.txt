@@ -3,6 +3,7 @@
 [] show the first status message in the body instead of the last
 [] replace, config.siteMode with environment variable
 [] show project board tickets todo and finished on site
+[] make TechItems page
 ==================
 - make links long for computer-size, short for responsive
 - categories    
