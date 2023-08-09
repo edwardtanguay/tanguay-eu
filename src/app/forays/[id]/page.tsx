@@ -36,6 +36,7 @@ export default async function Page({ params }: { params: { id: string } }) {
                      <span dangerouslySetInnerHTML={{ __html: foray.category }}></span>
                   </div>
                   <div className='text-2xl'>{foray.title}</div>
+                  <div className='italic' dangerouslySetInnerHTML={{ __html: foray.progressMessage }}></div>
                </div>
                <div className='bg-[#1a1a1a] p-3 border-r border-b border-l border-slate-600 font-mono itemForay'>
                   <div dangerouslySetInnerHTML={{ __html: foray.bodyHtml }}></div>
