@@ -1,5 +1,5 @@
 export const appVersion = () => {
-	return '0.070 haskell foray changed';
+	return '0.071 config change';
 }
 
 export const siteMode = () => { 
