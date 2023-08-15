@@ -1,5 +1,5 @@
 export const appVersion = () => {
-	return '0.071 config change';
+	return '0.072 change 444';
 }
 
 export const siteMode = () => { 
