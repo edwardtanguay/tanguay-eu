@@ -6,6 +6,7 @@
 [] replace, config.siteMode with environment variable
 [] show project board tickets todo and finished on site
 [] make TechItems page
+[] when displaying status, don't display ##image at end
 ==================
 - make links long for computer-size, short for responsive
 - categories    
