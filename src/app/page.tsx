@@ -102,6 +102,7 @@ export default function Home() {
 					<a href="https://zubia.de/home">Zubia did here</a>
 				</li>
 			</ul>
+			<div>Version info: 182371</div>
 		</main>
 	);
 }
