@@ -4,6 +4,10 @@ import { createContext } from 'react';
 import { IHowto, IForay } from './interfaces';
 import * as appModel from './models/model';
 
+// small change to trigger deploy
+const test = 123;
+console.log(test);
+
 interface IAppContext {
 	searchText: string;
 	setSearchText: (searchText: string) => void;
