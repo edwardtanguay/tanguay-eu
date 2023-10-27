@@ -17,8 +17,7 @@ export const Header = () => {
 					<li>
 						<Link
 							href="/"
-							className={`border-0 ${activeSegment === null ? 'text-yellow-200' : ''
-								}`}
+							className={`border-0 ${activeSegment === null ? 'text-yellow-200' : '' }`}
 						>
 							Welcome
 						</Link>
