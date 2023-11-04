@@ -9,7 +9,7 @@ console.log(test);
 export default function Home() {
 	return (
 		<main>
-			<h3 className="text-xl mb-3 text-yellow-100">My projects, libraries and tools</h3>
+			<h3 className="text-xl mb-3 text-yellow-100">My projects, sites and tools</h3>
 			<ul className="list-disc ml-4 mb-5">
 				<ProjectListing url="https://starters.tanguay.eu" title="Starter sites" />
 				<ProjectListing url="https://jobs.tanguay.eu" title="Web developer jobs in Germany" />

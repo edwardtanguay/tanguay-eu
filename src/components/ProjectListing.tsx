@@ -7,7 +7,7 @@ interface IProps {
 export const ProjectListing = ({ url, title, github = '' } : IProps) => {
 	return (
 		<li>
-			<a target="_blank" href={url}>{title}{github && (<>{' '} (<a target="_blank">GitHub</a>)</>)}</a>
+			<a target="_blank" href={url}>{title}</a>{github && (<> - <a className="text-xs text-orange-300" target="_blank" href={github}>GitHub</a></>)}
 		</li>
 	)
 }
