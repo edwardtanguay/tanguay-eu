@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { ProjectListing } from "@/components/ProjectListing";
+
 //force deployment
 const test = 123444;
 console.log(test);
@@ -7,6 +9,13 @@ console.log(test);
 export default function Home() {
 	return (
 		<main>
+			<h3 className="text-xl mb-3 text-yellow-100">My projects, libraries and tools</h3>
+			<ul className="list-disc ml-4 mb-5">
+				<ProjectListing url="https://starters.tanguay.eu" title="Starter sites" />
+				<ProjectListing url="https://jobs.tanguay.eu" title="Web developer jobs in Germany" />
+				<ProjectListing url="https://et284-jsdom-flex-grid.vercel.app" title="Flex, Grid and Animation Practice" github="https://github.com/edwardtanguay/et284-jsdom-flex-grid" />
+			</ul>
+			<h3 className="text-xl mb-3 text-yellow-100">Moving my stuff</h3>
 			<ul>
 				<li className="main">
 					<p className="mb-3">
@@ -32,16 +41,6 @@ export default function Home() {
 						<li>
 							<a href="https://onespace.pages.dev/flashcards">
 								Tech Flashcards
-							</a>
-						</li>
-						<li>
-							<a href="https://jobs.tanguay.eu">
-								Web developer jobs in Germany
-							</a>
-						</li>
-						<li>
-							<a href="https://starters.tanguay.eu">
-								Mern stack starter sites
 							</a>
 						</li>
 					</ul>
