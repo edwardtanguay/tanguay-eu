@@ -18,6 +18,10 @@ export default function Home() {
 					<a href="https://github.com/edwardtanguay/jsdom-team-project-2023">GitHub for JS-DOM Team Project 2023</a>
 				</li>
 			</ul>
+			<h3 className="text-xl mb-3 text-yellow-100">Templates</h3>
+			<ul className="list-disc ml-4 mb-5">
+				<ProjectListing url="https://github.com/edwardtanguay/template-api-node-express-typescript-es6-modules-lowdb" title="Node/Express API Starter Template" />
+			</ul>
 			<h3 className="text-xl mb-3 text-yellow-100">Moving my stuff</h3>
 			<ul>
 				<li className="main">
