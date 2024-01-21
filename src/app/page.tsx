@@ -20,6 +20,8 @@ export default function Home() {
 			</ul>
 			<h3 className="text-xl mb-3 text-yellow-100">Templates</h3>
 			<ul className="list-disc ml-4 mb-5">
+				<ProjectListing url="https://github.com/edwardtanguay/vite-react-menu-browserrouter" title="Vite-React Site with React Router 6.4 BrowserRouter" />
+				<ProjectListing url="https://github.com/edwardtanguay/vite-react-menu-createbrowserrouter" title="Vite-React Site with React Router 6.4 createBrowserRouter" />
 				<ProjectListing url="https://github.com/edwardtanguay/template-api-node-express-typescript-es6-modules-lowdb" title="Node/Express API Starter Template" />
 			</ul>
 			<h3 className="text-xl mb-3 text-yellow-100">Moving my stuff</h3>
