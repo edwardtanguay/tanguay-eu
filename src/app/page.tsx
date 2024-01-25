@@ -26,6 +26,12 @@ export default function Home() {
 				<ProjectListing url="https://github.com/edwardtanguay/template-node-express-ejs-website-typescript/tree/dev" title="Node/Express EJS Website Template with TypeScript" />
 				<ProjectListing url="https://github.com/edwardtanguay/template-simple-react-with-node-express-api-one-directory" title="Vite-React with simple Node/Express API in one directory" />
 			</ul>
+			<h3 className="text-xl mb-3 text-yellow-100">Learning Resources</h3>
+			<ul className="list-disc ml-4 mb-5">
+				<ProjectListing url="https://www.youtube.com/watch?v=8sXRyHI3bLw" title="Web Development In 2024 - A Practical Guide" />
+				<ProjectListing url="https://www.youtube.com/@PrismaData" title="Prisma Video Channel" />
+				<ProjectListing url="https://www.youtube.com/playlist?list=PLn2e1F9Rfr6mmmlwyxznax1HjnaiLBEy4" title="Prisma Features Highlights" />
+			</ul>
 			<h3 className="text-xl mb-3 text-yellow-100">Moving my stuff</h3>
 			<ul>
 				<li className="main">
