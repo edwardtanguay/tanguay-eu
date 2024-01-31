@@ -31,6 +31,7 @@ export default function Home() {
 				<ProjectListing url="https://www.youtube.com/watch?v=8sXRyHI3bLw" title="Web Development In 2024 - A Practical Guide" />
 				<ProjectListing url="https://www.youtube.com/@PrismaData" title="Prisma Video Channel" />
 				<ProjectListing url="https://www.youtube.com/playlist?list=PLn2e1F9Rfr6mmmlwyxznax1HjnaiLBEy4" title="Prisma Features Highlights" />
+				<ProjectListing url="https://www.youtube.com/watch?v=iEzKs-B36WI" title="ThePrimeagen: VIM (btw), Streaming, & Content Creation | The Frontend Masters Podcast Ep.9" />
 			</ul>
 			<h3 className="text-xl mb-3 text-yellow-100">Moving my stuff</h3>
 			<ul>
