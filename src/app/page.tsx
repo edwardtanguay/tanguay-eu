@@ -14,6 +14,7 @@ export default function Home() {
 				<ProjectListing url="https://starters.tanguay.eu" title="Starter sites" />
 				<ProjectListing url="https://jobs.tanguay.eu" title="Web developer jobs in Germany" />
 				<ProjectListing url="https://et284-jsdom-flex-grid.vercel.app" title="Flex, Grid and Animation Practice" github="https://github.com/edwardtanguay/et284-jsdom-flex-grid" />
+				<ProjectListing url="https://jsdomtodo.vercel.app" title="Vite JS-DOM Todo App with state manager" github="https://github.com/edwardtanguay/jsdomtodo" />
 				<li>
 					<a href="https://github.com/edwardtanguay/jsdom-team-project-2023">GitHub for JS-DOM Team Project 2023</a>
 				</li>
