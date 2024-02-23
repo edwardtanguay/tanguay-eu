@@ -1,22 +1,23 @@
+'use client';
 import * as appModel from '../../../models/model';
 import * as qdat from '../../../qtools/qdat';
 import '../../outline.scss';
 
-export async function generateMetadata({ params }: { params: { id: string } }) {
-   const { id } = params;
-   const howto = appModel.howtos.find(m => String(m.id) === id);
-   const title = howto === undefined ? 'UNKNOWN' : `HOWTO: ${howto.title}`;
-   return {
-      title,
-      openGraph: {
-         title,
-         description: howto?.bodyDescription,
-         images: ['https://tanguay-eu.vercel.app/images/siteIcon.png']
-      }
-   }
-}
+// export async function generateMetadata({ params }: { params: { id: string } }) {
+//    const { id } = params;
+//    const howto = appModel.howtos.find(m => String(m.id) === id);
+//    const title = howto === undefined ? 'UNKNOWN' : `HOWTO: ${howto.title}`;
+//    return {
+//       title,
+//       openGraph: {
+//          title,
+//          description: howto?.bodyDescription,
+//          images: ['https://tanguay-eu.vercel.app/images/siteIcon.png']
+//       }
+//    }
+// }
 
-export default async function Page({ params }: { params: { id: string } }) {
+export default function Page({ params }: { params: { id: string } }) {
    const { id } = params;
    const howto = appModel.howtos.find(m => String(m.id) === id);
 

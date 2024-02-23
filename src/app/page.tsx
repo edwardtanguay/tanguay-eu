@@ -1,3 +1,4 @@
+'use client';
 /* eslint-disable react/no-unescaped-entities */
 
 import { ProjectListing } from "@/components/ProjectListing";
