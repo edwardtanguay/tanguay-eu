@@ -30,6 +30,7 @@ export default function Home() {
 				<ProjectListing url="https://github.com/edwardtanguay/vite-react-menu-appcontext" title="Vite React site with TypeScript, React Router, AppContext" />
 				<ProjectListing url="https://github.com/edwardtanguay/830-mongo-book-app" title="Full-Stack MongoDB site in one directory with Vite React frontend and Node/Express backend" />
 				<ProjectListing url="https://github.com/edwardtanguay/template-minimal-node-express-api" title="Minimal TypeScript Node/Express API that can be hosted at Render" />
+				<ProjectListing url="https://github.com/edwardtanguay/vite-api-one-directory" title="This is a one-directory project that has Vite React frontend, Node/Express backend, JSON Server, meant to be used as a local application that has a JSON-file database." />
 			</ul>
 			<h3 className="text-xl mb-3 text-yellow-100">Learning Resources</h3>
 			<ul className="list-disc ml-4 mb-5">
