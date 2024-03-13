@@ -19,6 +19,7 @@ export default function Home() {
 				<li>
 					<a href="https://github.com/edwardtanguay/jsdom-team-project-2023">GitHub for JS-DOM Team Project 2023</a>
 				</li>
+				<ProjectListing url="https://github.com/edwardtanguay/nuxt-learning-showcase" title="Nuxt Learning Showcase" github="https://github.com/edwardtanguay/et284-jsdom-flex-grid" />
 			</ul>
 			<h3 className="text-xl mb-3 text-yellow-100">Templates</h3>
 			<ul className="list-disc ml-4 mb-5">
