@@ -115,18 +115,33 @@ $highlightBlur: 15px;
 		grid-gap: 1px;
 		padding: 1px;
 		color: black;
+
+		a {
+			text-decoration: underline;
+			@apply border-none;
+
+			&:hover {
+				@apply border-none;
+			}
+		}
 	}
 
 	.startersArea>div {
-		padding: 20px 0;
-		font-size: 1rem;
-		padding: 1rem;
+		padding: .5rem;
+		font-size: .8rem;
+		color: #aaa;
+		display: flex;
+		align-items: center;
+
+		ul {
+			list-style: disc;
+			margin: 0 0 0 1rem;
+		}
 	}
 
 	.startersArea>div.col1 {
 		background-color: #111;
-		text-align: center;
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		color: #aaa;
 	}
 
@@ -147,7 +162,8 @@ $highlightBlur: 15px;
 	}
 
 	.startersArea>div.header {
-		text-align: center;
+		color: #aaa;
+		display: block;
 
 		div.title {
 			font-size: 1.5rem;

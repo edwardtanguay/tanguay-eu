@@ -33,7 +33,11 @@ export default function Starters() {
 				<div className="col4"></div>
 
 				<div className="col1">Go</div>
-				<div className="col2"></div>
+				<div className="col2">
+					<ul>
+						<li><a href="https://github.com/edwardtanguay/showcase-go-basics" target="_blank">showcase-go-basics</a> - notes on Frontend Masters course</li>
+					</ul>
+				</div>
 				<div className="col3"></div>
 				<div className="col4"></div>
 
