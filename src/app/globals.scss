@@ -107,4 +107,40 @@ $highlightBlur: 15px;
 		}
 	}
 
+
+	.startersArea {
+		display: grid;
+		margin-top: 1rem;
+		grid-template-columns: 8rem auto auto auto;
+		grid-gap: 1px;
+		background-color: #555;
+		padding: 1px;
+		color: black;
+	}
+
+	.startersArea>div {
+		background-color: #333;
+		padding: 20px 0;
+		font-size: 1rem;
+		padding: 1rem;
+	}
+
+	.startersArea>div.col1 {
+		background-color: #111;
+		text-align: center;
+		font-size: 1.2rem;
+		color: #aaa;
+	}
+
+	.startersArea>div.col2 {
+		background-color: #5f3b16;
+	}
+
+	.startersArea>div.col3 {
+		background-color: rgb(121, 121, 121);
+	}
+
+	.startersArea>div.col4 {
+		background-color: rgb(161, 141, 22);
+	}
 }

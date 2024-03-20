@@ -1,3 +1,19 @@
+- .. make blank starters page
+- publish Go project with site
+- list out all technologies with spaces for rest: Showcases, Templates, Datapod
+	- bronze, silver gold theme
+
+
+
+
+
+
+
+
+
+
+
+
 [2023-08-07 21:13:25] hide online edit on Foray page
 [2023-08-08 23:54:57] show full URLs when in computer-width mode
 [..] on single page, show status message
