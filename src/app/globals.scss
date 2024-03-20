@@ -118,7 +118,6 @@ $highlightBlur: 15px;
 	}
 
 	.startersArea>div {
-		background-color: #333;
 		padding: 20px 0;
 		font-size: 1rem;
 		padding: 1rem;
@@ -140,10 +139,18 @@ $highlightBlur: 15px;
 	}
 
 	.startersArea>div.col4 {
-		background-color: rgb(161, 141, 22);
+		background-color: rgb(172, 147, 9);
 	}
 
 	.startersArea>div.blank {
 		background-color: transparent;
+	}
+
+	.startersArea>div.header {
+		text-align: center;
+
+		div.title {
+			font-size: 1.5rem;
+		}
 	}
 }

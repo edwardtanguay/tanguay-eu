@@ -4,9 +4,18 @@ export default function Starters() {
 		<>
 			<div className="startersArea">
 				<div className="blank"></div>
-				<div className="col2">Showcases</div>
-				<div className="col3">Templates</div>
-				<div className="col4">Datapods</div>
+				<div className="header">
+					<div className="title">Showcases</div>
+					<div className="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sunt omnis consequatur numquam quam consequuntur</div>
+				</div>
+				<div className="header">
+					<div className="title">Templates</div>
+					<div className="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sunt omnis consequatur numquam quam consequuntur</div>
+				</div>
+				<div className="header">
+					<div className="title">Datapods</div>
+					<div className="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sunt omnis consequatur numquam quam consequuntur</div>
+				</div>
 
 				<div className="col1">Nuxt</div>
 				<div className="col2">nnn</div>
