@@ -113,7 +113,6 @@ $highlightBlur: 15px;
 		margin-top: 1rem;
 		grid-template-columns: 8rem auto auto auto;
 		grid-gap: 1px;
-		background-color: #555;
 		padding: 1px;
 		color: black;
 	}
@@ -142,5 +141,9 @@ $highlightBlur: 15px;
 
 	.startersArea>div.col4 {
 		background-color: rgb(161, 141, 22);
+	}
+
+	.startersArea>div.blank {
+		background-color: transparent;
 	}
 }
