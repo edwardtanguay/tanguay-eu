@@ -1,5 +1,6 @@
 import { AppContext } from "@/AppContext";
 import { useContext } from "react";
+import { StarterCell } from "./StarterCell";
 
 export const StartersArea2 = () => {
 	const { handleFlip } = useContext(AppContext);
@@ -23,10 +24,7 @@ export const StartersArea2 = () => {
 			<div className="col1">React</div>
 			<div className="col2"></div>
 			<div className="col3">
-				<ul>
-					<li><a href="https://github.com/edwardtanguay/vite-react-menu-browserrouter" target="_blank">vite-react-menu-browserrouter</a> - React Router 6.4</li>
-					<li><a href="https://github.com/edwardtanguay/vite-react-menu-createbrowserrouter" target="_blank">vite-react-menu-createbrowserrouter</a> - React Router 6.4</li>
-				</ul>
+				<StarterCell />
 			</div>
 			<div className="col4"></div>
 

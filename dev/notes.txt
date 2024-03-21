@@ -13,7 +13,8 @@
 - .. add content
 	- .. switch to JSON file
 		- x put all in appContext
-		- .. load starters in appModel, display in area1
+		- x load starters in appModel, display in area1
+		- .. make StarterCell
 
 
 
