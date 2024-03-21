@@ -44,3 +44,4 @@ export const blankForay = {
 	progressMessage: ''
 }
 
+export type AreaShowing = 'startersArea1' | 'startersArea2'; 
