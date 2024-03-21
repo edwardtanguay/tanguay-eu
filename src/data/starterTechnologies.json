@@ -1,0 +1,30 @@
+[
+	{
+		"idCode": "react",
+		"title": "React"
+	},
+	{
+		"idCode": "nodeExpress",
+		"title": "Node/Express"
+	},
+	{
+		"idCode": "nuxt",
+		"title": "Nuxt"
+	},
+	{
+		"idCode": "vue",
+		"title": "Vue"
+	},
+	{
+		"idCode": "go",
+		"title": "Go"
+	},
+	{
+		"idCode": "next",
+		"title": "Next.js"
+	},
+	{
+		"idCode": "python",
+		"title": "Python"
+	}
+]
