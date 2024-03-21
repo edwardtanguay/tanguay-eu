@@ -12,7 +12,8 @@
 	- x real texts
 - .. add content
 	- .. switch to JSON file
-		- .. put all in appContext
+		- x put all in appContext
+		- .. load starters in appModel, display in area1
 
 
 

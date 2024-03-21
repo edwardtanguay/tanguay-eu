@@ -3,7 +3,7 @@ import { useContext } from "react";
 
 /* eslint-disable react/no-unescaped-entities */
 export const StartersArea1 = () => {
-	const { handleFlip } = useContext(AppContext);
+	const { handleFlip, frontendStarters } = useContext(AppContext);
 
 	return (
 		<div className="startersArea startersArea1">

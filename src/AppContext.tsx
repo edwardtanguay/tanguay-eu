@@ -1,12 +1,8 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { createContext } from 'react';
-import { IHowto, IForay, AreaShowing } from './interfaces';
+import { IHowto, IForay, AreaShowing, FrontendStarter } from './interfaces';
 import * as appModel from './models/model';
-
-// small change to trigger deploy
-const test = 123;
-console.log(test);
 
 interface IAppContext {
 	searchText: string;
@@ -22,6 +18,7 @@ interface IAppContext {
 	areaShowing: AreaShowing;
 	setAreaShowing: (areaShowing: AreaShowing) => void;
 	handleFlip: () => void;
+	frontendStarters: FrontendStarter[]
 }
 
 interface IAppProvider {
@@ -37,12 +34,14 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [forays, setForays] = useState<IForay[]>([]);
 	const [filteredForays, setFilteredForays] = useState<IForay[]>([]);
 	const [areaShowing, setAreaShowing] = useState<AreaShowing>('startersArea2');
+	const [frontendStarters, setFrontendStarters] = useState<FrontendStarter[]>([]);
 
 	useEffect(() => {
 		setHowtos(appModel.howtos);
 		setFilteredHowtos(appModel.howtos);
 		setForays(appModel.forays);
 		setFilteredForays(appModel.forays);
+		setFrontendStarters(appModel.frontendStarters)
 	}, []);
 
 	const handleFlip = () => {
@@ -65,7 +64,8 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				setFilteredForays,
 				areaShowing,
 				setAreaShowing,
-				handleFlip
+				handleFlip,
+				frontendStarters
 			}}
 		>
 			{children}

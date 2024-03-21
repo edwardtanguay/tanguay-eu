@@ -1,3 +1,4 @@
+import { z } from "zod";
 
 export interface IHowto {
 	id: number;
@@ -44,4 +45,13 @@ export const blankForay = {
 	progressMessage: ''
 }
 
-export type AreaShowing = 'startersArea1' | 'startersArea2'; 
+export type AreaShowing = 'startersArea1' | 'startersArea2';
+
+export const FrontendStarterSchema = z.object({
+	technology: z.string(),
+	section: z.string(),
+	title: z.string(),
+	description: z.string(),
+	url: z.string().regex(/^https?:\/\/(?:www\.)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(?:\/[^\s]*)?$/)
+});
+export type FrontendStarter = z.infer<typeof FrontendStarterSchema>;
