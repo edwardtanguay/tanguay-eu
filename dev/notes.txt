@@ -2,15 +2,15 @@
 - x publish Go project with site
 - x list out all technologies with spaces for rest: Showcases, Templates, Datapod
 	- x bronze, silver gold theme
-- .. make flip link that shows Links, Forays, Howtos
+- x make flip link that shows Links, Forays, Howtos
 	- x make link
 	- x make it hide/show current
 	- x make button work
 	- x add numbers
 	- x add constant height
 	- x change colors
-	- .. real texts
-
+	- x real texts
+- add content
 
 
 

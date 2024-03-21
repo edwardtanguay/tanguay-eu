@@ -6,7 +6,7 @@ import { useState } from "react";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function Starters() {
-	const [areaShowing, setAreaShowing] = useState<AreaShowing>('startersArea1');
+	const [areaShowing, setAreaShowing] = useState<AreaShowing>('startersArea2');
 
 	const handleFlip = () => {
 		const _areaShowing: AreaShowing = areaShowing === 'startersArea1' ? 'startersArea2' : 'startersArea1';
