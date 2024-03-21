@@ -3,6 +3,7 @@
 import { AppContext } from "@/AppContext";
 import { useContext } from "react";
 import { StarterCell } from "./StarterCell";
+import { TechnologyRow } from "./TechnologyRow";
 
 export const StartersArea2 = () => {
 	const { handleFlip } = useContext(AppContext);
@@ -29,12 +30,7 @@ export const StartersArea2 = () => {
 				</div>
 			</div>
 
-			<div className="col1">React</div>
-			<div className="col2"></div>
-			<div className="col3">
-				<StarterCell technology="react" section="templates"/>
-			</div>
-			<div className="col4"></div>
+			<TechnologyRow sectionArea={1} idCode="react" title="React" />
 
 			<div className="col1">Node/Express</div>
 			<div className="col2"></div>

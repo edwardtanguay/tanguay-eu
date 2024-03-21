@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { AppContext } from "@/AppContext"
 import { useContext } from "react";
+import { TechnologyRow } from "./TechnologyRow";
 
 /* eslint-disable react/no-unescaped-entities */
 export const StartersArea1 = () => {
@@ -29,10 +30,7 @@ export const StartersArea1 = () => {
 				</div>
 			</div>
 
-			<div className="col1">React</div>
-			<div className="col2"></div>
-			<div className="col3"></div>
-			<div className="col4"></div>
+			<TechnologyRow sectionArea={1} idCode="react" title="React" />
 
 			<div className="col1">Node/Express</div>
 			<div className="col2"></div>
