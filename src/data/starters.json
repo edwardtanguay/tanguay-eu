@@ -24,7 +24,7 @@
 		"technology": "react",
 		"section": "datapods",
 		"title": "Datapod for Vite-React",
-		"description": "has base Datapod engine",
+		"description": "has basic Datapod parsing",
 		"url": "https://github.com/edwardtanguay/datapod-for-vite-react-core"
 	}
 ]

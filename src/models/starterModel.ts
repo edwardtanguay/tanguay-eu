@@ -6,10 +6,10 @@ export const buildFrontendStarters = () => {
 	for(const rawStarter of rawStarters) {
 		const frontendStarter: FrontendStarter = {
 			technology: rawStarter.technology,
-			section: rawStarter.technology,
-			title: rawStarter.technology,
-			description: rawStarter.technology,
-			url: rawStarter.technology,
+			section: rawStarter.section,
+			title: rawStarter.title,
+			description: rawStarter.description,
+			url: rawStarter.url,
 		}
 		frontendStarters.push(frontendStarter);
 	}
