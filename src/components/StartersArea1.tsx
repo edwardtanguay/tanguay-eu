@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 import { AppContext } from "@/AppContext"
 import { useContext } from "react";
 
@@ -7,18 +9,24 @@ export const StartersArea1 = () => {
 
 	return (
 		<div className="startersArea startersArea1">
-			<div className="flip"><button onClick={handleFlip}>FLIP</button></div>
+			<div className="flip"><button onClick={handleFlip}><img src="images/starters-astronaut2.jpg" /></button></div>
 			<div className="header">
-				<div className="title title1">1 Links</div>
-				<div className="subtitle">External resources to learn this technology such as courses, tutorials, videos, articles, etc. </div>
+				<div>
+					<div className="title title1">1 Links</div>
+					<div className="subtitle">External resources to learn from such as courses, tutorials, videos, articles, etc. </div>
+				</div>
 			</div>
 			<div className="header">
-				<div className="title title2">2 Forays</div>
-				<div className="subtitle">Notes on something I try to accomplish which may or may not be successful.</div>
+				<div>
+					<div className="title title2">2 Forays</div>
+					<div className="subtitle">Notes on something I try to accomplish which may or may not be successful.</div>
+				</div>
 			</div>
 			<div className="header">
-				<div className="title title3">3 Howtos</div>
-				<div className="subtitle">Step-by-step instructions on how to accomplish a specific task.</div>
+				<div>
+					<div className="title title3">3 Howtos</div>
+					<div className="subtitle">Step-by-step instructions on how to accomplish a specific task.</div>
+				</div>
 			</div>
 
 			<div className="col1">React</div>
@@ -43,7 +51,7 @@ export const StartersArea1 = () => {
 
 			<div className="col1">Go</div>
 			<div className="col2">
-			
+
 			</div>
 			<div className="col3"></div>
 			<div className="col4"></div>

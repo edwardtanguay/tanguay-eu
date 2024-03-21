@@ -111,7 +111,7 @@ $highlightBlur: 15px;
 	.startersArea {
 		display: grid;
 		margin-top: 1rem;
-		grid-template-columns: 9rem auto auto auto;
+		grid-template-columns: 13rem auto auto auto;
 		grid-gap: 1px;
 		padding: 1px;
 		color: black;
@@ -178,47 +178,60 @@ $highlightBlur: 15px;
 	.startersArea>div.header {
 		color: #aaa;
 		display: block;
-		height: 6rem;
+		display: flex;
+		align-items: end;
+		display: flex;
+		align-items: center;
 
 		div.title {
-			font-size: 1.5rem;
+			font-size: 2rem;
 		}
+
 		div.title1 {
 			color: rgb(124, 219, 124);
 		}
+
 		div.title2 {
 			color: rgb(102, 233, 102);
 		}
+
 		div.title3 {
 			color: rgb(11, 172, 11);
 		}
+
 		div.title4 {
 			color: rgb(172, 96, 25);
 		}
+
 		div.title5 {
 			color: rgb(189, 189, 189);
 		}
+
 		div.title6 {
 			color: rgb(179, 182, 22);
 		}
+
 		div.subtitle {
 			font-style: italic;
 			color: rgb(226, 226, 161);
+			font-size: 1.3rem;
 		}
 	}
+
 	.startersArea>div.flip {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 		button {
 			background-color: rgb(13, 13, 44);
-			padding: .5rem;
+			padding: .2rem;
 			font-size: 2rem;
-			border-radius: .5rem;
-		&:hover {
-			background-color: rgb(20, 20, 68);
+
+			&:hover {
+				background-color: rgb(20, 20, 68);
+			}
 		}
-		}
-		
+
 	}
 }
