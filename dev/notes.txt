@@ -11,6 +11,7 @@
 	- x change colors
 	- x real texts
 - .. add content
+	- .. switch to JSON file
 
 
 
