@@ -96,7 +96,7 @@ export default function Starters() {
 				<div className="col3"></div>
 				<div className="col4"></div>
 
-				<div className="col1">Pheonix</div>
+				<div className="col1">Phoenix</div>
 				<div className="col2"></div>
 				<div className="col3"></div>
 				<div className="col4"></div>
