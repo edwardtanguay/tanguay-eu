@@ -26,7 +26,7 @@ export const StartersArea2 = () => {
 			<div className="header">
 				<div>
 					<div className="title title6">6-Datapods</div>
-					<div className="subtitle">Datapod is a framework for creating schemas that automatically create a CRUD user experience to manage data.</div>
+					<div className="subtitle">A datapod is a framework for creating schemas that automatically create a CRUD user experience to manage data.</div>
 				</div>
 			</div>
 
