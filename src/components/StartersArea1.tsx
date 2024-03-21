@@ -1,9 +1,10 @@
-/* eslint-disable react/no-unescaped-entities */
-interface IProps {
-	handleFlip: () => void;
-}
+import { AppContext } from "@/AppContext"
+import { useContext } from "react";
 
-export const StartersArea1 = ({ handleFlip }: IProps) => {
+/* eslint-disable react/no-unescaped-entities */
+export const StartersArea1 = () => {
+	const { handleFlip } = useContext(AppContext);
+
 	return (
 		<div className="startersArea startersArea1">
 			<div className="flip"><button onClick={handleFlip}>FLIP</button></div>

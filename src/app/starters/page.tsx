@@ -1,28 +1,22 @@
 'use client';
+import { AppContext } from "@/AppContext";
 import { StartersArea1 } from "@/components/StartersArea1";
 import { StartersArea2 } from "@/components/StartersArea2";
-import { AreaShowing } from "@/interfaces";
-import { useState } from "react";
+import { useContext } from "react";
 
-/* eslint-disable react/no-unescaped-entities */
 export default function Starters() {
-	const [areaShowing, setAreaShowing] = useState<AreaShowing>('startersArea2');
-
-	const handleFlip = () => {
-		const _areaShowing: AreaShowing = areaShowing === 'startersArea1' ? 'startersArea2' : 'startersArea1';
-		setAreaShowing(_areaShowing);
-	}
+	const { areaShowing } = useContext(AppContext);
 
 	return (
 		<>
 			{
 				areaShowing == 'startersArea1' && (
-					<StartersArea1 handleFlip={handleFlip} />
+					<StartersArea1/>
 				)
 			}
 			{
 				areaShowing == 'startersArea2' && (
-					<StartersArea2 handleFlip={handleFlip} />
+					<StartersArea2/>
 				)
 			}
 		</>

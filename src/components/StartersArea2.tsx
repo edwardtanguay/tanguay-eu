@@ -1,8 +1,9 @@
-interface IProps {
-	handleFlip: () => void;
-}
+import { AppContext } from "@/AppContext";
+import { useContext } from "react";
 
-export const StartersArea2 = ({ handleFlip }: IProps) => {
+export const StartersArea2 = () => {
+	const { handleFlip } = useContext(AppContext);
+
 	return (
 		<div className="startersArea startersArea2">
 			<div className="flip"><button onClick={handleFlip}>FLIP</button></div>

@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { createContext } from 'react';
-import { IHowto, IForay } from './interfaces';
+import { IHowto, IForay, AreaShowing } from './interfaces';
 import * as appModel from './models/model';
 
 // small change to trigger deploy
@@ -19,6 +19,9 @@ interface IAppContext {
 	setForays: (forays: IForay[]) => void;
 	filteredForays: IForay[];
 	setFilteredForays: (forays: IForay[]) => void;
+	areaShowing: AreaShowing;
+	setAreaShowing: (areaShowing: AreaShowing) => void;
+	handleFlip: () => void;
 }
 
 interface IAppProvider {
@@ -33,6 +36,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [filteredHowtos, setFilteredHowtos] = useState<IHowto[]>([]);
 	const [forays, setForays] = useState<IForay[]>([]);
 	const [filteredForays, setFilteredForays] = useState<IForay[]>([]);
+	const [areaShowing, setAreaShowing] = useState<AreaShowing>('startersArea2');
 
 	useEffect(() => {
 		setHowtos(appModel.howtos);
@@ -40,6 +44,11 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setForays(appModel.forays);
 		setFilteredForays(appModel.forays);
 	}, []);
+
+	const handleFlip = () => {
+		const _areaShowing: AreaShowing = areaShowing === 'startersArea1' ? 'startersArea2' : 'startersArea1';
+		setAreaShowing(_areaShowing);
+	}
 
 	return (
 		<AppContext.Provider
@@ -53,7 +62,10 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				forays,
 				setForays,
 				filteredForays,
-				setFilteredForays
+				setFilteredForays,
+				areaShowing,
+				setAreaShowing,
+				handleFlip
 			}}
 		>
 			{children}

@@ -12,6 +12,7 @@
 	- x real texts
 - .. add content
 	- .. switch to JSON file
+		- .. put all in appContext
 
 
 
