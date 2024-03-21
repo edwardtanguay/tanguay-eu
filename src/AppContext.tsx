@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { createContext } from 'react';
-import { IHowto, IForay, AreaShowing, FrontendStarter } from './interfaces';
+import { IHowto, IForay, AreaShowing, FrontendStarter, FrontendStarterTechnology } from './interfaces';
 import * as appModel from './models/model';
 
 interface IAppContext {
@@ -18,7 +18,8 @@ interface IAppContext {
 	areaShowing: AreaShowing;
 	setAreaShowing: (areaShowing: AreaShowing) => void;
 	handleFlip: () => void;
-	frontendStarters: FrontendStarter[]
+	frontendStarters: FrontendStarter[],
+	frontendStarterTechnologies: FrontendStarterTechnology[]
 }
 
 interface IAppProvider {
@@ -35,6 +36,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [filteredForays, setFilteredForays] = useState<IForay[]>([]);
 	const [areaShowing, setAreaShowing] = useState<AreaShowing>('startersArea2');
 	const [frontendStarters, setFrontendStarters] = useState<FrontendStarter[]>([]);
+	const [frontendStarterTechnologies, setFrontendStarterTechnologies] = useState<FrontendStarterTechnology[]>([]);
 
 	useEffect(() => {
 		setHowtos(appModel.howtos);
@@ -42,6 +44,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setForays(appModel.forays);
 		setFilteredForays(appModel.forays);
 		setFrontendStarters(appModel.frontendStarters)
+		setFrontendStarterTechnologies(appModel.frontendStarterTechnologies)
 	}, []);
 
 	const handleFlip = () => {
@@ -65,7 +68,8 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				areaShowing,
 				setAreaShowing,
 				handleFlip,
-				frontendStarters
+				frontendStarters,
+				frontendStarterTechnologies
 			}}
 		>
 			{children}

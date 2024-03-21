@@ -55,3 +55,9 @@ export const FrontendStarterSchema = z.object({
 	url: z.string().regex(/^https?:\/\/(?:www\.)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(?:\/[^\s]*)?$/)
 });
 export type FrontendStarter = z.infer<typeof FrontendStarterSchema>;
+
+export const FrontendStarterTechnologySchema = z.object({
+	idCode: z.string(),
+	title: z.string(),
+});
+export type FrontendStarterTechnology = z.infer<typeof FrontendStarterTechnologySchema>;

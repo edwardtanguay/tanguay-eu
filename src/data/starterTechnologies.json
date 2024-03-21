@@ -26,5 +26,53 @@
 	{
 		"idCode": "python",
 		"title": "Python"
+	},
+	{
+		"idCode": "angular",
+		"title": "Angular 17"
+	},
+	{
+		"idCode": "svelte",
+		"title": "Svelte"
+	},
+	{
+		"idCode": "svelteKit",
+		"title": "SvelteKit"
+	},
+	{
+		"idCode": "electron",
+		"title": "Electron"
+	},
+	{
+		"idCode": "reactNative",
+		"title": "React Native"
+	},
+	{
+		"idCode": "flutter",
+		"title": "Flutter"
+	},
+	{
+		"idCode": "astro",
+		"title": "Astro"
+	},
+	{
+		"idCode": "solid",
+		"title": "Solid"
+	},
+	{
+		"idCode": "qwik",
+		"title": "Qwik"
+	},
+	{
+		"idCode": "pheonix",
+		"title": "Pheonix"
+	},
+	{
+		"idCode": "laravel",
+		"title": "Laravel"
+	},
+	{
+		"idCode": "flask",
+		"title": "Flask"
 	}
 ]
