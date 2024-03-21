@@ -7,15 +7,15 @@ export const StartersArea2 = ({handleFlip}: IProps) => {
 		<div className="startersArea">
 			<div className="flip"><button onClick={handleFlip}>FLIP</button></div>
 			<div className="header">
-				<div className="title">Showcases</div>
+				<div className="title">4 Showcases</div>
 				<div className="subtitle">Projects created while learning the basics of a technology, useful for returning to find basic code that works.</div>
 			</div>
 			<div className="header">
-				<div className="title">Templates</div>
+				<div className="title">5 Templates</div>
 				<div className="subtitle">Base projects that are good starters for projects, e.g. have basic settings and tools set up for specific purposes.</div>
 			</div>
 			<div className="header">
-				<div className="title">Datapods</div>
+				<div className="title">6 Datapods</div>
 				<div className="subtitle">Datapod is a framework for creating schemas that automatically create a CRUD user experience to manage these items.</div>
 			</div>
 

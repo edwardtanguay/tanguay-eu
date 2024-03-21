@@ -2,20 +2,20 @@ interface IProps {
 	handleFlip: () => void;
 }
 
-export const StartersArea1 = ({handleFlip}: IProps) => {
+export const StartersArea1 = ({ handleFlip }: IProps) => {
 	return (
 		<div className="startersArea">
 			<div className="flip"><button onClick={handleFlip}>FLIP</button></div>
 			<div className="header">
-				<div className="title">Links</div>
+				<div className="title">1 Links</div>
 				<div className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt, voluptas fuga sapiente ducimus autem necessitatibus dicta omnis temporibus alias nihil, distinctio nobis quia. Qui quas quis harum! Suscipit, hic.</div>
 			</div>
 			<div className="header">
-				<div className="title">Forays</div>
+				<div className="title">2 Forays</div>
 				<div className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt, voluptas fuga sapiente ducimus autem necessitatibus dicta omnis temporibus alias nihil, distinctio nobis quia. Qui quas quis harum! Suscipit, hic.</div>
 			</div>
 			<div className="header">
-				<div className="title">Howtos</div>
+				<div className="title">3 Howtos</div>
 				<div className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt, voluptas fuga sapiente ducimus autem necessitatibus dicta omnis temporibus alias nihil, distinctio nobis quia. Qui quas quis harum! Suscipit, hic.</div>
 			</div>
 

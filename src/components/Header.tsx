@@ -68,9 +68,6 @@ export const Header = () => {
 					</li>
 				</ul>
 			</nav>
-			<div className='devInfo text-right'>
-				<div className="text-slate-500">Version {config.appVersion()}</div>
-			</div>
 		</div>
 	);
 };

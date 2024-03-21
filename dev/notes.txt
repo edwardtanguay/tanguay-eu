@@ -5,7 +5,8 @@
 - .. make flip link that shows Links, Forays, Howtos
 	- x make link
 	- x make it hide/show current
-	- .. make button work
+	- x make button work
+	- add numbers
 
 
 
