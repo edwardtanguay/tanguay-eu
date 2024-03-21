@@ -14,7 +14,8 @@
 	- .. switch to JSON file
 		- x put all in appContext
 		- x load starters in appModel, display in area1
-		- .. make StarterCell
+		- x make StarterCell
+		- .. make based on technologies array
 
 
 

@@ -1,5 +1,10 @@
-export const StarterCell = () => {
+interface IProps {
+	technology: string;
+	section: string;
+}
+
+export const StarterCell = ({technology, section}: IProps) => {
 	return (
-		<span>starter cell</span>
+		<span>{technology}|{section}</span>
 	)
 }
