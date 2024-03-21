@@ -8,7 +8,8 @@
 	- x make button work
 	- x add numbers
 	- x add constant height
-	- .. change colors
+	- x change colors
+	- .. real texts
 
 
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 interface IProps {
 	handleFlip: () => void;
 }
@@ -7,16 +8,16 @@ export const StartersArea1 = ({ handleFlip }: IProps) => {
 		<div className="startersArea startersArea1">
 			<div className="flip"><button onClick={handleFlip}>FLIP</button></div>
 			<div className="header">
-				<div className="title">1 Links</div>
-				<div className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt, voluptas fuga sapiente ducimus autem necessitatibus dicta omnis temporibus alias nihil, distinctio nobis quia. Qui quas quis harum! Suscipit, hic.</div>
+				<div className="title title1">1 Links</div>
+				<div className="subtitle">External resources to learn this technology such as courses, tutorials, videos, articles, etc. </div>
 			</div>
 			<div className="header">
-				<div className="title">2 Forays</div>
-				<div className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt, voluptas fuga sapiente ducimus autem necessitatibus dicta omnis temporibus alias nihil, distinctio nobis quia. Qui quas quis harum! Suscipit, hic.</div>
+				<div className="title title2">2 Forays</div>
+				<div className="subtitle">Notes on something I try to accomplish which may or may not be successful.</div>
 			</div>
 			<div className="header">
-				<div className="title">3 Howtos</div>
-				<div className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt, voluptas fuga sapiente ducimus autem necessitatibus dicta omnis temporibus alias nihil, distinctio nobis quia. Qui quas quis harum! Suscipit, hic.</div>
+				<div className="title title3">3 Howtos</div>
+				<div className="subtitle">Step-by-step instructions on how to accomplish a specific task.</div>
 			</div>
 
 			<div className="col1">React</div>

@@ -176,10 +176,31 @@ $highlightBlur: 15px;
 	.startersArea>div.header {
 		color: #aaa;
 		display: block;
-		height: 9rem;
+		height: 6rem;
 
 		div.title {
 			font-size: 1.5rem;
+		}
+		div.title1 {
+			color: rgb(124, 219, 124);
+		}
+		div.title2 {
+			color: rgb(102, 233, 102);
+		}
+		div.title3 {
+			color: rgb(11, 172, 11);
+		}
+		div.title4 {
+			color: rgb(172, 96, 25);
+		}
+		div.title5 {
+			color: rgb(218, 218, 182);
+		}
+		div.title6 {
+			color: rgb(179, 182, 22);
+		}
+		div.subtitle {
+			font-style: italic;
 		}
 	}
 	.startersArea>div.flip {
