@@ -1,0 +1,30 @@
+[
+	{
+		"technology": "go",
+		"section": "showcases",
+		"title": "showcase-go-basics",
+		"description": "notes on Frontend Masters course",
+		"url": "https://github.com/edwardtanguay/showcase-go-basics"
+	},
+	{
+		"technology": "react",
+		"section": "templates",
+		"title": "vite-react-menu-browserrouter ",
+		"description": "React Router 6.4",
+		"url": "https://github.com/edwardtanguay/vite-react-menu-browserrouter"
+	},
+	{
+		"technology": "react",
+		"section": "templates",
+		"title": "vite-react-menu-createbrowserrouter ",
+		"description": "React Router 6.4",
+		"url": "https://github.com/edwardtanguay/vite-react-menu-createbrowserrouter"
+	},
+	{
+		"technology": "react",
+		"section": "datapods",
+		"title": "Datapod for Vite-React",
+		"description": "has base Datapod engine",
+		"url": "https://github.com/edwardtanguay/datapod-for-vite-react-core"
+	}
+]

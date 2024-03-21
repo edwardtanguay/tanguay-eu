@@ -16,7 +16,7 @@ export const StartersArea2 = ({ handleFlip }: IProps) => {
 			</div>
 			<div className="header">
 				<div className="title title6">6 Datapods</div>
-				<div className="subtitle">Datapod is a framework for creating schemas that automatically create a CRUD user experience to manage these items.</div>
+				<div className="subtitle">Datapod is a framework for creating schemas that automatically create a CRUD user experience to manage data.</div>
 			</div>
 
 			<div className="col1">React</div>
