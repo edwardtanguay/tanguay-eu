@@ -25,6 +25,11 @@ export const StartersArea1 = ({ handleFlip }: IProps) => {
 			<div className="col3"></div>
 			<div className="col4"></div>
 
+			<div className="col1">Node/Express</div>
+			<div className="col2"></div>
+			<div className="col3"></div>
+			<div className="col4"></div>
+
 			<div className="col1">Nuxt</div>
 			<div className="col2"></div>
 			<div className="col3"></div>

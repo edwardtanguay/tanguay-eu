@@ -111,7 +111,7 @@ $highlightBlur: 15px;
 	.startersArea {
 		display: grid;
 		margin-top: 1rem;
-		grid-template-columns: 8rem auto auto auto;
+		grid-template-columns: 9rem auto auto auto;
 		grid-gap: 1px;
 		padding: 1px;
 		color: black;
@@ -158,15 +158,17 @@ $highlightBlur: 15px;
 	}
 
 	.startersArea2>div.col2 {
-		background-color: #5f3b16;
+		background-color: #80562d;
+		color: black;
 	}
 
 	.startersArea2>div.col3 {
 		background-color: rgb(121, 121, 121);
+		color: black;
 	}
 
 	.startersArea2>div.col4 {
-		background-color: rgb(172, 147, 9);
+		background-color: rgb(165, 148, 53);
 	}
 
 	.startersArea>div.blank {

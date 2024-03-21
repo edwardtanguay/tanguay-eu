@@ -2,7 +2,7 @@ interface IProps {
 	handleFlip: () => void;
 }
 
-export const StartersArea2 = ({handleFlip}: IProps) => {
+export const StartersArea2 = ({ handleFlip }: IProps) => {
 	return (
 		<div className="startersArea startersArea2">
 			<div className="flip"><button onClick={handleFlip}>FLIP</button></div>
@@ -20,6 +20,16 @@ export const StartersArea2 = ({handleFlip}: IProps) => {
 			</div>
 
 			<div className="col1">React</div>
+			<div className="col2"></div>
+			<div className="col3">
+				<ul>
+					<li><a href="https://github.com/edwardtanguay/vite-react-menu-browserrouter" target="_blank">vite-react-menu-browserrouter</a> - React Router 6.4</li>
+					<li><a href="https://github.com/edwardtanguay/vite-react-menu-createbrowserrouter" target="_blank">vite-react-menu-createbrowserrouter</a> - React Router 6.4</li>
+				</ul>
+			</div>
+			<div className="col4"></div>
+
+			<div className="col1">Node/Express</div>
 			<div className="col2"></div>
 			<div className="col3"></div>
 			<div className="col4"></div>

@@ -10,7 +10,7 @@
 	- x add constant height
 	- x change colors
 	- x real texts
-- add content
+- .. add content
 
 
 
