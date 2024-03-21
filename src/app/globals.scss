@@ -169,4 +169,19 @@ $highlightBlur: 15px;
 			font-size: 1.5rem;
 		}
 	}
+	.startersArea>div.flip {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		button {
+			background-color: rgb(13, 13, 44);
+			padding: .5rem;
+			font-size: 2rem;
+			border-radius: .5rem;
+		&:hover {
+			background-color: rgb(20, 20, 68);
+		}
+		}
+		
+	}
 }

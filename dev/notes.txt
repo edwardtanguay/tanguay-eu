@@ -1,8 +1,10 @@
-- .. make blank starters page
-- publish Go project with site
-- list out all technologies with spaces for rest: Showcases, Templates, Datapod
-	- bronze, silver gold theme
-
+- x make blank starters page
+- x publish Go project with site
+- x list out all technologies with spaces for rest: Showcases, Templates, Datapod
+	- x bronze, silver gold theme
+- .. make flip link that shows Links, Forays, Howtos
+	- x make link
+	- .. make it hide/show current
 
 
 

@@ -3,7 +3,7 @@ export default function Starters() {
 	return (
 		<>
 			<div className="startersArea">
-				<div className="blank"></div>
+				<div className="flip"><button>FLIP</button></div>
 				<div className="header">
 					<div className="title">Showcases</div>
 					<div className="subtitle">Projects created while learning the basics of a technology, useful for returning to find basic code that works.</div>
