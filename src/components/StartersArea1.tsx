@@ -4,7 +4,7 @@ interface IProps {
 
 export const StartersArea1 = ({ handleFlip }: IProps) => {
 	return (
-		<div className="startersArea">
+		<div className="startersArea startersArea1">
 			<div className="flip"><button onClick={handleFlip}>FLIP</button></div>
 			<div className="header">
 				<div className="title">1 Links</div>
@@ -36,9 +36,7 @@ export const StartersArea1 = ({ handleFlip }: IProps) => {
 
 			<div className="col1">Go</div>
 			<div className="col2">
-				<ul>
-					<li><a href="https://github.com/edwardtanguay/showcase-go-basics" target="_blank">showcase-go-basics</a> - notes on Frontend Masters course</li>
-				</ul>
+			
 			</div>
 			<div className="col3"></div>
 			<div className="col4"></div>

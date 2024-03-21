@@ -6,7 +6,9 @@
 	- x make link
 	- x make it hide/show current
 	- x make button work
-	- add numbers
+	- x add numbers
+	- x add constant height
+	- .. change colors
 
 
 

@@ -4,7 +4,7 @@ interface IProps {
 
 export const StartersArea2 = ({handleFlip}: IProps) => {
 	return (
-		<div className="startersArea">
+		<div className="startersArea startersArea2">
 			<div className="flip"><button onClick={handleFlip}>FLIP</button></div>
 			<div className="header">
 				<div className="title">4 Showcases</div>
