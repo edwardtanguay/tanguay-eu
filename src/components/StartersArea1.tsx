@@ -2,21 +2,21 @@ interface IProps {
 	handleFlip: () => void;
 }
 
-export const StartersArea2 = ({handleFlip}: IProps) => {
+export const StartersArea1 = ({handleFlip}: IProps) => {
 	return (
 		<div className="startersArea">
 			<div className="flip"><button onClick={handleFlip}>FLIP</button></div>
 			<div className="header">
-				<div className="title">Showcases</div>
-				<div className="subtitle">Projects created while learning the basics of a technology, useful for returning to find basic code that works.</div>
+				<div className="title">Links</div>
+				<div className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt, voluptas fuga sapiente ducimus autem necessitatibus dicta omnis temporibus alias nihil, distinctio nobis quia. Qui quas quis harum! Suscipit, hic.</div>
 			</div>
 			<div className="header">
-				<div className="title">Templates</div>
-				<div className="subtitle">Base projects that are good starters for projects, e.g. have basic settings and tools set up for specific purposes.</div>
+				<div className="title">Forays</div>
+				<div className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt, voluptas fuga sapiente ducimus autem necessitatibus dicta omnis temporibus alias nihil, distinctio nobis quia. Qui quas quis harum! Suscipit, hic.</div>
 			</div>
 			<div className="header">
-				<div className="title">Datapods</div>
-				<div className="subtitle">Datapod is a framework for creating schemas that automatically create a CRUD user experience to manage these items.</div>
+				<div className="title">Howtos</div>
+				<div className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt, voluptas fuga sapiente ducimus autem necessitatibus dicta omnis temporibus alias nihil, distinctio nobis quia. Qui quas quis harum! Suscipit, hic.</div>
 			</div>
 
 			<div className="col1">React</div>

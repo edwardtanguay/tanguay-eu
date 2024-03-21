@@ -4,7 +4,8 @@
 	- x bronze, silver gold theme
 - .. make flip link that shows Links, Forays, Howtos
 	- x make link
-	- .. make it hide/show current
+	- x make it hide/show current
+	- .. make button work
 
 
 
