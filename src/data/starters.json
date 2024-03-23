@@ -26,5 +26,19 @@
 		"title": "Datapod for Vite-React",
 		"description": "has basic Datapod parsing",
 		"url": "https://github.com/edwardtanguay/datapod-for-vite-react-core"
+	},
+	{
+		"technology": "viteJsdom",
+		"section": "templates",
+		"title": "Vite JS-DOM mini-framework",
+		"description": "custom state management",
+		"url": "https://github.com/edwardtanguay/jsdomtodo"
+	},
+	{
+		"technology": "viteJsdom",
+		"section": "templates",
+		"title": "Vite JS-DOM Team Project",
+		"description": "practice JS-DOM skills",
+		"url": "https://github.com/edwardtanguay/jsdom-team-project-2023"
 	}
 ]

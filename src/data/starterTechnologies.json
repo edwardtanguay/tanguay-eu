@@ -16,6 +16,14 @@
 		"title": "Vue"
 	},
 	{
+		"idCode": "viteJsdom",
+		"title": "Vite JS-DOM"
+	},
+	{
+		"idCode": "jsdom",
+		"title": "HTML/JS/CSS"
+	},
+	{
 		"idCode": "go",
 		"title": "Go"
 	},
