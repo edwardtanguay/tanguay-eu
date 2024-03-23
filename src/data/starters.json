@@ -30,7 +30,7 @@
 	{
 		"technology": "viteJsdom",
 		"section": "templates",
-		"title": "Vite JS-DOM mini-framework",
+		"title": "Vite JS-DOM todo app",
 		"description": "custom state management",
 		"url": "https://github.com/edwardtanguay/jsdomtodo"
 	},
@@ -40,5 +40,12 @@
 		"title": "Vite JS-DOM Team Project",
 		"description": "practice JS-DOM skills",
 		"url": "https://github.com/edwardtanguay/jsdom-team-project-2023"
+	},
+	{
+		"technology": "jsdom",
+		"section": "templates",
+		"title": "html-css-js-learn-template",
+		"description": "learn JS-DOM site structure",
+		"url": "https://github.com/edwardtanguay/html-css-js-learn-template"
 	}
 ]
