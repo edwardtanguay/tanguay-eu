@@ -54,5 +54,12 @@
 		"title": "et401-astro-start-blank",
 		"description": "learn Astro basics",
 		"url": "https://github.com/edwardtanguay/et401-astro-start-blank"
+	},
+	{
+		"technology": "astro",
+		"section": "links",
+		"title": "my notes on Jason Lengstorf's class",
+		"description": "learn Astro basics",
+		"url": "https://tanguay-eu.vercel.app/howtos/850"
 	}
 ]
