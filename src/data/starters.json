@@ -47,5 +47,12 @@
 		"title": "html-css-js-learn-template",
 		"description": "learn JS-DOM site structure",
 		"url": "https://github.com/edwardtanguay/html-css-js-learn-template"
+	},
+	{
+		"technology": "astro",
+		"section": "showcases",
+		"title": "et401-astro-start-blank",
+		"description": "learn Astro basics",
+		"url": "https://github.com/edwardtanguay/et401-astro-start-blank"
 	}
 ]

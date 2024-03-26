@@ -82,5 +82,9 @@
 	{
 		"idCode": "flask",
 		"title": "Flask"
+	},
+	{
+		"idCode": "bash",
+		"title": "bash"
 	}
 ]
