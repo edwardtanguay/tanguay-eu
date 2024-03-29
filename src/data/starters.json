@@ -68,5 +68,13 @@
 		"title": "svelte-learn-showcase",
 		"description": "showcase site made during course",
 		"url": "https://github.com/edwardtanguay/svelte-learn-showcase"
+	},
+	{
+		"technology": "svelte",
+		"section": "links",
+		"title": "my notes on Rich Harris' class",
+		"description": "Svelte Fundamentals",
+		"url": "https://tanguay-eu.vercel.app/howtos/851"
+	},
 	}
 ]
