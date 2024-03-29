@@ -61,5 +61,12 @@
 		"title": "my notes on Jason Lengstorf's class",
 		"description": "learn Astro basics",
 		"url": "https://tanguay-eu.vercel.app/howtos/850"
+	},
+	{
+		"technology": "svelte",
+		"section": "showcases",
+		"title": "svelte-learn-showcase",
+		"description": "showcase site made during course",
+		"url": "https://github.com/edwardtanguay/svelte-learn-showcase"
 	}
 ]
