@@ -72,8 +72,22 @@
 	{
 		"technology": "svelte",
 		"section": "links",
-		"title": "my notes on Rich Harris' class",
+		"title": "my notes on Rich Harris' Svelte class",
 		"description": "Svelte Fundamentals",
 		"url": "https://tanguay-eu.vercel.app/howtos/851"
+	},
+	{
+		"technology": "sveltekit",
+		"section": "showcases",
+		"title": "sveltekit-learn-showcase",
+		"description": "showcase site made during course",
+		"url": "https://github.com/edwardtanguay/sveltekit-learn-showcase"
+	},
+	{
+		"technology": "sveltekit",
+		"section": "links",
+		"title": "my notes on Rich Harris' SvelteKit class",
+		"description": "SvelteKit Fundamentals",
+		"url": "https://tanguay-eu.vercel.app/howtos/852"
 	}
 ]
