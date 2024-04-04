@@ -8,6 +8,14 @@
 		"title": "Node/Express"
 	},
 	{
+		"idCode": "svelte",
+		"title": "Svelte"
+	},
+	{
+		"idCode": "sveltekit",
+		"title": "Sveltekit"
+	},
+	{
 		"idCode": "nuxt",
 		"title": "Nuxt"
 	},
@@ -38,14 +46,6 @@
 	{
 		"idCode": "angular",
 		"title": "Angular 17"
-	},
-	{
-		"idCode": "svelte",
-		"title": "Svelte"
-	},
-	{
-		"idCode": "svelteKit",
-		"title": "SvelteKit"
 	},
 	{
 		"idCode": "electron",
