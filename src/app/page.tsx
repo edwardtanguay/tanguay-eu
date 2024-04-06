@@ -21,6 +21,10 @@ export default function Home() {
 				</li>
 				<ProjectListing url="https://nuxt-learning-showcase.vercel.app" title="Nuxt Learning Showcase" github="https://github.com/edwardtanguay/nuxt-learning-showcase" />
 			</ul>
+			<h3 className="text-xl mb-3 text-yellow-100">Starters</h3>
+			<ul className="list-disc ml-4 mb-5">
+				<ProjectListing url="https://github.com/edwardtanguay/starter-mongo-mongoose-atlas" title="This is code that connects to a MongoDB Atlas database via Mongo and Mongoose." />
+			</ul>
 			<h3 className="text-xl mb-3 text-yellow-100">Templates</h3>
 			<ul className="list-disc ml-4 mb-5">
 				<ProjectListing url="https://github.com/edwardtanguay/vite-react-menu-browserrouter" title="Vite-React Site with React Router 6.4 BrowserRouter" />
@@ -34,6 +38,7 @@ export default function Home() {
 				<ProjectListing url="https://github.com/edwardtanguay/vite-react-node-api-one-directory" title="This is a one-directory project that has Vite React frontend, Node/Express backend, JSON Server, meant to be used as a local application that has a JSON-file database." />
 				<ProjectListing url="https://github.com/edwardtanguay/nuxt-starter-site" title="This site is a Nuxt site created with npx nuxi init and has minimal page routing and Tailwind styling to serve as a simple base site for applications." />
 			</ul>
+
 			<h3 className="text-xl mb-3 text-yellow-100">Learning Resources</h3>
 			<ul className="list-disc ml-4 mb-5">
 				<ProjectListing url="https://www.youtube.com/watch?v=8sXRyHI3bLw" title="Web Development In 2024 - A Practical Guide" />
