@@ -89,5 +89,12 @@
 		"title": "my notes on Rich Harris' SvelteKit class",
 		"description": "SvelteKit Fundamentals",
 		"url": "https://tanguay-eu.vercel.app/howtos/852"
+	},
+	{
+		"technology": "qwik",
+		"section": "links",
+		"title": "my notes on Miško Hevery's Qwik class",
+		"description": "background and fundamentals",
+		"url": "https://tanguay-eu.vercel.app/howtos/854"
 	}
 ]
