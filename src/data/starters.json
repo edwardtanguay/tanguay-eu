@@ -96,5 +96,12 @@
 		"title": "my notes on Miško Hevery's Qwik class",
 		"description": "background and fundamentals",
 		"url": "https://tanguay-eu.vercel.app/howtos/854"
+	},
+	{
+		"technology": "qwik",
+		"section": "showcases",
+		"title": "qwik-learn-showcase",
+		"description": "showcase site made during course",
+		"url": "https://github.com/edwardtanguay/qwik-learn-showcase"
 	}
 ]
