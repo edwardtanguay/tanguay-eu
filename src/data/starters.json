@@ -107,7 +107,7 @@
 	{
 		"technology": "solidjs",
 		"section": "links",
-		"title": "my notes on Carniato's Reactivity with SolidJS course",
+		"title": "my notes on Ryan Carniato's Reactivity with SolidJS course",
 		"description": "background and fundamentals",
 		"url": "https://tanguay-eu.vercel.app/howtos/855"
 	},
