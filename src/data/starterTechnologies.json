@@ -64,8 +64,8 @@
 		"title": "Astro"
 	},
 	{
-		"idCode": "solid",
-		"title": "Solid"
+		"idCode": "solidjs",
+		"title": "SolidJS"
 	},
 	{
 		"idCode": "qwik",
