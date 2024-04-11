@@ -93,7 +93,7 @@
 	{
 		"technology": "qwik",
 		"section": "links",
-		"title": "my notes on Miško Hevery's Qwik class",
+		"title": "my notes on Miško Hevery's Qwik course",
 		"description": "background and fundamentals",
 		"url": "https://tanguay-eu.vercel.app/howtos/854"
 	},
@@ -103,5 +103,19 @@
 		"title": "qwik-learn-showcase",
 		"description": "showcase site made during course",
 		"url": "https://github.com/edwardtanguay/qwik-learn-showcase"
+	},
+	{
+		"technology": "solidjs",
+		"section": "links",
+		"title": "my notes on Carniato's Reactivity with SolidJS course",
+		"description": "background and fundamentals",
+		"url": "https://tanguay-eu.vercel.app/howtos/855"
+	},
+	{
+		"technology": "solidjs",
+		"section": "showcases",
+		"title": "solidjs-learn-showcase",
+		"description": "showcase site made during course",
+		"url": "https://github.com/edwardtanguay/solidjs-learn-showcase"
 	}
 ]
