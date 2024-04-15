@@ -124,5 +124,12 @@
 		"title": "electron-learn-showcase",
 		"description": "showcase site made during course",
 		"url": "https://github.com/edwardtanguay/electron-learn-showcase"
+	},
+	{
+		"technology": "electron",
+		"section": "links",
+		"title": "my notes on Steve Kinney's Electron course",
+		"description": "background and fundamentals",
+		"url": "https://tanguay-eu.vercel.app/howtos/856"
 	}
 ]
