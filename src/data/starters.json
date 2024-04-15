@@ -117,5 +117,12 @@
 		"title": "solidjs-learn-showcase",
 		"description": "showcase site made during course",
 		"url": "https://github.com/edwardtanguay/solidjs-learn-showcase"
+	},
+	{
+		"technology": "electron",
+		"section": "showcases",
+		"title": "electron-learn-showcase",
+		"description": "showcase site made during course",
+		"url": "https://github.com/edwardtanguay/electron-learn-showcase"
 	}
 ]
