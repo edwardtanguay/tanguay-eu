@@ -130,6 +130,20 @@
 		"section": "links",
 		"title": "my notes on Steve Kinney's Electron course",
 		"description": "background and fundamentals",
+		"url": "https://tanguay-eu.vercel.app/howtos/857"
+	},
+	{
+		"technology": "reactNative",
+		"section": "showcases",
+		"title": "reactnative-learn-showcase",
+		"description": "showcase site made during course",
+		"url": "https://github.com/edwardtanguay/reactnative-learn-showcase"
+	},
+	{
+		"technology": "reactNative",
+		"section": "links",
+		"title": "my notes on Kadi Kraman's React Native course",
+		"description": "background and fundamentals",
 		"url": "https://tanguay-eu.vercel.app/howtos/856"
 	}
 ]
