@@ -145,5 +145,19 @@
 		"title": "my notes on Kadi Kraman's React Native course",
 		"description": "background and fundamentals",
 		"url": "https://tanguay-eu.vercel.app/howtos/856"
+	},
+	{
+		"technology": "flutter",
+		"section": "showcases",
+		"title": "flutter-learn-showcase",
+		"description": "showcase site made during course",
+		"url": "https://github.com/edwardtanguay/flutter-learn-showcase"
+	},
+	{
+		"technology": "flutter",
+		"section": "links",
+		"title": "my notes on Maximiliano Firtman's Flutter course",
+		"description": "background and fundamentals",
+		"url": "https://tanguay-eu.vercel.app/howtos/858"
 	}
 ]
