@@ -21,9 +21,10 @@ export default function Home() {
 				</li>
 				<ProjectListing url="https://nuxt-learning-showcase.vercel.app" title="Nuxt Learning Showcase" github="https://github.com/edwardtanguay/nuxt-learning-showcase" />
 			</ul>
-			<h3 className="text-xl mb-3 text-yellow-100">Starters</h3>
+			<h3 className="text-xl mb-3 text-yellow-100">Starter Tools</h3>
 			<ul className="list-disc ml-4 mb-5">
-				<ProjectListing url="https://github.com/edwardtanguay/starter-mongo-mongoose-atlas" title="This is code that connects to a MongoDB Atlas database via Mongo and Mongoose." />
+				<ProjectListing url="https://github.com/edwardtanguay/starter-mongo-mongoose-atlas" title="Mongo/Mongoose connection from CLI" />
+				<ProjectListing url="https://github.com/edwardtanguay/et892-typescript-course-001" title="TypeScript notes to Mike North's TypeScript Fundamentals class" />
 			</ul>
 			<h3 className="text-xl mb-3 text-yellow-100">Templates</h3>
 			<ul className="list-disc ml-4 mb-5">
