@@ -3,10 +3,11 @@
 import { AppContext } from "@/AppContext"
 import { useContext } from "react";
 import { TechnologyRow } from "./TechnologyRow";
+import { SubheaderRow } from "./SubheaderRow";
 
 /* eslint-disable react/no-unescaped-entities */
 export const StartersArea1 = () => {
-	const { handleFlip, frontendDatapodStarterTechnologies } = useContext(AppContext);
+	const { handleFlip, frontendDatapodStarterTechnologies, frontendOtherStarterTechnologies } = useContext(AppContext);
 
 	return (
 		<div className="startersArea startersArea1">
@@ -30,7 +31,14 @@ export const StartersArea1 = () => {
 				</div>
 			</div>
 
+			<SubheaderRow title="Datapod Technologies" color="yellow"/>
 			{frontendDatapodStarterTechnologies.map(fst => {
+				return (
+					<TechnologyRow sectionArea={1} idCode={fst.idCode} title={fst.title} key={fst.idCode} />
+				)
+			})}
+			<SubheaderRow title="Other Technologies" color="#ccc" />
+			{frontendOtherStarterTechnologies.map(fst => {
 				return (
 					<TechnologyRow sectionArea={1} idCode={fst.idCode} title={fst.title} key={fst.idCode} />
 				)

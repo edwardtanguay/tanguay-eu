@@ -3,9 +3,10 @@
 import { AppContext } from "@/AppContext";
 import { useContext } from "react";
 import { TechnologyRow } from "./TechnologyRow";
+import { SubheaderRow } from "./SubheaderRow";
 
 export const StartersArea2 = () => {
-	const { handleFlip, frontendDatapodStarterTechnologies } = useContext(AppContext);
+	const { handleFlip, frontendDatapodStarterTechnologies, frontendOtherStarterTechnologies } = useContext(AppContext);
 
 	return (
 		<div className="startersArea startersArea2">
@@ -29,7 +30,14 @@ export const StartersArea2 = () => {
 				</div>
 			</div>
 
+			<SubheaderRow title="Datapod Frameworks" color="yellow"/>
 			{frontendDatapodStarterTechnologies.map(fst => {
+				return (
+					<TechnologyRow sectionArea={2} idCode={fst.idCode} title={fst.title} key={fst.idCode} />
+				)
+			})}
+			<SubheaderRow title="Other Technologies" color="#ccc" />
+			{frontendOtherStarterTechnologies.map(fst => {
 				return (
 					<TechnologyRow sectionArea={2} idCode={fst.idCode} title={fst.title} key={fst.idCode} />
 				)
