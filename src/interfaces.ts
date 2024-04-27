@@ -58,6 +58,7 @@ export type FrontendStarter = z.infer<typeof FrontendStarterSchema>;
 
 export const FrontendStarterTechnologySchema = z.object({
 	idCode: z.string(),
-	title: z.string(),
+	kind: z.string(),
+	title: z.string()
 });
 export type FrontendStarterTechnology = z.infer<typeof FrontendStarterTechnologySchema>;

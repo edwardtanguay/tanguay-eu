@@ -2,11 +2,10 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { AppContext } from "@/AppContext";
 import { useContext } from "react";
-import { StarterCell } from "./StarterCell";
 import { TechnologyRow } from "./TechnologyRow";
 
 export const StartersArea2 = () => {
-	const { handleFlip, frontendStarterTechnologies } = useContext(AppContext);
+	const { handleFlip, frontendDatapodStarterTechnologies } = useContext(AppContext);
 
 	return (
 		<div className="startersArea startersArea2">
@@ -30,7 +29,7 @@ export const StartersArea2 = () => {
 				</div>
 			</div>
 
-			{frontendStarterTechnologies.map(fst => {
+			{frontendDatapodStarterTechnologies.map(fst => {
 				return (
 					<TechnologyRow sectionArea={2} idCode={fst.idCode} title={fst.title} key={fst.idCode} />
 				)

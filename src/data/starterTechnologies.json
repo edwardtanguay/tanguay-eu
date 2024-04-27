@@ -1,90 +1,112 @@
 [
 	{
 		"idCode": "react",
+		"kind": "datapod",
 		"title": "React"
 	},
 	{
 		"idCode": "nodeExpress",
+		"kind": "other",
 		"title": "Node/Express"
 	},
 	{
 		"idCode": "svelte",
+		"kind": "other",
 		"title": "Svelte"
 	},
 	{
 		"idCode": "sveltekit",
+		"kind": "datapod",
 		"title": "Sveltekit"
 	},
 	{
 		"idCode": "nuxt",
+		"kind": "datapod",
 		"title": "Nuxt"
 	},
 	{
 		"idCode": "vue",
+		"kind": "other",
 		"title": "Vue"
 	},
 	{
 		"idCode": "viteJsdom",
+		"kind": "other",
 		"title": "Vite JS-DOM"
 	},
 	{
 		"idCode": "jsdom",
+		"kind": "other",
 		"title": "HTML/CSS/JS"
 	},
 	{
 		"idCode": "go",
+		"kind": "other",
 		"title": "Go"
 	},
 	{
 		"idCode": "next",
+		"kind": "datapod",
 		"title": "Next.js"
 	},
 	{
 		"idCode": "python",
+		"kind": "other",
 		"title": "Python"
 	},
 	{
 		"idCode": "angular",
+		"kind": "datapod",
 		"title": "Angular 17"
 	},
 	{
 		"idCode": "electron",
+		"kind": "datapod",
 		"title": "Electron"
 	},
 	{
 		"idCode": "reactNative",
+		"kind": "other",
 		"title": "React Native"
 	},
 	{
 		"idCode": "flutter",
+		"kind": "other",
 		"title": "Flutter"
 	},
 	{
 		"idCode": "astro",
+		"kind": "other",
 		"title": "Astro"
 	},
 	{
 		"idCode": "solidjs",
+		"kind": "other",
 		"title": "SolidJS"
 	},
 	{
 		"idCode": "qwik",
+		"kind": "other",
 		"title": "Qwik"
 	},
 	{
 		"idCode": "phoenix",
+		"kind": "datapod",
 		"title": "Phoenix"
 	},
 	{
 		"idCode": "laravel",
+		"kind": "other",
 		"title": "Laravel"
 	},
 	{
 		"idCode": "flask",
+		"kind": "datapod",
 		"title": "Flask"
 	},
 	{
 		"idCode": "bash",
+		"kind": "other",
 		"title": "bash"
 	}
 ]

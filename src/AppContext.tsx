@@ -19,7 +19,8 @@ interface IAppContext {
 	setAreaShowing: (areaShowing: AreaShowing) => void;
 	handleFlip: () => void;
 	frontendStarters: FrontendStarter[],
-	frontendStarterTechnologies: FrontendStarterTechnology[]
+	frontendDatapodStarterTechnologies: FrontendStarterTechnology[]
+	frontendOtherStarterTechnologies: FrontendStarterTechnology[]
 }
 
 interface IAppProvider {
@@ -36,7 +37,8 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [filteredForays, setFilteredForays] = useState<IForay[]>([]);
 	const [areaShowing, setAreaShowing] = useState<AreaShowing>('startersArea2');
 	const [frontendStarters, setFrontendStarters] = useState<FrontendStarter[]>([]);
-	const [frontendStarterTechnologies, setFrontendStarterTechnologies] = useState<FrontendStarterTechnology[]>([]);
+	const [frontendDatapodStarterTechnologies, setFrontendDatapodStarterTechnologies] = useState<FrontendStarterTechnology[]>([]);
+	const [frontendOtherStarterTechnologies, setFrontendOtherStarterTechnologies] = useState<FrontendStarterTechnology[]>([]);
 
 	useEffect(() => {
 		setHowtos(appModel.howtos);
@@ -44,7 +46,8 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setForays(appModel.forays);
 		setFilteredForays(appModel.forays);
 		setFrontendStarters(appModel.frontendStarters)
-		setFrontendStarterTechnologies(appModel.frontendStarterTechnologies)
+		setFrontendDatapodStarterTechnologies(appModel.frontendDatapodStarterTechnologies)
+		setFrontendOtherStarterTechnologies(appModel.frontendOtherStarterTechnologies)
 	}, []);
 
 	const handleFlip = () => {
@@ -69,7 +72,8 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				setAreaShowing,
 				handleFlip,
 				frontendStarters,
-				frontendStarterTechnologies
+				frontendDatapodStarterTechnologies,
+				frontendOtherStarterTechnologies
 			}}
 		>
 			{children}

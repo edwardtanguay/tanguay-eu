@@ -6,7 +6,7 @@ import { TechnologyRow } from "./TechnologyRow";
 
 /* eslint-disable react/no-unescaped-entities */
 export const StartersArea1 = () => {
-	const { handleFlip, frontendStarterTechnologies } = useContext(AppContext);
+	const { handleFlip, frontendDatapodStarterTechnologies } = useContext(AppContext);
 
 	return (
 		<div className="startersArea startersArea1">
@@ -30,7 +30,7 @@ export const StartersArea1 = () => {
 				</div>
 			</div>
 
-			{frontendStarterTechnologies.map(fst => {
+			{frontendDatapodStarterTechnologies.map(fst => {
 				return (
 					<TechnologyRow sectionArea={1} idCode={fst.idCode} title={fst.title} key={fst.idCode} />
 				)
