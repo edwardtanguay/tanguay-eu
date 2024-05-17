@@ -159,5 +159,12 @@
 		"title": "my notes on Maximiliano Firtman's Flutter course",
 		"description": "background and fundamentals",
 		"url": "https://tanguay-eu.vercel.app/howtos/858"
+	},
+	{
+		"technology": "nodeExpress",
+		"section": "templates",
+		"title": "Minimum TypeScript Node/Express API with router/handler structure and one route that reads from JSON file, README instructions on how to publish at Render",
+		"description": "background and fundamentals",
+		"url": "https://github.com/edwardtanguay/node-express-typescript-api-routers-handlers-readonly-json"
 	}
 ]
