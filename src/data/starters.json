@@ -163,8 +163,8 @@
 	{
 		"technology": "nodeExpress",
 		"section": "templates",
-		"title": "Minimum TypeScript Node/Express API with router/handler structure and one route that reads from JSON file, README instructions on how to publish at Render",
-		"description": "background and fundamentals",
+		"title": "minimal TypeScript Node/Express API",
+		"description": "with router/handler structure and one route that reads from JSON file, README instructions on how to publish at Render",
 		"url": "https://github.com/edwardtanguay/node-express-typescript-api-routers-handlers-readonly-json"
 	}
 ]
