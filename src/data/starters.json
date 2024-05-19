@@ -166,5 +166,19 @@
 		"title": "minimal TypeScript Node/Express API",
 		"description": "Quotes API with router/handler structure and one route that reads from JSON file, README instructions show how to publish at Render",
 		"url": "https://github.com/edwardtanguay/node-express-typescript-api-routers-handlers-readonly-json"
+	},
+	{
+		"technology": "nodeExpress",
+		"section": "templates",
+		"title": "React and Node/Express API in one site",
+		"description": "a Vite-React site that has an API in the /backend directory and so acts as a local application that has access to the file system, databaes, etc.",
+		"url": "https://github.com/edwardtanguay/template-simple-react-with-node-express-api-one-directory"
+	},
+	{
+		"technology": "react",
+		"section": "templates",
+		"title": "React and Node/Express API in one site",
+		"description": "a Vite-React site that has an API in the /backend directory and so acts as a local application that has access to the file system, databaes, etc.",
+		"url": "https://github.com/edwardtanguay/template-simple-react-with-node-express-api-one-directory"
 	}
 ]
