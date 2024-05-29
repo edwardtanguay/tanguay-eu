@@ -9,8 +9,9 @@ export const Header = () => {
 
 	return (
 		<div>
-			<div className="flex justify-between">
-				<h1 className="text-4xl mb-3">Edward's Tech Site</h1>
+			<div>
+				<h1 className="text-4xl">Edward's Tech Site</h1>
+				<h2 className='mb-3 italic'>this site made with <span className='text-orange-300'>Next.js 13</span>, see <a className='text-orange-300' target="_blank" href="https://github.com/edwardtanguay/tanguay-eu">the code</a></h2>
 			</div>
 			<nav className="bg-slate-900 p-2 mainnav mb-6">
 				<ul className="flex gap-3">
