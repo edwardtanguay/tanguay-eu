@@ -20,6 +20,7 @@ export default function Home() {
 					<a href="https://github.com/edwardtanguay/jsdom-team-project-2023">GitHub for JS-DOM Team Project 2023</a>
 				</li>
 				<ProjectListing url="https://nuxt-learning-showcase.vercel.app" title="Nuxt Learning Showcase" github="https://github.com/edwardtanguay/nuxt-learning-showcase" />
+				<ProjectListing url="https://coggle.it/diagram/ZE-oXwAjwnrf-l8P/t/web-development" title="Web Development Mind Map" />
 			</ul>
 			<h3 className="text-xl mb-3 text-yellow-100">Starter Tools</h3>
 			<ul className="list-disc ml-4 mb-5">
