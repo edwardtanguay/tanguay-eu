@@ -40,6 +40,7 @@ export default function Home() {
 				<ProjectListing url="https://github.com/edwardtanguay/vite-react-node-api-one-directory" title="This is a one-directory project that has Vite React frontend, Node/Express backend, JSON Server, meant to be used as a local application that has a JSON-file database." />
 				<ProjectListing url="https://github.com/edwardtanguay/nuxt-starter-site" title="This site is a Nuxt site created with npx nuxi init and has minimal page routing and Tailwind styling to serve as a simple base site for applications." />
 				<ProjectListing url="https://template-vue3-typescript-tailwind-router.vercel.app" title="Vue 3 starter template with TypeScript, Tailwind, Router, Vitest Unit-Testing" github="https://github.com/edwardtanguay/template-vue3-typescript-tailwind-router" />
+				<ProjectListing url="https://github.com/edwardtanguay/vue3-showcase-site" title="vue3-showcase-site with list/single book pages, 404 page, JSON file datasource" />
 			</ul>
 
 			<h3 className="text-xl mb-3 text-yellow-100">Learning Resources</h3>
