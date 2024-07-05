@@ -44,6 +44,7 @@ export default function Home() {
 				<ProjectListing url="https://github.com/edwardtanguay/go-showcase-examples" title="go-showcase-examples" />
 				<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Showcase - backend" />
 				<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Showcase - frontend" />
+				<ProjectListing url="https://github.com/edwardtanguay/python-showcase-examples" title="python-showcase-examples" />
 			</ul>
 
 			<h3 className="text-xl mb-3 text-yellow-100">Learning Resources</h3>
