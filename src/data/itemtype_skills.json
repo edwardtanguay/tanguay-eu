@@ -1,0 +1,212 @@
+[
+	{
+		"dpodId": "k42fNC",
+		"categories": "go setup",
+		"title": "Install Go on Windows",
+		"body": "- see: [Install Go on Windows and create and compile program](https://tanguay-eu.vercel.app/howtos/349)",
+		"extras": "$order=1"
+	},
+	{
+		"dpodId": "gik8oT",
+		"categories": "go setup",
+		"title": "Install Go on Linux",
+		"body": "- see: [Install Go on a new Hetzner Debian machine and make universal executable Go program](https://tanguay-eu.vercel.app/howtos/865)",
+		"extras": "$order=1"
+	},
+	{
+		"dpodId": "iJf0O3",
+		"categories": "go variables",
+		"title": "Display a string and random number with a Printf",
+		"body": "- here's one solution##variableandrandom",
+		"extras": "$order=1.2"
+	},
+	{
+		"dpodId": "sCurtZ",
+		"categories": "go variables",
+		"title": "Create a variable outside and inside a function and print them out with println",
+		"body": "- note **var =** and **:=**\n- note also there is no import##varsinandoutfnc",
+		"extras": "$order=1.4"
+	},
+	{
+		"dpodId": "UvNzaX",
+		"categories": "go files",
+		"title": "Create a fileExists function with a compound if statement",
+		"body": "- note the semicolon##compoinnddnif",
+		"extras": "$order=4;$idCode=fileExistsCompound"
+	},
+	{
+		"dpodId": "Sv46IY",
+		"categories": "go files",
+		"title": "Create a function to print out file's size and modification time",
+		"body": "- note the Go format date for yyyy-MM-dd HH:mm:ss##thesizemodtime",
+		"extras": "$idCode=fileSizeModtime"
+	},
+	{
+		"dpodId": "4hpY85",
+		"categories": "go files",
+		"title": "Create a function writeFile that takes fileName, content and writes the file to disk",
+		"body": "- note the two kinds of equal signs##thewrirtefilesok",
+		"extras": "$idCode=writefileingo"
+	},
+	{
+		"dpodId": "uNgNWD",
+		"categories": "go files",
+		"title": "Create a function getLinesFromFile to read a text file and return a slice containing the lines",
+		"body": "- not that ReadFile returns a slice of bytes##thewritetofile",
+		"extras": "$idCode=thewritetofile222"
+	},
+	{
+		"dpodId": "eHiCeL",
+		"categories": "go files",
+		"title": "- Create functions to create and delete directories",
+		"body": "\t- createNestedDirectories(\"output/images\")",
+		"extras": "- createNestedDirectories(\"output/data\")"
+	},
+	{
+		"dpodId": "kczoIW",
+		"categories": "go files",
+		"title": "Create function getFiles that return a list of all JSON files in a given directory",
+		"body": "- note the second parameter in filepath.Walk is a function##getalljsonsfiles",
+		"extras": "$idCode=getalljsonsfiles"
+	},
+	{
+		"dpodId": "qYPNtn",
+		"categories": "go url",
+		"title": "Create function getUrlParts which accepts a url and returns base host url and Map of query variables",
+		"body": "- note that the values in urlInfo.Query() are arrays, so you have to take the first item out##thequeryvars",
+		"extras": "$idCode=thequeryvars"
+	},
+	{
+		"dpodId": "GooVDv",
+		"categories": "go json",
+		"title": "Convert a slice of structs to JSON text and save to a JSON file",
+		"body": "- note that struct properties which are in PascalCase\n- in Go, the visibility of struct fields\n\t- is determined by the capitalization of the first letter\n\t- this is a part of Go's conventions for exporting identifiers##gojsonsjosj",
+		"extras": "$idCode=gojsonsjosj"
+	},
+	{
+		"dpodId": "s1QpqM",
+		"categories": "go json",
+		"title": "Load JSON file and transform into slice of structs",
+		"body": "- note that the struct key mappings HtmlName-->name and Color-->textColor##theecnodingjson",
+		"extras": "$idCode=theecnodingjson"
+	},
+	{
+		"dpodId": "qyZ0nv",
+		"categories": "linux find",
+		"title": "find all files in current directory that have \"string\" in the name",
+		"body": "- `find . -maxdepth 1 -name \"*string*\" -exec ls -ld {} +`##themaxdepthsdkf",
+		"extras": ""
+	},
+	{
+		"dpodId": "z4i3IH",
+		"categories": "go documentation",
+		"title": "find quick documentation on packages and functions",
+		"body": "- use **go fmt**\n- note you have to have a module (go.mod)##tthebothsidfearfind",
+		"extras": ""
+	},
+	{
+		"dpodId": "DkscTL",
+		"categories": "go functions",
+		"title": "create a function with a naked return",
+		"body": "- naked return is best used in short functions to improve readability##nakedruetrnsgo",
+		"extras": ""
+	},
+	{
+		"dpodId": "mGrJpr",
+		"categories": "go testing",
+		"title": "write a test for simple function",
+		"body": "- you can either click on \"run test\" or type `go test`##thetestingokok",
+		"extras": ""
+	},
+	{
+		"dpodId": "BuLx0Q",
+		"categories": "go structs",
+		"title": "create a struct Framework with name/yearCreate, then a method \"display\" to display it, use it twice",
+		"body": "- note line 16, 17, instances are created with braces and properties in order##structmethodsoij",
+		"extras": ""
+	},
+	{
+		"dpodId": "k9tJuZ",
+		"categories": "go errorHandling",
+		"title": "create a struct with method to change a property and handle errors on it: Employee with name/department/conferences and method registerForSalesConference",
+		"body": "- note the use of a pointer in line 11##errohandlisnginstruc",
+		"extras": ""
+	},
+	{
+		"dpodId": "B7l26z",
+		"categories": "go generics",
+		"title": "create a function that takes a dog age and returns the human age, make the function be able to accept an int or float64",
+		"body": "- note you don't need to specify the type that is being sent, it will be recognized by the function##thecodeforgen",
+		"extras": ""
+	},
+	{
+		"dpodId": "vvkb7d",
+		"categories": "go functions",
+		"title": "create a function called StringFilter that accepts a string slice and a filter function that is performed on each string",
+		"body": "- notice that you send an anonymous function to the function that takes a function as a parameter##thefuncaspaam",
+		"extras": ""
+	},
+	{
+		"dpodId": "7DZ2tu",
+		"categories": "go defer",
+		"title": "write a function CreateFile(fileName, content) that creates and writes content to a file",
+		"body": "- the defer statement forces the statement to be executed after the surrounding function returns, either on normal return or by an panic##dothedefer",
+		"extras": ""
+	},
+	{
+		"dpodId": "XUBbxV",
+		"categories": "go interfaces",
+		"title": "Make a circle and rectangle struct, each with a method getArea, and then make an interface which has a getArea method",
+		"body": "- note that getArea of circle and rectangle have the same signature as interface##thegointerinterface",
+		"extras": ""
+	},
+	{
+		"dpodId": "2tk2SU",
+		"categories": "go interfaces",
+		"title": "Make use of the Stringer interface by creating a String method for a struct",
+		"body": "- all you have to do is create a method called String with return type string##reportsstringers",
+		"extras": ""
+	},
+	{
+		"dpodId": "9NW9Uy",
+		"categories": "go interfaces",
+		"title": "Make a function called PrintAnything that accepts any parameter type and prints informationa about it",
+		"body": "- you have to use the empty interface##ttheemptysexample",
+		"extras": ""
+	},
+	{
+		"dpodId": "4hFObm",
+		"categories": "go cli",
+		"title": "Add colors to the output of a CLI app",
+		"body": "- `go get github.com/fatih/color`##tehgredgreen",
+		"extras": ""
+	},
+	{
+		"dpodId": "6OYA3u",
+		"categories": "go concurrency",
+		"title": "Create a fetchUrl() function that gets and displays data from URLs using concurrency",
+		"body": "- note that the \"for range urls\" is used simply to print the string received from the same number of channels##concurr2222",
+		"extras": ""
+	},
+	{
+		"dpodId": "BPmMX8",
+		"categories": "go concurency",
+		"title": "Make a concurrency function MakePayment which displays the amount received, but if nothing is received within 1 second, it prints \"nothing received\"",
+		"body": "- func main sleeps 2 seconds to make sure it doesn't end a split second before makePayment is run##nothingrecevrecev",
+		"extras": ""
+	},
+	{
+		"dpodId": "XtQwbG",
+		"categories": "go concurrency",
+		"title": "Create a fetchUrl() function that gets and displays data from URLs using WaitGroup",
+		"body": "- note wg.Add(1) increments the WaitGroup counter##waitgroupsexample",
+		"extras": ""
+	},
+	{
+		"dpodId": "PlWML0",
+		"categories": "go concurrency",
+		"title": "Create a debate example using concurrency which emulates two speakers taking turns using a microphone to speak random phrases",
+		"body": "- note that you can add as many speakers as you like##thedeabuexamplskd",
+		"extras": ""
+	}
+]
