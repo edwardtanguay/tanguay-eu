@@ -15,7 +15,7 @@ export default function Page({ params }: { params: { id: string } }) {
                   <div className="text-yellow-400 smallcaps text-md text-opacity-70">
                      SKILL:{' '}
                      {qdat.smartDateWithYear(skill.dpodWhenCreated)} -{' '}
-                     <span dangerouslySetInnerHTML={{ __html: skill.category }}></span>
+                     {skill.category} {skill.subcategory}
                   </div>
                   <div className='text-2xl'>{skill.title}</div>
                </div>

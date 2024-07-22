@@ -112,7 +112,7 @@ export default function SkillSearch() {
 							<div key={index} className="mb-3">
 								<div className="text-yellow-400 smallcaps text-sm text-opacity-70">
 									{qdat.smartDateWithYear(filteredSkill.dpodWhenCreated)} -{' '}
-									<span dangerouslySetInnerHTML={{ __html: filteredSkill.styledCategory }}></span>
+									<span dangerouslySetInnerHTML={{ __html: filteredSkill.styledCategory }}></span> {filteredSkill.subcategory}
 								</div>
 								<div><span className="searchHighlight"></span></div>
 								<Link href={`/skills/${filteredSkill.dpodId}`} className='skillLink' onClick={(e) => { userUxLoadSinglePage() }}>
