@@ -29,7 +29,7 @@ export type Skill = {
 	subcategory: string;
 	title: string;
 	body: string;
-	htmlBody: string;
+	bodyHtml: string;
 	extras: string;
 	selectedForSearch: boolean;
 	styledTitle: string;

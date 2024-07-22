@@ -43,11 +43,11 @@ export const wrapFoundSearchWordsWithClassElement = (text: string, searchText: s
 	}
 }
 
-export const buildOutlineHtml = (body: string) => {
+export const buildOutlineHtml = (body: string, ignoreSingleLineBody = false) => {
 	const lines = qstr.convertStringBlockToLines(body);
 	if (qstr.isEmpty(body)) {
 		return "";
-	} else if (lines.length === 1) {
+	} else if (lines.length === 1 && !ignoreSingleLineBody) {
 		const cleanedBody = qstr.chopLeft(body, "- ");
 		return (
 			'<div class="outline">' + qstr.parseMarkDown(cleanedBody) + "</div>"

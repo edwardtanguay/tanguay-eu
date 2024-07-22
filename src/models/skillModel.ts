@@ -15,7 +15,7 @@ export const buildSkills = () => {
 			subcategory,
 			title: rawSkill.title,
 			body: rawSkill.body,
-			htmlBody: qstr.buildOutlineHtml(rawSkill.body),
+			bodyHtml: qstr.buildOutlineHtml(rawSkill.body, true),
 			extras: rawSkill.extras,
 			selectedForSearch: false,
 			styledTitle: rawSkill.title,
@@ -25,7 +25,7 @@ export const buildSkills = () => {
 	}
 
 	skills.sort((a, b) =>
-		a.dpodWhenCreated > b.dpodWhenCreated ? 1 : -1
+		a.dpodWhenCreated < b.dpodWhenCreated ? 1 : -1
 	);
 	return skills;
 }
