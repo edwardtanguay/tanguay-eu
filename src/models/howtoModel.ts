@@ -2,7 +2,7 @@ import { IHowto } from '@/interfaces';
 import _rawHowtos from '../data/itemtype_howtos.json';
 import * as qstr from '../qtools/qstr';
 
-const rawHowtos:IHowto[] = _rawHowtos as IHowto[]
+const rawHowtos:IHowto[] = _rawHowtos as any[]
 
 export const buildHowtos = () => {
 	let _howtos: IHowto[] = [];
