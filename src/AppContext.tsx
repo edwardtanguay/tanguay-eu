@@ -25,6 +25,7 @@ interface IAppContext {
 	filteredSkills: Skill[];
 	setFilteredSkills: (skills: Skill[]) => void;
 	siteTitle: string;
+	handleToggleShowingSkillPostText: (skill: Skill) => void;
 }
 
 interface IAppProvider {
@@ -71,6 +72,11 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setAreaShowing(_areaShowing);
 	}
 
+	const handleToggleShowingSkillPostText = (skill: Skill) => {
+		skill.showingPostText = !skill.showingPostText;
+		setSkills(structuredClone(skills))
+	}
+
 	return (
 		<AppContext.Provider
 			value={{
@@ -93,7 +99,8 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				skills,
 				filteredSkills,
 				setFilteredSkills,
-				siteTitle
+				siteTitle,
+				handleToggleShowingSkillPostText
 			}}
 		>
 			{children}

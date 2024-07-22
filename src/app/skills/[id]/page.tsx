@@ -1,11 +1,14 @@
 'use client';
+import { useContext } from 'react';
 import * as appModel from '../../../models/model';
 import * as qdat from '../../../qtools/qdat';
 import '../../outline.scss';
+import { AppContext } from '@/AppContext';
 
 export default function Page({ params }: { params: { id: string } }) {
    const { id } = params;
    const skill = appModel.skills.find(m => String(m.dpodId) === id);
+   const { handleToggleShowingSkillPostText } = useContext(AppContext);
 
    return (
       <>
@@ -13,7 +16,7 @@ export default function Page({ params }: { params: { id: string } }) {
             <>
                <div className='border-slate-600 bg-gray-950 border p-5 mt-6'>
                   <div className="text-yellow-400 smallcaps text-md text-opacity-70">
-                     SKILL:{' '}
+                     <span onClick={() => handleToggleShowingSkillPostText(skill)}>SKILL</span>:{' '}
                      {qdat.smartDateWithYear(skill.dpodWhenCreated)} -{' '}
                      {skill.category} {skill.subcategory}
                   </div>
