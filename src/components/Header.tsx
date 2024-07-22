@@ -1,16 +1,18 @@
 'use client';
+import { AppContext } from '@/AppContext';
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
-import * as config from '../config';
+import { useContext } from 'react';
 
 /* eslint-disable react/no-unescaped-entities */
 export const Header = () => {
 	const activeSegment = useSelectedLayoutSegment();
+	const { siteTitle } = useContext(AppContext);
 
 	return (
 		<div>
 			<div>
-				<h1 className="text-4xl">Edward's Tech Site</h1>
+				<h1 className="text-4xl">{siteTitle}</h1>
 				<h2 className='mb-3 italic'>this site made with <span className='text-orange-300'>Next.js 13</span>, see <a className='text-orange-300' target="_blank" href="https://github.com/edwardtanguay/tanguay-eu">the code</a></h2>
 			</div>
 			<nav className="bg-slate-900 p-2 mainnav mb-6">

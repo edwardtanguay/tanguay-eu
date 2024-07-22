@@ -24,6 +24,7 @@ interface IAppContext {
 	skills: Skill[]
 	filteredSkills: Skill[];
 	setFilteredSkills: (skills: Skill[]) => void;
+	siteTitle: string;
 }
 
 interface IAppProvider {
@@ -44,6 +45,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [frontendOtherStarterTechnologies, setFrontendOtherStarterTechnologies] = useState<FrontendStarterTechnology[]>([]);
 	const [skills, setSkills] = useState<Skill[]>([]);
 	const [filteredSkills, setFilteredSkills] = useState<Skill[]>([]);
+	const [siteTitle, setSiteTitle] = useState("");
 
 	useEffect(() => {
 		setHowtos(appModel.howtos);
@@ -55,6 +57,13 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setFrontendOtherStarterTechnologies(appModel.frontendOtherStarterTechnologies)
 		setSkills(appModel.skills);
 		setFilteredSkills(appModel.skills);
+		let siteMode = process.env.NEXT_PUBLIC_SITE_MODE;
+		if (siteMode === 'development') {
+			setSiteTitle("Edward's LOCAL TECH SITE");
+		} else {
+			setSiteTitle("Edward's Tech Site");
+		}
+
 	}, []);
 
 	const handleFlip = () => {
@@ -83,7 +92,8 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				frontendOtherStarterTechnologies,
 				skills,
 				filteredSkills,
-				setFilteredSkills
+				setFilteredSkills,
+				siteTitle
 			}}
 		>
 			{children}

@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 let siteMode = process.env.SITE_MODE;
 
-const pageTitle = siteMode === 'development' ? "LOCAL TECH SITE" : "Edward's Tech Site";
+const pageTitle = siteMode === 'development' ? "Edward's LOCAL TECH SITE" : "Edward's Tech Site";
 
 export const metadata: Metadata = {
   title: pageTitle,
