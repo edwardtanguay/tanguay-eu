@@ -4,13 +4,19 @@ import * as qstr from '../qtools/qstr';
 
 const rawSkills:RawSkill[] = _rawSkills as RawSkill[]
 
+const baseSkillsUrl = 'https://tanguay-eu.vercel.app/skills';
+
 const buildPostText = (skill: Skill) => {
 	return `
 ${skill.category.toUpperCase()} ${skill.subcategory.toUpperCase()} SKILL: ${skill.title}
 
 ${qstr.cleanContentOfOutlineImageMarkers(skill.body)}
 
-https://tanguay-eu.vercel.app/skills/${skill.dpodId}
+${baseSkillsUrl}/${skill.dpodId}
+
+=============================================================================================
+
+[SKILL: ${skill.title}](https://tanguay-eu.vercel.app/skills/${skill.dpodId})
 	`.trim();
 }
 
