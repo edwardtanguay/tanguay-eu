@@ -6,7 +6,9 @@ import { AppProvider } from '../AppContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const pageTitle = "Edward's Tech Site";
+let siteMode = process.env.SITE_MODE;
+
+const pageTitle = siteMode === 'development' ? "LOCAL TECH SITE" : "Edward's Tech Site";
 
 export const metadata: Metadata = {
   title: pageTitle,
