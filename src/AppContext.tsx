@@ -45,7 +45,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [frontendOtherStarterTechnologies, setFrontendOtherStarterTechnologies] = useState<FrontendStarterTechnology[]>([]);
 	const [skills, setSkills] = useState<Skill[]>([]);
 	const [filteredSkills, setFilteredSkills] = useState<Skill[]>([]);
-	const [siteTitle, setSiteTitle] = useState("");
+	const [siteTitle, setSiteTitle] = useState("Edward's Tech Site");
 
 	useEffect(() => {
 		setHowtos(appModel.howtos);
