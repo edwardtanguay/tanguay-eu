@@ -16,14 +16,14 @@ export default function Page({ params }: { params: { id: string } }) {
             <>
                <div className='border-slate-600 bg-gray-950 border p-5 mt-6'>
                   <div className="text-yellow-400 smallcaps text-md text-opacity-70">
-                     <span onClick={() => handleToggleShowingSkillPostText(skill)}>SKILL</span>:{' '}
+                     <span onClick={(e) => handleToggleShowingSkillPostText(skill, e)}>SKILL</span>:{' '}
                      {qdat.smartDateWithYear(skill.dpodWhenCreated)} -{' '}
                      {skill.category} {skill.subcategory}
                   </div>
                   <div className='text-2xl'>{skill.title}</div>
                </div>
                {skill.showingPostText && (
-               <textarea value="testing" className='text-black font-mono w-full h-[10rem] bg-gray-300' readOnly>
+                  <textarea value={skill.postText} className='text-black font-mono w-full h-[10rem] bg-gray-300' readOnly>
                </textarea>
                )}
                <div className='bg-slate-900 p-3 border-r border-b border-l border-slate-600'>

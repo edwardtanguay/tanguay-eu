@@ -4,10 +4,21 @@ import * as qstr from '../qtools/qstr';
 
 const rawSkills:RawSkill[] = _rawSkills as RawSkill[]
 
+const buildPostText = (skill: Skill) => {
+	return `
+${skill.category.toUpperCase()} ${skill.subcategory.toUpperCase()} SKILL: ${skill.title}
+
+${qstr.cleanContentOfOutlineImageMarkers(skill.body)}
+
+https://tanguay-eu.vercel.app/skills/${skill.dpodId}
+	`.trim();
+}
+
 export const buildSkills = () => {
 	const skills: Skill[] = [];
 	for (const rawSkill of rawSkills) {
 		const [ category, subcategory ] = qstr.breakIntoParts(rawSkill.categories, ' ');
+
 		const skill: Skill = {
 			dpodId: rawSkill.dpodId,
 			dpodWhenCreated: rawSkill.dpodWhenCreated,
@@ -20,8 +31,11 @@ export const buildSkills = () => {
 			selectedForSearch: false,
 			styledTitle: rawSkill.title,
 			styledCategory: category,
-			showingPostText: false
+			showingPostText: false,
+			postText: ''
 		};
+
+		skill.postText = buildPostText(skill)
 		skills.push(skill);
 	}
 

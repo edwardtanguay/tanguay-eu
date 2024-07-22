@@ -25,7 +25,7 @@ interface IAppContext {
 	filteredSkills: Skill[];
 	setFilteredSkills: (skills: Skill[]) => void;
 	siteTitle: string;
-	handleToggleShowingSkillPostText: (skill: Skill) => void;
+	handleToggleShowingSkillPostText: (skill: Skill, e: React.MouseEvent<HTMLSpanElement>) => void;
 }
 
 interface IAppProvider {
@@ -72,7 +72,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setAreaShowing(_areaShowing);
 	}
 
-	const handleToggleShowingSkillPostText = (skill: Skill) => {
+	const handleToggleShowingSkillPostText = (skill: Skill, e: React.MouseEvent) => {
 		skill.showingPostText = !skill.showingPostText;
 		setSkills(structuredClone(skills))
 	}

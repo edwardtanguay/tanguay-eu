@@ -251,7 +251,7 @@
 		"dpodId": "X3Jeds",
 		"dpodWhenCreated": "2024-07-22 16:51:56",
 		"categories": "go api",
-		"title": "Create an API that outputs a HTML page at the \"/\" route",
+		"title": "Create an API that outputs an HTML page at the \"/\" route",
 		"body": "- note that the order of response/request is backwards from Node/Express##theinfosonj",
 		"extras": ""
 	}

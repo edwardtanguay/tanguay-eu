@@ -376,3 +376,28 @@ export const smartPlural = (number: number, singularNoun: string, pluralNoun: st
 	r += number === 1 ? singularNoun : pluralNoun;
 	return r;
 }
+
+export const cleanContentOfOutlineImageMarkers = (content: string): string => {
+	const lines = qstr.convertStringBlockToLines(content);
+	const cleanedLines: string[] = [];
+	for (const line of lines) {
+		const parts = qstr.breakIntoParts(line, '##');
+		const cleanedLine = parts[0];
+		cleanedLines.push(cleanedLine);
+	}
+	const newContent = qstr.convertLinesToStringBlock(cleanedLines);
+	return newContent;
+}
+
+export const convertLinesToStringBlock = (lines: string[]) => {
+	let r = "";
+	let index = 0;
+	for (const line of lines) {
+		r += line;
+		if (index != lines.length - 1) {
+			r += "\n";
+		}
+		index++;
+	}
+	return r;
+};
