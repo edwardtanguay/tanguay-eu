@@ -203,8 +203,8 @@
 		"dpodId": "wCIzfw",
 		"dpodWhenCreated": "2024-07-22 09:30:55",
 		"categories": "go interfaces",
-		"title": "Make a function called PrintAnything that accepts any parameter type and prints informationa about it",
-		"body": "- you have to use the empty interface##ttheemptysexample",
+		"title": "Make a function called PrintAnything that accepts any parameter type and prints information about it",
+		"body": "- you have to use the empty interface##ttheemptysexample\n- in this case, interface{} is like TypeScript's any",
 		"extras": ""
 	},
 	{
@@ -268,7 +268,15 @@
 		"dpodWhenCreated": "2024-07-23 00:14:12",
 		"categories": "go api",
 		"title": "Create an API route handling function and then a unit test to test it",
-		"body": "- uncomment the code on the left to emulate a status that is not 200 OK\n- full code is here: https://github.com/edwardtanguay/go-showcase-examples/tree/dev/01620-api-handler##apitestinggo",
+		"body": "- to run the test, simply click on the \"run test\" text above the test function\n- uncomment the code on the left in line 11 to emulate a status that is not 200 OK\n- full code is here: https://github.com/edwardtanguay/go-showcase-examples/tree/dev/01620-api-handler##apitestinggo",
+		"extras": ""
+	},
+	{
+		"dpodId": "3ytqu2",
+		"dpodWhenCreated": "2024-07-23 00:56:35",
+		"categories": "go website",
+		"title": "Use the Go standard library template to create a website with variables from a struct",
+		"body": "- you have to create a data object, then in the HTML, you have access to all of the properties##gowevtemplate",
 		"extras": ""
 	}
 ]
