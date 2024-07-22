@@ -254,5 +254,13 @@
 		"title": "Create an API that outputs an HTML page at the \"/\" route",
 		"body": "- note that the order of response/request is backwards from Node/Express##theinfosonj",
 		"extras": ""
+	},
+	{
+		"dpodId": "3Oaygc",
+		"dpodWhenCreated": "2024-07-22 23:36:49",
+		"categories": "go api",
+		"title": "Create an API with an HTML info router at \"/\" and a FrameworkRouteHandler function that serves a JSON array of JavaScript frameworks",
+		"body": "- note that if you send JSON, you need to sent the content type as well, see line 11##apiahandleriroute",
+		"extras": ""
 	}
 ]
