@@ -23,7 +23,7 @@ export default function Page({ params }: { params: { id: string } }) {
                   <div className='text-2xl'>{skill.title}</div>
                </div>
                {skill.showingPostText && (
-                  <textarea value={skill.postText} className='text-black font-mono w-full h-[15rem] bg-gray-300' readOnly>
+                  <textarea value={skill.postText} className='text-black font-mono w-full h-[25rem] bg-gray-300' readOnly>
                </textarea>
                )}
                <div className='bg-slate-900 p-3 border-r border-b border-l border-slate-600'>
