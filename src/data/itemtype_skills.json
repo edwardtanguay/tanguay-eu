@@ -147,7 +147,7 @@
 		"dpodId": "98CxfD",
 		"dpodWhenCreated": "2024-07-22 09:30:48",
 		"categories": "go structs",
-		"title": "Create a struct called Framework with name/yearCreate, then a method \"display\" to display it, use it twice",
+		"title": "Create a struct called Framework with name/yearCreated, then a method \"display\" to display it, use it twice",
 		"body": "- note line 16, 17, instances are created with braces and properties in order##structmethodsoij",
 		"extras": ""
 	},
