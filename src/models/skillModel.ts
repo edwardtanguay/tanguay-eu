@@ -19,7 +19,8 @@ export const buildSkills = () => {
 			extras: rawSkill.extras,
 			selectedForSearch: false,
 			styledTitle: rawSkill.title,
-			styledCategory: category
+			styledCategory: category,
+			showingPostText: false
 		};
 		skills.push(skill);
 	}

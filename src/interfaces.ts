@@ -34,6 +34,7 @@ export type Skill = {
 	selectedForSearch: boolean;
 	styledTitle: string;
 	styledCategory: string;
+	showingPostText: boolean;
 }
 
 export interface IForay {
