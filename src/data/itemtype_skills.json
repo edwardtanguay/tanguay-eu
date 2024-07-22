@@ -147,7 +147,7 @@
 		"dpodId": "98CxfD",
 		"dpodWhenCreated": "2024-07-22 09:30:48",
 		"categories": "go structs",
-		"title": "Create a struct Framework with name/yearCreate, then a method \"display\" to display it, use it twice",
+		"title": "Create a struct called Framework with name/yearCreate, then a method \"display\" to display it, use it twice",
 		"body": "- note line 16, 17, instances are created with braces and properties in order##structmethodsoij",
 		"extras": ""
 	},
@@ -155,7 +155,7 @@
 		"dpodId": "c9HenL",
 		"dpodWhenCreated": "2024-07-22 09:30:49",
 		"categories": "go errorHandling",
-		"title": "Create a struct with method to change a property and handle errors on it: Employee with name/department/conferences and method registerForSalesConference",
+		"title": "Create a struct with method to change a property and handle errors on it: Employee with name/department/conferences and method AddSalesConference",
 		"body": "- note the use of a pointer in line 11##errohandlisnginstruc",
 		"extras": ""
 	},
