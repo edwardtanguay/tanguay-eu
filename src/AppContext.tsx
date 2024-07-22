@@ -22,6 +22,8 @@ interface IAppContext {
 	frontendDatapodStarterTechnologies: FrontendStarterTechnology[];
 	frontendOtherStarterTechnologies: FrontendStarterTechnology[];
 	skills: Skill[]
+	filteredSkills: Skill[];
+	setFilteredSkills: (skills: Skill[]) => void;
 }
 
 interface IAppProvider {
@@ -41,6 +43,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [frontendDatapodStarterTechnologies, setFrontendDatapodStarterTechnologies] = useState<FrontendStarterTechnology[]>([]);
 	const [frontendOtherStarterTechnologies, setFrontendOtherStarterTechnologies] = useState<FrontendStarterTechnology[]>([]);
 	const [skills, setSkills] = useState<Skill[]>([]);
+	const [filteredSkills, setFilteredSkills] = useState<Skill[]>([]);
 
 	useEffect(() => {
 		setHowtos(appModel.howtos);
@@ -51,6 +54,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setFrontendDatapodStarterTechnologies(appModel.frontendDatapodStarterTechnologies)
 		setFrontendOtherStarterTechnologies(appModel.frontendOtherStarterTechnologies)
 		setSkills(appModel.skills);
+		setFilteredSkills(appModel.skills);
 	}, []);
 
 	const handleFlip = () => {
@@ -77,7 +81,9 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				frontendStarters,
 				frontendDatapodStarterTechnologies,
 				frontendOtherStarterTechnologies,
-				skills
+				skills,
+				filteredSkills,
+				setFilteredSkills
 			}}
 		>
 			{children}

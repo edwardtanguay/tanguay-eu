@@ -17,6 +17,9 @@ export const buildSkills = () => {
 			body: rawSkill.body,
 			htmlBody: qstr.buildOutlineHtml(rawSkill.body),
 			extras: rawSkill.extras,
+			selectedForSearch: false,
+			styledTitle: rawSkill.title,
+			styledCategory: category
 		};
 		skills.push(skill);
 	}

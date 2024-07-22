@@ -31,6 +31,9 @@ export type Skill = {
 	body: string;
 	htmlBody: string;
 	extras: string;
+	selectedForSearch: boolean;
+	styledTitle: string;
+	styledCategory: string;
 }
 
 export interface IForay {
