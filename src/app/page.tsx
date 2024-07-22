@@ -42,7 +42,7 @@ export default function Home() {
 				<ProjectListing url="https://template-vue3-typescript-tailwind-router.vercel.app" title="Vue 3 starter template with TypeScript, Tailwind, Router, Vitest Unit-Testing" github="https://github.com/edwardtanguay/template-vue3-typescript-tailwind-router" />
 				<ProjectListing url="https://github.com/edwardtanguay/vue3-showcase-site" title="vue3-showcase-site with list/single book pages, 404 page, JSON file datasource" />
 				<ProjectListing url="https://github.com/edwardtanguay/go-showcase-examples" title="go-showcase-examples" />
-				<ProjectListing url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" />
+				<ProjectListing url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
 				<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Showcase - backend" />
 				<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Showcase - frontend" />
 				<ProjectListing url="https://github.com/edwardtanguay/python-showcase-examples" title="python-showcase-examples" />
