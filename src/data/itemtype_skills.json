@@ -278,5 +278,13 @@
 		"title": "Use the Go standard library template to create a website with variables from a struct",
 		"body": "- you have to create a data object, then in the HTML, you have access to all of the properties##gowevtemplate",
 		"extras": ""
+	},
+	{
+		"dpodId": "oQmjRu",
+		"dpodWhenCreated": "2024-07-23 01:31:23",
+		"categories": "go makefile",
+		"title": "Create make file to more easily build a Go executable",
+		"body": "- \"make build\" will create the executable, \"make clean\" will delete it\n- this worked on my Ubuntu without installing anything\n- on Windows, even in Git Bash, make can't be found, installation is involved##createstheexecmake",
+		"extras": ""
 	}
 ]
