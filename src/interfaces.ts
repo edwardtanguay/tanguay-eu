@@ -25,7 +25,8 @@ export type RawSkill = {
 export type Skill = {
 	dpodId: string;
 	dpodWhenCreated: string;
-	categories: string;
+	category: string;
+	subcategory: string;
 	title: string;
 	body: string;
 	htmlBody: string;

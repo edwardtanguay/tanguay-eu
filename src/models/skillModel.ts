@@ -7,10 +7,12 @@ const rawSkills:RawSkill[] = _rawSkills as RawSkill[]
 export const buildSkills = () => {
 	const skills: Skill[] = [];
 	for (const rawSkill of rawSkills) {
+		const [ category, subcategory ] = qstr.breakIntoParts(rawSkill.categories, ' ');
 		const skill: Skill = {
 			dpodId: rawSkill.dpodId,
 			dpodWhenCreated: rawSkill.dpodWhenCreated,
-			categories: rawSkill.categories,
+			category,
+			subcategory,
 			title: rawSkill.title,
 			body: rawSkill.body,
 			htmlBody: qstr.buildOutlineHtml(rawSkill.body),
