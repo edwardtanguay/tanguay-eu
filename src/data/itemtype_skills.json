@@ -262,5 +262,13 @@
 		"title": "Create an API with an HTML info router at \"/\" and a FrameworkRouteHandler function that serves a JSON array of JavaScript frameworks",
 		"body": "- note that if you send JSON, you need to sent the content type as well, see line 11##apiahandleriroute",
 		"extras": ""
+	},
+	{
+		"dpodId": "mKjcCg",
+		"dpodWhenCreated": "2024-07-23 00:14:12",
+		"categories": "go api",
+		"title": "Create an API route handling function and then a unit test to test it",
+		"body": "- uncomment the code on the left to emulate a status that is not 200 OK\n- full code is here: https://github.com/edwardtanguay/go-showcase-examples/tree/dev/01620-api-handler##apitestinggo",
+		"extras": ""
 	}
 ]
