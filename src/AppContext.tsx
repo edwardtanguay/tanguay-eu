@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { createContext } from 'react';
-import { IHowto, IForay, AreaShowing, FrontendStarter, FrontendStarterTechnology } from './interfaces';
+import { IHowto, IForay, AreaShowing, FrontendStarter, FrontendStarterTechnology, Skill } from './interfaces';
 import * as appModel from './models/model';
 
 interface IAppContext {
@@ -18,9 +18,10 @@ interface IAppContext {
 	areaShowing: AreaShowing;
 	setAreaShowing: (areaShowing: AreaShowing) => void;
 	handleFlip: () => void;
-	frontendStarters: FrontendStarter[],
-	frontendDatapodStarterTechnologies: FrontendStarterTechnology[]
-	frontendOtherStarterTechnologies: FrontendStarterTechnology[]
+	frontendStarters: FrontendStarter[];
+	frontendDatapodStarterTechnologies: FrontendStarterTechnology[];
+	frontendOtherStarterTechnologies: FrontendStarterTechnology[];
+	skills: Skill[]
 }
 
 interface IAppProvider {
@@ -39,6 +40,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [frontendStarters, setFrontendStarters] = useState<FrontendStarter[]>([]);
 	const [frontendDatapodStarterTechnologies, setFrontendDatapodStarterTechnologies] = useState<FrontendStarterTechnology[]>([]);
 	const [frontendOtherStarterTechnologies, setFrontendOtherStarterTechnologies] = useState<FrontendStarterTechnology[]>([]);
+	const [skills, setSkills] = useState<Skill[]>([]);
 
 	useEffect(() => {
 		setHowtos(appModel.howtos);
@@ -48,6 +50,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setFrontendStarters(appModel.frontendStarters)
 		setFrontendDatapodStarterTechnologies(appModel.frontendDatapodStarterTechnologies)
 		setFrontendOtherStarterTechnologies(appModel.frontendOtherStarterTechnologies)
+		setSkills(appModel.skills);
 	}, []);
 
 	const handleFlip = () => {
@@ -73,7 +76,8 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				handleFlip,
 				frontendStarters,
 				frontendDatapodStarterTechnologies,
-				frontendOtherStarterTechnologies
+				frontendOtherStarterTechnologies,
+				skills
 			}}
 		>
 			{children}

@@ -13,6 +13,25 @@ export interface IHowto {
 	styledCategory: string;
 }
 
+export type RawSkill = {
+	dpodId: string;
+	dpodWhenCreated: string;
+	categories: string;
+	title: string;
+	body: string;
+	extras: string;
+}
+
+export type Skill = {
+	dpodId: string;
+	dpodWhenCreated: string;
+	categories: string;
+	title: string;
+	body: string;
+	htmlBody: string;
+	extras: string;
+}
+
 export interface IForay {
 	id: number;
 	category: string;
