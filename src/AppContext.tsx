@@ -58,6 +58,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setSkills(appModel.skills);
 		setFilteredSkills(appModel.skills);
 		let siteMode = process.env.NEXT_PUBLIC_SITE_MODE;
+		alert(siteMode)
 		if (siteMode === 'development') {
 			setSiteTitle("Edward's LOCAL TECH SITE");
 		} else {
