@@ -180,7 +180,7 @@
 		"dpodWhenCreated": "2024-07-22 09:30:52",
 		"categories": "go defer",
 		"title": "Write a function CreateFile(fileName, content) that creates and writes content to a file",
-		"body": "- the defer statement forces the statement to be executed after the surrounding function returns, either on normal return or by an panic##dothedefer",
+		"body": "- the defer statement forces the statement to be executed after the surrounding function returns, either on normal return or by a panic##dothedefer",
 		"extras": ""
 	},
 	{
@@ -245,6 +245,14 @@
 		"categories": "go concurrency",
 		"title": "Create a debate example using concurrency which emulates two speakers taking turns using a microphone to speak random phrases",
 		"body": "- note that you can add as many speakers as you like##thedeabuexamplskd",
+		"extras": ""
+	},
+	{
+		"dpodId": "X3Jeds",
+		"dpodWhenCreated": "2024-07-22 16:51:56",
+		"categories": "go api",
+		"title": "Create an API that outputs a HTML page at the \"/\" route",
+		"body": "- notes that the order of response/request is backwards from Node/Express##theinfosonj",
 		"extras": ""
 	}
 ]
