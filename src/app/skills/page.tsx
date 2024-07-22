@@ -8,8 +8,6 @@ export default function Howtos() {
 	const {skills} = useContext(AppContext);
 
 	return (
-		<>
-		<h2>There are {skills.length} skills</h2>
 		<section>
 				{skills.map(skill => {
 					return (
@@ -17,6 +15,5 @@ export default function Howtos() {
 				)
 			})}
 		</section>
-		</>
 	);
 }

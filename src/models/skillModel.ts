@@ -20,7 +20,7 @@ export const buildSkills = () => {
 	}
 
 	skills.sort((a, b) =>
-		a.dpodWhenCreated < b.dpodWhenCreated ? 1 : -1
+		a.dpodWhenCreated > b.dpodWhenCreated ? 1 : -1
 	);
 	return skills;
 }

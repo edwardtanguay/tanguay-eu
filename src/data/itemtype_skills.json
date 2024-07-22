@@ -1,7 +1,7 @@
 [
 	{
 		"dpodId": "AiqPOa",
-		"dpodWhenCreated": "2024-07-21 23:57:41",
+		"dpodWhenCreated": "2024-07-22 09:30:30",
 		"categories": "go setup",
 		"title": "Install Go on Windows",
 		"body": "- see: [Install Go on Windows and create and compile program](https://tanguay-eu.vercel.app/howtos/349)",
@@ -9,7 +9,7 @@
 	},
 	{
 		"dpodId": "NJt9VP",
-		"dpodWhenCreated": "2024-07-21 23:58:23",
+		"dpodWhenCreated": "2024-07-22 09:30:31",
 		"categories": "go setup",
 		"title": "Install Go on Linux",
 		"body": "- see: [Install Go on a new Hetzner Debian machine and make universal executable Go program](https://tanguay-eu.vercel.app/howtos/865)",
@@ -17,7 +17,7 @@
 	},
 	{
 		"dpodId": "9vDYEi",
-		"dpodWhenCreated": "2024-07-22 00:04:33",
+		"dpodWhenCreated": "2024-07-22 09:30:32",
 		"categories": "go setup",
 		"title": "Create, run and compile a hello world",
 		"body": "- **main.go**\n\t-----------------------------------\n\tpackage main\n\n\timport \"fmt\"\n\n\tfunc main() {\n\t\tfmt.Println(\"Hello, World!\")\n\t}\n\t-----------------------------------\n- `go run main.go`\n- `go build main.go`",
@@ -25,7 +25,7 @@
 	},
 	{
 		"dpodId": "oZu6Xo",
-		"dpodWhenCreated": "2024-07-22 06:28:26",
+		"dpodWhenCreated": "2024-07-22 09:30:33",
 		"categories": "go variables",
 		"title": "Display a string and random number with a Printf",
 		"body": "- here's one solution##variableandrandom",
@@ -33,7 +33,7 @@
 	},
 	{
 		"dpodId": "KTZ6WZ",
-		"dpodWhenCreated": "2024-07-22 06:28:26",
+		"dpodWhenCreated": "2024-07-22 09:30:34",
 		"categories": "go variables",
 		"title": "Create a variable outside and inside a function and print them out with println",
 		"body": "- note **var =** and **:=**\n- note also there is no import##varsinandoutfnc",
@@ -41,7 +41,7 @@
 	},
 	{
 		"dpodId": "RkEn3T",
-		"dpodWhenCreated": "2024-07-22 06:28:27",
+		"dpodWhenCreated": "2024-07-22 09:30:35",
 		"categories": "go files",
 		"title": "Create a fileExists function with a compound if statement",
 		"body": "- note the semicolon##compoinnddnif",
@@ -49,7 +49,7 @@
 	},
 	{
 		"dpodId": "bTKz1r",
-		"dpodWhenCreated": "2024-07-22 06:30:34",
+		"dpodWhenCreated": "2024-07-22 09:30:36",
 		"categories": "go files",
 		"title": "Create a function to print out file's size and modification time",
 		"body": "- note the Go format date for yyyy-MM-dd HH:mm:ss##thesizemodtime",
@@ -57,7 +57,7 @@
 	},
 	{
 		"dpodId": "xxfNz3",
-		"dpodWhenCreated": "2024-07-22 06:30:35",
+		"dpodWhenCreated": "2024-07-22 09:30:37",
 		"categories": "go files",
 		"title": "Create a function writeFile that takes fileName, content and writes the file to disk",
 		"body": "- note the two kinds of equal signs##thewrirtefilesok",
@@ -65,7 +65,7 @@
 	},
 	{
 		"dpodId": "ywMAOn",
-		"dpodWhenCreated": "2024-07-22 06:30:36",
+		"dpodWhenCreated": "2024-07-22 09:30:38",
 		"categories": "go files",
 		"title": "Create a function getLinesFromFile to read a text file and return a slice containing the lines",
 		"body": "- not that ReadFile returns a slice of bytes##thewritetofile",
@@ -73,15 +73,15 @@
 	},
 	{
 		"dpodId": "DO8HBo",
-		"dpodWhenCreated": "2024-07-22 06:30:37",
+		"dpodWhenCreated": "2024-07-22 09:30:39",
 		"categories": "go files",
-		"title": "- Create functions to create and delete directories",
+		"title": "Create functions to create and delete directories",
 		"body": "\t- createNestedDirectories(\"output/images\")",
 		"extras": "- createNestedDirectories(\"output/data\")"
 	},
 	{
 		"dpodId": "Pkq4WC",
-		"dpodWhenCreated": "2024-07-22 06:30:38",
+		"dpodWhenCreated": "2024-07-22 09:30:40",
 		"categories": "go files",
 		"title": "Create function getFiles that return a list of all JSON files in a given directory",
 		"body": "- note the second parameter in filepath.Walk is a function##getalljsonsfiles",
@@ -89,7 +89,7 @@
 	},
 	{
 		"dpodId": "xudM7I",
-		"dpodWhenCreated": "2024-07-22 06:30:39",
+		"dpodWhenCreated": "2024-07-22 09:30:41",
 		"categories": "go url",
 		"title": "Create function getUrlParts which accepts a url and returns base host url and Map of query variables",
 		"body": "- note that the values in urlInfo.Query() are arrays, so you have to take the first item out##thequeryvars",
@@ -97,7 +97,7 @@
 	},
 	{
 		"dpodId": "kWhYxx",
-		"dpodWhenCreated": "2024-07-22 06:30:50",
+		"dpodWhenCreated": "2024-07-22 09:30:42",
 		"categories": "go json",
 		"title": "Convert a slice of structs to JSON text and save to a JSON file",
 		"body": "- note that struct properties which are in PascalCase\n- in Go, the visibility of struct fields\n\t- is determined by the capitalization of the first letter\n\t- this is a part of Go's conventions for exporting identifiers##gojsonsjosj",
@@ -105,7 +105,7 @@
 	},
 	{
 		"dpodId": "2EiFjn",
-		"dpodWhenCreated": "2024-07-22 06:30:41",
+		"dpodWhenCreated": "2024-07-22 09:30:43",
 		"categories": "go json",
 		"title": "Load JSON file and transform into slice of structs",
 		"body": "- note that the struct key mappings HtmlName-->name and Color-->textColor##theecnodingjson",
@@ -113,79 +113,79 @@
 	},
 	{
 		"dpodId": "V9mk81",
-		"dpodWhenCreated": "2024-07-22 06:30:42",
+		"dpodWhenCreated": "2024-07-22 09:30:44",
 		"categories": "linux find",
-		"title": "find all files in current directory that have \"string\" in the name",
+		"title": "Find all files in current directory that have \"string\" in the name",
 		"body": "- `find . -maxdepth 1 -name \"*string*\" -exec ls -ld {} +`##themaxdepthsdkf",
 		"extras": ""
 	},
 	{
 		"dpodId": "glirMI",
-		"dpodWhenCreated": "2024-07-22 06:30:43",
+		"dpodWhenCreated": "2024-07-22 09:30:45",
 		"categories": "go documentation",
-		"title": "find quick documentation on packages and functions",
+		"title": "Find quick documentation on packages and functions",
 		"body": "- use **go fmt**\n- note you have to have a module (go.mod)##tthebothsidfearfind",
 		"extras": ""
 	},
 	{
 		"dpodId": "8SanFZ",
-		"dpodWhenCreated": "2024-07-22 06:30:44",
+		"dpodWhenCreated": "2024-07-22 09:30:46",
 		"categories": "go functions",
-		"title": "create a function with a naked return",
+		"title": "Create a function with a naked return",
 		"body": "- naked return is best used in short functions to improve readability##nakedruetrnsgo",
 		"extras": ""
 	},
 	{
 		"dpodId": "6Cqo4l",
-		"dpodWhenCreated": "2024-07-22 06:30:45",
+		"dpodWhenCreated": "2024-07-22 09:30:47",
 		"categories": "go testing",
-		"title": "write a test for simple function",
+		"title": "Write a test for simple function",
 		"body": "- you can either click on \"run test\" or type `go test`##thetestingokok",
 		"extras": ""
 	},
 	{
 		"dpodId": "98CxfD",
-		"dpodWhenCreated": "2024-07-22 06:30:46",
+		"dpodWhenCreated": "2024-07-22 09:30:48",
 		"categories": "go structs",
-		"title": "create a struct Framework with name/yearCreate, then a method \"display\" to display it, use it twice",
+		"title": "Create a struct Framework with name/yearCreate, then a method \"display\" to display it, use it twice",
 		"body": "- note line 16, 17, instances are created with braces and properties in order##structmethodsoij",
 		"extras": ""
 	},
 	{
 		"dpodId": "c9HenL",
-		"dpodWhenCreated": "2024-07-22 06:30:47",
+		"dpodWhenCreated": "2024-07-22 09:30:49",
 		"categories": "go errorHandling",
-		"title": "create a struct with method to change a property and handle errors on it: Employee with name/department/conferences and method registerForSalesConference",
+		"title": "Create a struct with method to change a property and handle errors on it: Employee with name/department/conferences and method registerForSalesConference",
 		"body": "- note the use of a pointer in line 11##errohandlisnginstruc",
 		"extras": ""
 	},
 	{
 		"dpodId": "dhfBXP",
-		"dpodWhenCreated": "2024-07-22 06:30:48",
+		"dpodWhenCreated": "2024-07-22 09:30:50",
 		"categories": "go generics",
-		"title": "create a function that takes a dog age and returns the human age, make the function be able to accept an int or float64",
+		"title": "Create a function that takes a dog age and returns the human age, make the function be able to accept an int or float64",
 		"body": "- note you don't need to specify the type that is being sent, it will be recognized by the function##thecodeforgen",
 		"extras": ""
 	},
 	{
 		"dpodId": "EgvC6D",
-		"dpodWhenCreated": "2024-07-22 06:30:49",
+		"dpodWhenCreated": "2024-07-22 09:30:51",
 		"categories": "go functions",
-		"title": "create a function called StringFilter that accepts a string slice and a filter function that is performed on each string",
+		"title": "Create a function called StringFilter that accepts a string slice and a filter function that is performed on each string",
 		"body": "- notice that you send an anonymous function to the function that takes a function as a parameter##thefuncaspaam",
 		"extras": ""
 	},
 	{
 		"dpodId": "Mi02QZ",
-		"dpodWhenCreated": "2024-07-22 06:30:50",
+		"dpodWhenCreated": "2024-07-22 09:30:52",
 		"categories": "go defer",
-		"title": "write a function CreateFile(fileName, content) that creates and writes content to a file",
+		"title": "Write a function CreateFile(fileName, content) that creates and writes content to a file",
 		"body": "- the defer statement forces the statement to be executed after the surrounding function returns, either on normal return or by an panic##dothedefer",
 		"extras": ""
 	},
 	{
 		"dpodId": "G2aEZR",
-		"dpodWhenCreated": "2024-07-22 06:30:51",
+		"dpodWhenCreated": "2024-07-22 09:30:53",
 		"categories": "go interfaces",
 		"title": "Make a circle and rectangle struct, each with a method getArea, and then make an interface which has a getArea method",
 		"body": "- note that getArea of circle and rectangle have the same signature as interface##thegointerinterface",
@@ -193,7 +193,7 @@
 	},
 	{
 		"dpodId": "i9xVux",
-		"dpodWhenCreated": "2024-07-22 06:30:52",
+		"dpodWhenCreated": "2024-07-22 09:30:54",
 		"categories": "go interfaces",
 		"title": "Make use of the Stringer interface by creating a String method for a struct",
 		"body": "- all you have to do is create a method called String with return type string##reportsstringers",
@@ -201,7 +201,7 @@
 	},
 	{
 		"dpodId": "wCIzfw",
-		"dpodWhenCreated": "2024-07-22 06:30:53",
+		"dpodWhenCreated": "2024-07-22 09:30:55",
 		"categories": "go interfaces",
 		"title": "Make a function called PrintAnything that accepts any parameter type and prints informationa about it",
 		"body": "- you have to use the empty interface##ttheemptysexample",
@@ -209,7 +209,7 @@
 	},
 	{
 		"dpodId": "MarNOZ",
-		"dpodWhenCreated": "2024-07-22 06:30:54",
+		"dpodWhenCreated": "2024-07-22 09:30:56",
 		"categories": "go cli",
 		"title": "Add colors to the output of a CLI app",
 		"body": "- `go get github.com/fatih/color`##tehgredgreen",
@@ -217,7 +217,7 @@
 	},
 	{
 		"dpodId": "CdPb6p",
-		"dpodWhenCreated": "2024-07-22 06:30:55",
+		"dpodWhenCreated": "2024-07-22 09:30:57",
 		"categories": "go concurrency",
 		"title": "Create a fetchUrl() function that gets and displays data from URLs using concurrency",
 		"body": "- note that the \"for range urls\" is used simply to print the string received from the same number of channels##concurr2222",
@@ -225,7 +225,7 @@
 	},
 	{
 		"dpodId": "rklmL6",
-		"dpodWhenCreated": "2024-07-22 06:30:56",
+		"dpodWhenCreated": "2024-07-22 09:30:58",
 		"categories": "go concurency",
 		"title": "Make a concurrency function MakePayment which displays the amount received, but if nothing is received within 1 second, it prints \"nothing received\"",
 		"body": "- func main sleeps 2 seconds to make sure it doesn't end a split second before makePayment is run##nothingrecevrecev",
@@ -233,7 +233,7 @@
 	},
 	{
 		"dpodId": "cY19H0",
-		"dpodWhenCreated": "2024-07-22 06:30:57",
+		"dpodWhenCreated": "2024-07-22 09:30:59",
 		"categories": "go concurrency",
 		"title": "Create a fetchUrl() function that gets and displays data from URLs using WaitGroup",
 		"body": "- note wg.Add(1) increments the WaitGroup counter##waitgroupsexample",
@@ -241,7 +241,7 @@
 	},
 	{
 		"dpodId": "kIbJr7",
-		"dpodWhenCreated": "2024-07-22 06:30:58",
+		"dpodWhenCreated": "2024-07-22 09:31:00",
 		"categories": "go concurrency",
 		"title": "Create a debate example using concurrency which emulates two speakers taking turns using a microphone to speak random phrases",
 		"body": "- note that you can add as many speakers as you like##thedeabuexamplskd",
