@@ -243,7 +243,7 @@
 		"dpodId": "kIbJr7",
 		"dpodWhenCreated": "2024-07-22 09:31:00",
 		"categories": "go concurrency",
-		"title": "Create a debate example using concurrency which emulates two speakers taking turns using a microphone to speak random phrases",
+		"title": "Create a conversation emulation example using concurrency which emulates two speakers taking turns using a microphone to speak random phrases",
 		"body": "- note that you can add as many speakers as you like##thedeabuexamplskd",
 		"extras": ""
 	},
