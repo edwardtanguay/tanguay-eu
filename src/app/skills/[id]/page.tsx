@@ -14,6 +14,7 @@ export default function Page({ params }: { params: { id: string } }) {
       <>
          {skill && (
             <>
+							<p className='mb-4'>look at the solution to the <span className='text-yellow-200'>skill</span> <span>as long as you like, then try to recreate the code from memory</span></p>
                <div className='border-slate-600 bg-gray-950 border p-5 mt-6'>
                   <div className="text-yellow-400 smallcaps text-md text-opacity-70">
                      <span onClick={(e) => handleToggleShowingSkillPostText(skill, e)}>SKILL</span>:{' '}

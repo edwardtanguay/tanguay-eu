@@ -92,7 +92,10 @@ export default function SkillSearch() {
 			) : (
 				<>
 					{skillsAreReady() ? (
-						<p className="text-3xl mb-3">{qstr.smartPlural(filteredSkills.length, 'Skill')}</p>
+						<>
+							<p className='mb-4'>look at the solution to each <span className='text-yellow-200'>skill</span> <span>as long as you like, then try to recreate the code from memory</span></p>
+							<p className="text-3xl mb-3">{qstr.smartPlural(filteredSkills.length, 'Skill')}</p>
+						</>
 					) : (
 						<p className="text-3xl mb-3 flex gap-1">
 							<FaSpinner className="loaderIcon" /> Skills
