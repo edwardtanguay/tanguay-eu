@@ -12,7 +12,7 @@ ${skill.category.toUpperCase()} ${skill.subcategory.toUpperCase()} SKILL: ${skil
 
 ${qstr.cleanContentOfOutlineImageMarkers(skill.body)}
 
-${baseSkillsUrl}/${skill.dpodId}
+SKILL: ${baseSkillsUrl}/${skill.dpodId}
 
 =============================================================================================
 
