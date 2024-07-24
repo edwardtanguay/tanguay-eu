@@ -294,5 +294,13 @@
 		"title": "Make a custom Go module on your GitHub which you can import into other projects",
 		"body": "- create a local Go project that has Go functions organized into files and publish it to a repository, e.g.\n\t- https://github.com/edwardtanguay/gotools##firstfunction\n- set the project up up module with the name of the repository:\n\t- `go mod init github.com/edwardtanguay/gotools`\n- create a new release on GitHub\n\t- \"Releases\"\n\t- \"Created a new release\"\n\t- enter tag version e.g. \"v1.0.0\"\n\t- enter title and description\n\t- \"Publish release\"\n- create another project\n\t- create it as a module\n\t\t- `go mod init tanguay.info/02300-use-custom-module`\n\t- import and use a function in your custom module##importansdfususe\n\t- record the current version in your module file\n\t\t- `go mod tidy`##gotidsjdsy\n- to upgrade to a new version\n\t- make change\n\t- on GitHub make a new release (must begin with \"v\", e.g. \"v1.1.0\")\n\t- go to new version URL at pkg.go.dev e.g. https://pkg.go.dev/github.com/edwardtanguay/gotools@v1.1.0\n\t\t- click button to upgrade, this make take a few minutes\n\t- in projects where you want to upgrade to the new version\n\t\t- `go mod tidy`\n\t\t- click and upgrade##theclickandup",
 		"extras": ""
+	},
+	{
+		"dpodId": "qQuW3K",
+		"dpodWhenCreated": "2024-07-24 10:41:27",
+		"categories": "go pointers",
+		"title": "Create two functions, one where changing the argument values change the external values and one where they do not change",
+		"body": "- BY VALUE: if you simply send a variable to a function e.g. Display, it receives a copy of the variable and so will not change the original variable sent\n- BY REFERENCE: however if you send a variable POINTER to a function e.g. Update, then the original variable is changed\n- note that the second case is how JavaScript objects behave by default, i.e. they are automatically sent by reference to functions##thethepersonpointer",
+		"extras": ""
 	}
 ]
