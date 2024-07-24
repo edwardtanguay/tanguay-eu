@@ -302,5 +302,13 @@
 		"title": "Create two functions, one where changing the argument values change the external values and one where they do not change",
 		"body": "- BY VALUE: if you simply send a variable to a function e.g. Display, it receives a copy of the variable and so will not change the original variable sent\n- BY REFERENCE: however if you send a variable POINTER to a function e.g. Update, then the original variable is changed\n- note that the second case is how JavaScript objects behave by default, i.e. they are automatically sent by reference to functions##thethepersonpointer",
 		"extras": ""
+	},
+	{
+		"dpodId": "c1Cj4S",
+		"dpodWhenCreated": "2024-07-24 13:52:32",
+		"categories": "go sqlite",
+		"title": "Read SQLite database file and print out data from SQL table",
+		"body": "- note for mattn/go-sqlite3 to work, you have to have gcc installed\n\t- Linux:\n\t\t- `sudo apt update`\n\t\t- `sudo apt install build-essential`\n\t- Windows:\n\t\t- https://jmeubank.github.io/tdm-gcc/download\n- get northwind.sqlite from here\n\t- https://edwardtanguay.vercel.app/share\n\t- search for \"sqlite\"##thesqlisjworking",
+		"extras": ""
 	}
 ]
