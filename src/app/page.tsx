@@ -47,6 +47,7 @@ export default function Home() {
 				<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Showcase - backend" />
 				<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Showcase - frontend" />
 				<ProjectListing url="https://github.com/edwardtanguay/python-showcase-examples" title="python-showcase-examples" />
+				<ProjectListing url="https://showcase-react-flow.vercel.app" title="React Flow Showcase" github="https://showcase-react-flow.vercel.app" />
 			</ul>
 
 			<h3 className="text-xl mb-3 text-yellow-100">Learning Resources</h3>
