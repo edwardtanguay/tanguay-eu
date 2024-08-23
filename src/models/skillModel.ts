@@ -29,7 +29,7 @@ export const buildSkills = () => {
 			dpodId: rawSkill.dpodId,
 			dpodWhenCreated: rawSkill.dpodWhenCreated,
 			category,
-			subcategory,
+			subcategory: subcategory ?? '',
 			title: rawSkill.title,
 			body: rawSkill.body,
 			bodyHtml: qstr.buildOutlineHtml(rawSkill.body, true),

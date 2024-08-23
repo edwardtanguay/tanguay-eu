@@ -1,0 +1,322 @@
+[
+	{
+		"dpodId": "AiqPOa",
+		"dpodWhenCreated": "2024-07-22 09:30:30",
+		"categories": "go setup",
+		"title": "Install Go on Windows",
+		"body": "- see: [Install Go on Windows and create and compile program](https://tanguay-eu.vercel.app/howtos/349)",
+		"extras": "$order=1"
+	},
+	{
+		"dpodId": "NJt9VP",
+		"dpodWhenCreated": "2024-07-22 09:30:31",
+		"categories": "go setup",
+		"title": "Install Go on Linux",
+		"body": "- see: [Install Go on a new Hetzner Debian machine and make universal executable Go program](https://tanguay-eu.vercel.app/howtos/865)",
+		"extras": "$order=1"
+	},
+	{
+		"dpodId": "9vDYEi",
+		"dpodWhenCreated": "2024-07-22 09:30:32",
+		"categories": "go setup",
+		"title": "Create, run and compile a hello world",
+		"body": "- **main.go**\n\t-----------------------------------\n\tpackage main\n\n\timport \"fmt\"\n\n\tfunc main() {\n\t\tfmt.Println(\"Hello, World!\")\n\t}\n\t-----------------------------------\n- `go run main.go`\n- `go build main.go`",
+		"extras": "$order=1.4"
+	},
+	{
+		"dpodId": "oZu6Xo",
+		"dpodWhenCreated": "2024-07-22 09:30:33",
+		"categories": "go variables",
+		"title": "Display a string and random number with a Printf",
+		"body": "- here's one solution##variableandrandom",
+		"extras": "$order=1.2"
+	},
+	{
+		"dpodId": "KTZ6WZ",
+		"dpodWhenCreated": "2024-07-22 09:30:34",
+		"categories": "go variables",
+		"title": "Create a variable outside and inside a function and print them out with println",
+		"body": "- note **var =** and **:=**\n- note also there is no import##varsinandoutfnc",
+		"extras": "$order=1.4"
+	},
+	{
+		"dpodId": "RkEn3T",
+		"dpodWhenCreated": "2024-07-22 09:30:35",
+		"categories": "go files",
+		"title": "Create a fileExists function with a compound if statement",
+		"body": "- note the semicolon##compoinnddnif",
+		"extras": "$order=4;$idCode=fileExistsCompound"
+	},
+	{
+		"dpodId": "bTKz1r",
+		"dpodWhenCreated": "2024-07-22 09:30:36",
+		"categories": "go files",
+		"title": "Create a function to print out file's size and modification time",
+		"body": "- note the Go format date for yyyy-MM-dd HH:mm:ss##thesizemodtime",
+		"extras": "$idCode=fileSizeModtime"
+	},
+	{
+		"dpodId": "xxfNz3",
+		"dpodWhenCreated": "2024-07-22 09:30:37",
+		"categories": "go files",
+		"title": "Create a function writeFile that takes fileName, content and writes the file to disk",
+		"body": "- note the two kinds of equal signs##thewrirtefilesok",
+		"extras": "$idCode=writefileingo"
+	},
+	{
+		"dpodId": "ywMAOn",
+		"dpodWhenCreated": "2024-07-22 09:30:38",
+		"categories": "go files",
+		"title": "Create a function getLinesFromFile to read a text file and return a slice containing the lines",
+		"body": "- not that ReadFile returns a slice of bytes##thewritetofile",
+		"extras": "$idCode=thewritetofile222"
+	},
+	{
+		"dpodId": "DO8HBo",
+		"dpodWhenCreated": "2024-07-22 09:30:39",
+		"categories": "go files",
+		"title": "Create functions to create and delete directories",
+		"body": "\t- createNestedDirectories(\"output/images\")",
+		"extras": "- createNestedDirectories(\"output/data\")"
+	},
+	{
+		"dpodId": "Pkq4WC",
+		"dpodWhenCreated": "2024-07-22 09:30:40",
+		"categories": "go files",
+		"title": "Create function getFiles that return a list of all JSON files in a given directory",
+		"body": "- note the second parameter in filepath.Walk is a function##getalljsonsfiles",
+		"extras": "$idCode=getalljsonsfiles"
+	},
+	{
+		"dpodId": "xudM7I",
+		"dpodWhenCreated": "2024-07-22 09:30:41",
+		"categories": "go url",
+		"title": "Create function getUrlParts which accepts a url and returns base host url and Map of query variables",
+		"body": "- note that the values in urlInfo.Query() are arrays, so you have to take the first item out##thequeryvars",
+		"extras": "$idCode=thequeryvars"
+	},
+	{
+		"dpodId": "kWhYxx",
+		"dpodWhenCreated": "2024-07-22 09:30:42",
+		"categories": "go json",
+		"title": "Convert a slice of structs to JSON text and save to a JSON file",
+		"body": "- note that struct properties which are in PascalCase\n- in Go, the visibility of struct fields\n\t- is determined by the capitalization of the first letter\n\t- this is a part of Go's conventions for exporting identifiers##gojsonsjosj",
+		"extras": "$idCode=gojsonsjosj"
+	},
+	{
+		"dpodId": "2EiFjn",
+		"dpodWhenCreated": "2024-07-22 09:30:43",
+		"categories": "go json",
+		"title": "Load JSON file and transform into slice of structs",
+		"body": "- note that the struct key mappings HtmlName-->name and Color-->textColor##theecnodingjson",
+		"extras": "$idCode=theecnodingjson"
+	},
+	{
+		"dpodId": "V9mk81",
+		"dpodWhenCreated": "2024-07-22 09:30:44",
+		"categories": "linux find",
+		"title": "Find all files in current directory that have \"string\" in the name",
+		"body": "- `find . -maxdepth 1 -name \"*string*\" -exec ls -ld {} +`##themaxdepthsdkf",
+		"extras": ""
+	},
+	{
+		"dpodId": "glirMI",
+		"dpodWhenCreated": "2024-07-22 09:30:45",
+		"categories": "go documentation",
+		"title": "Find quick documentation on packages and functions",
+		"body": "- use **go fmt**\n- note you have to have a module (go.mod)##tthebothsidfearfind",
+		"extras": ""
+	},
+	{
+		"dpodId": "8SanFZ",
+		"dpodWhenCreated": "2024-07-22 09:30:46",
+		"categories": "go functions",
+		"title": "Create a function with a naked return",
+		"body": "- naked return is best used in short functions to improve readability##nakedruetrnsgo",
+		"extras": ""
+	},
+	{
+		"dpodId": "6Cqo4l",
+		"dpodWhenCreated": "2024-07-22 09:30:47",
+		"categories": "go testing",
+		"title": "Write a test for simple function",
+		"body": "- you can either click on \"run test\" or type `go test`##thetestingokok",
+		"extras": ""
+	},
+	{
+		"dpodId": "98CxfD",
+		"dpodWhenCreated": "2024-07-22 09:30:48",
+		"categories": "go structs",
+		"title": "Create a struct called Framework with name/yearCreated, then a method \"display\" to display it, use it twice",
+		"body": "- note line 16, 17, instances are created with braces and properties in order##structmethodsoij",
+		"extras": ""
+	},
+	{
+		"dpodId": "c9HenL",
+		"dpodWhenCreated": "2024-07-22 09:30:49",
+		"categories": "go errorHandling",
+		"title": "Create a struct with a method to change a property and handle errors on it: Employee with name/department/conferences and method AddSalesConference",
+		"body": "- note the use of a pointer in line 11##errohandlisnginstruc",
+		"extras": ""
+	},
+	{
+		"dpodId": "dhfBXP",
+		"dpodWhenCreated": "2024-07-22 09:30:50",
+		"categories": "go generics",
+		"title": "Create a function that takes a dog age and returns the human age, make the function be able to accept an int or float64",
+		"body": "- note you don't need to specify the type that is being sent, it will be recognized by the function##thecodeforgen",
+		"extras": ""
+	},
+	{
+		"dpodId": "EgvC6D",
+		"dpodWhenCreated": "2024-07-22 09:30:51",
+		"categories": "go functions",
+		"title": "Create a function called StringFilter that accepts a string slice and a filter function that is performed on each string",
+		"body": "- notice that you send an anonymous function to the function that takes a function as a parameter##thefuncaspaam",
+		"extras": ""
+	},
+	{
+		"dpodId": "Mi02QZ",
+		"dpodWhenCreated": "2024-07-22 09:30:52",
+		"categories": "go defer",
+		"title": "Write a function CreateFile(fileName, content) that creates and writes content to a file",
+		"body": "- the defer statement forces the statement to be executed after the surrounding function returns, either on normal return or by a panic##dothedefer",
+		"extras": ""
+	},
+	{
+		"dpodId": "G2aEZR",
+		"dpodWhenCreated": "2024-07-22 09:30:53",
+		"categories": "go interfaces",
+		"title": "Make a circle and rectangle struct, each with a method getArea, and then make an interface which has a getArea method",
+		"body": "- note that getArea of circle and rectangle have the same signature as interface##thegointerinterface",
+		"extras": ""
+	},
+	{
+		"dpodId": "i9xVux",
+		"dpodWhenCreated": "2024-07-22 09:30:54",
+		"categories": "go interfaces",
+		"title": "Make use of the Stringer interface by creating a String method for a struct",
+		"body": "- all you have to do is create a method called String with return type string##reportsstringers",
+		"extras": ""
+	},
+	{
+		"dpodId": "wCIzfw",
+		"dpodWhenCreated": "2024-07-22 09:30:55",
+		"categories": "go interfaces",
+		"title": "Make a function called PrintAnything that accepts any parameter type and prints information about it",
+		"body": "- you have to use the empty interface##ttheemptysexample\n- in this case, interface{} is like TypeScript's any",
+		"extras": ""
+	},
+	{
+		"dpodId": "MarNOZ",
+		"dpodWhenCreated": "2024-07-22 09:30:56",
+		"categories": "go cli",
+		"title": "Add colors to the output of a CLI app",
+		"body": "- `go get github.com/fatih/color`##tehgredgreen",
+		"extras": ""
+	},
+	{
+		"dpodId": "CdPb6p",
+		"dpodWhenCreated": "2024-07-22 09:30:57",
+		"categories": "go concurrency",
+		"title": "Create a fetchUrl() function that gets and displays data from URLs using concurrency",
+		"body": "- note that the \"for range urls\" is used simply to print the string received from the same number of channels##concurr2222",
+		"extras": ""
+	},
+	{
+		"dpodId": "rklmL6",
+		"dpodWhenCreated": "2024-07-22 09:30:58",
+		"categories": "go concurency",
+		"title": "Make a concurrency function MakePayment which displays the amount received, but if nothing is received within 1 second, it prints \"nothing received\"",
+		"body": "- func main sleeps 2 seconds to make sure it doesn't end a split second before makePayment is run##nothingrecevrecev",
+		"extras": ""
+	},
+	{
+		"dpodId": "cY19H0",
+		"dpodWhenCreated": "2024-07-22 09:30:59",
+		"categories": "go concurrency",
+		"title": "Create a fetchUrl() function that gets and displays data from URLs using WaitGroup",
+		"body": "- note wg.Add(1) increments the WaitGroup counter##waitgroupsexample",
+		"extras": ""
+	},
+	{
+		"dpodId": "kIbJr7",
+		"dpodWhenCreated": "2024-07-22 09:31:00",
+		"categories": "go concurrency",
+		"title": "Create a conversation emulation example using concurrency which emulates two speakers taking turns using a microphone to speak random phrases",
+		"body": "- note that you can add as many speakers as you like##thedeabuexamplskd",
+		"extras": ""
+	},
+	{
+		"dpodId": "X3Jeds",
+		"dpodWhenCreated": "2024-07-22 16:51:56",
+		"categories": "go api",
+		"title": "Create an API that outputs an HTML page at the \"/\" route",
+		"body": "- note that the order of response/request is backwards from Node/Express##theinfosonj",
+		"extras": ""
+	},
+	{
+		"dpodId": "3Oaygc",
+		"dpodWhenCreated": "2024-07-22 23:36:49",
+		"categories": "go api",
+		"title": "Create an API with an HTML info router at \"/\" and a FrameworkRouteHandler function that serves a JSON array of JavaScript frameworks",
+		"body": "- note that if you send JSON, you need to sent the content type as well, see line 11##apiahandleriroute",
+		"extras": ""
+	},
+	{
+		"dpodId": "mKjcCg",
+		"dpodWhenCreated": "2024-07-23 00:14:12",
+		"categories": "go api",
+		"title": "Create an API route handling function and then a unit test to test it",
+		"body": "- to run the test, simply click on the \"run test\" text above the test function\n- uncomment the code on the left in line 11 to emulate a status that is not 200 OK\n- full code is here: https://github.com/edwardtanguay/go-showcase-examples/tree/dev/01620-api-handler##apitestinggo",
+		"extras": ""
+	},
+	{
+		"dpodId": "3ytqu2",
+		"dpodWhenCreated": "2024-07-23 00:56:35",
+		"categories": "go website",
+		"title": "Use the Go standard library template to create a website with variables from a struct",
+		"body": "- you have to create a data object, then in the HTML, you have access to all of the properties##gowevtemplate",
+		"extras": ""
+	},
+	{
+		"dpodId": "oQmjRu",
+		"dpodWhenCreated": "2024-07-23 01:31:23",
+		"categories": "go makefile",
+		"title": "Create make file to more easily build a Go executable",
+		"body": "- \"make build\" will create the executable, \"make clean\" will delete it\n- this worked on my Ubuntu without installing anything\n- on Windows, even in Git Bash, make can't be found, installation is involved##createstheexecmake",
+		"extras": ""
+	},
+	{
+		"dpodId": "JjEzhZ",
+		"dpodWhenCreated": "2024-07-23 12:19:56",
+		"categories": "go modules",
+		"title": "Make a custom Go module on your GitHub which you can import into other projects",
+		"body": "- create a local Go project that has Go functions organized into files and publish it to a repository, e.g.\n\t- https://github.com/edwardtanguay/gotools##firstfunction\n- set the project up up module with the name of the repository:\n\t- `go mod init github.com/edwardtanguay/gotools`\n- create a new release on GitHub\n\t- \"Releases\"\n\t- \"Created a new release\"\n\t- enter tag version e.g. \"v1.0.0\"\n\t- enter title and description\n\t- \"Publish release\"\n- create another project\n\t- create it as a module\n\t\t- `go mod init tanguay.info/02300-use-custom-module`\n\t- import and use a function in your custom module##importansdfususe\n\t- record the current version in your module file\n\t\t- `go mod tidy`##gotidsjdsy\n- to upgrade to a new version\n\t- make change\n\t- on GitHub make a new release (must begin with \"v\", e.g. \"v1.1.0\")\n\t- go to new version URL at pkg.go.dev e.g. https://pkg.go.dev/github.com/edwardtanguay/gotools@v1.1.0\n\t\t- click button to upgrade, this make take a few minutes\n\t- in projects where you want to upgrade to the new version\n\t\t- `go mod tidy`\n\t\t- click and upgrade##theclickandup",
+		"extras": ""
+	},
+	{
+		"dpodId": "qQuW3K",
+		"dpodWhenCreated": "2024-07-24 10:41:27",
+		"categories": "go pointers",
+		"title": "Create two functions, one where changing the argument values change the external values and one where they do not change",
+		"body": "- BY VALUE: if you simply send a variable to a function e.g. Display, it receives a copy of the variable and so will not change the original variable sent\n- BY REFERENCE: however if you send a variable POINTER to a function e.g. Update, then the original variable is changed\n- note that the second case is how JavaScript objects behave by default, i.e. they are automatically sent by reference to functions##thethepersonpointer",
+		"extras": ""
+	},
+	{
+		"dpodId": "c1Cj4S",
+		"dpodWhenCreated": "2024-07-24 13:52:32",
+		"categories": "go sqlite",
+		"title": "Read SQLite database file and print out data from SQL table",
+		"body": "- note for mattn/go-sqlite3 to work, you have to have gcc installed\n\t- Linux:\n\t\t- `sudo apt update`\n\t\t- `sudo apt install build-essential`\n\t- Windows:\n\t\t- https://jmeubank.github.io/tdm-gcc/download\n- get northwind.sqlite from here\n\t- https://edwardtanguay.vercel.app/share\n\t- search for \"sqlite\"##thesqlisjworking",
+		"extras": ""
+	},
+	{
+		"dpodId": "qnIYza",
+		"dpodWhenCreated": "2024-08-23 10:38:25",
+		"categories": "linux scripting",
+		"title": "Create a script command that allows the user to guess a number",
+		"body": "- **~/scripts/guess.sh**\n\t--------------------------------------\n\t#!/usr/bin/zsh\n\n\tr=$(( ($RANDOM % 3) + 1 ))\n\techo \"Guess a number between 1 and 3\"\n\tvared -p \"guess> \" -c g\n\tif [[ $g -eq $r ]]; then;\n\t\techo \"Yes, $g is correct.\"\n\telse;\n\t\techo \"Sorry, the number was $r.\"\n\tfi\n\t--------------------------------------\n- add to **~/.bashrc**\n\t-----------------------------------------\n\texport PATH=$PATH:/home/edward/scripts\n\t-----------------------------------------\n- reload: `source ~/.bashrc`\n- anywhere you can now type `guess.sh` and it will run",
+		"extras": ""
+	}
+]
