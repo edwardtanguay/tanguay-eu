@@ -146,32 +146,41 @@ export default function Home() {
 			</ul>
 			<h3 className="text-xl mb-3 text-yellow-100">2024-08 Level Up</h3>
 
-			<section className="ml-6">
+			<section className="ml-2 md:ml-6">
 
 				<h4 className="text-[1.2rem] text-orange-300">Skills</h4>
-				<section className="ml-6">
+				<section className="ml-2 md:ml-6">
 
 					<LevelUpSkill title="Easy Peasy">
-						<LevelUpLink what="foray" url="https://tanguay-eu.vercel.app/forays/321" title="Get easy-peasy up and running in a React site" />
+						<LevelUpLink status="doing" what="foray" url="https://tanguay-eu.vercel.app/forays/321" title="Get easy-peasy up and running in a React site" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="React Flow">
-						<LevelUpLink what="foray" url="https://tanguay-eu.vercel.app/forays/320" title="Get a React Flow showcase up and running" />
-						<LevelUpLink what="showcase" url="https://showcase-react-flow.vercel.app" title="React Flow" github="https://github.com/edwardtanguay/showcase-react-flow" />
+						<LevelUpLink status="doing" what="foray" url="https://tanguay-eu.vercel.app/forays/320" title="Get a React Flow showcase up and running" />
+						<LevelUpLink status="doing" what="showcase" url="https://showcase-react-flow.vercel.app" title="React Flow" github="https://github.com/edwardtanguay/showcase-react-flow" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="ArangoDB">
+						<LevelUpLink status="doing" what="foray" url="https://tanguay-eu.vercel.app/forays/319" title="Get ArangoDB running locally on Windows" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="GraphQL">
-						<LevelUpLink what="showcase" url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Backend" />
-						<LevelUpLink what="showcase" url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Frontend" />
+						<LevelUpLink status="doing" what="showcase" url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Backend" />
+						<LevelUpLink status="doing" what="showcase" url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Frontend" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="MUI">
-						<LevelUpLink what="course" url="https://www.youtube.com/watch?v=0KEpWHtG10M&list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58" title="Net Ninja Matieral UI (18 videos)" />
-						<LevelUpLink what="note" url="https://mui.com/system/getting-started/the-sx-prop" title="sx" />
+						<LevelUpLink status="todo" what="course" url="https://www.youtube.com/watch?v=0KEpWHtG10M&list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58" title="Net Ninja Matieral UI (18 videos)" />
+						<LevelUpLink status="todo" what="info" url="https://mui.com/system/getting-started/the-sx-prop" title="sx" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="Unity">
 						<LevelUpLink what="course" url="https://www.youtube.com/watch?v=xw6DR7uuNz0&list=PL0eyrZgxdwhwQZ9zPUC7TnJ-S0KxqGlrN" title="Unity for Beginners (17 videos)" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="KeyCloak">
+						<LevelUpLink what="info" url="https://www.keycloak.org/documentation" title="KeyCloak documentation" />
+						<LevelUpLink what="youtube" url="https://www.youtube.com/results?search_query=keycloak" title="tutorials about KeyCloak" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="Go">
@@ -181,16 +190,20 @@ export default function Home() {
 					</LevelUpSkill>
 
 					<LevelUpSkill title="VSCode workspaces">
-						<LevelUpLink what="main" url="https://code.visualstudio.com/docs/editor/workspaces" title="VSCode Workspaces" />
-						<LevelUpLink what="videos" url="https://www.youtube.com/results?search_query=vscode+workspaces" title="YouTube videos on this topic" />
+						<LevelUpLink what="info" url="https://code.visualstudio.com/docs/editor/workspaces" title="VSCode Workspaces documentation" />
+						<LevelUpLink what="youtube" url="https://www.youtube.com/results?search_query=vscode+workspaces" title="tutorials about VSCode Workspaces" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="react-i18next">
+						<LevelUpLink what="info" url="https://react.i18next.com" title="react-i18next documentation" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="react-dropzone">
-						<LevelUpLink what="main" url="https://react-dropzone.js.org" title="react-dropzone" />
+						<LevelUpLink what="info" url="https://react-dropzone.js.org" title="react-dropzone documentation" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="react-hook-form">
-						<LevelUpLink what="main" url="https://react-hook-form.com" title="react-hook-form" />
+						<LevelUpLink what="info" url="https://react-hook-form.com" title="react-hook-form" />
 					</LevelUpSkill>
 
 

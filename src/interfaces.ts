@@ -87,3 +87,5 @@ export const FrontendStarterTechnologySchema = z.object({
 	title: z.string()
 });
 export type FrontendStarterTechnology = z.infer<typeof FrontendStarterTechnologySchema>;
+
+export type LevelUpStatus = "todo" | "doing" | "finished"
