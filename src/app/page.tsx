@@ -171,19 +171,20 @@ export default function Home() {
 
 					<LevelUpSkill title="MUI">
 						<LevelUpLink status="todo" what="course" url="https://www.youtube.com/watch?v=0KEpWHtG10M&list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58" title="Net Ninja Matieral UI (18 videos)" />
-						<LevelUpLink status="todo" what="info" url="https://mui.com/system/getting-started/the-sx-prop" title="sx" />
+						<LevelUpLink status="todo" what="tutorial" url="https://mui.com/system/getting-started/the-sx-prop" title="sx" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="Unity">
-						<LevelUpLink what="course" url="https://www.youtube.com/watch?v=xw6DR7uuNz0&list=PL0eyrZgxdwhwQZ9zPUC7TnJ-S0KxqGlrN" title="Unity for Beginners (17 videos)" />
+						<LevelUpLink status="todo" what="course" url="https://www.youtube.com/watch?v=xw6DR7uuNz0&list=PL0eyrZgxdwhwQZ9zPUC7TnJ-S0KxqGlrN" title="Unity for Beginners (17 videos)" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="KeyCloak">
-						<LevelUpLink what="info" url="https://www.keycloak.org/documentation" title="KeyCloak documentation" />
-						<LevelUpLink what="youtube" url="https://www.youtube.com/results?search_query=keycloak" title="tutorials about KeyCloak" />
+						<LevelUpLink status="todo" what="tutorial" url="https://www.keycloak.org/documentation" title="KeyCloak documentation" />
+						<LevelUpLink status="todo" what="youtube" url="https://www.youtube.com/results?search_query=keycloak" title="tutorials about KeyCloak" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="Go">
+						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/howtos/881" title="Joe Marini's Learning the Go Standard Library course" />
 						<LevelUpLink what="showcase" url="https://github.com/edwardtanguay/go-showcase-examples" title="GitHub repository of all Go learning examples" />
 						<LevelUpLink what="project" url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
 						<LevelUpLink what="course" url="https://www.youtube.com/watch?v=aLVJY-1dKz8" title="Build a CRUD Rest API in Go using Mux, Postgres, Docker and Docker Compose" />
