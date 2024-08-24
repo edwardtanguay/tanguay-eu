@@ -159,18 +159,27 @@ export default function Home() {
 				<section className="ml-6">
 					<h5 className="text-red-400">React Flow</h5>
 					<ul className="list-disc ml-4 mb-5">
-						<ProjectListing url="https://showcase-react-flow.vercel.app" title="React Flow Showcase" github="https://github.com/edwardtanguay/showcase-react-flow" />
+						<ProjectListing url="https://tanguay-eu.vercel.app/forays/320" title="FORAY: Get a React Flow showcase up and running" />
+						<ProjectListing url="https://showcase-react-flow.vercel.app" title="SHOWCASE: React Flow" github="https://github.com/edwardtanguay/showcase-react-flow" />
 					</ul>
+
+					<h5 className="text-red-400">Easy Peasy</h5>
+					<ul className="list-disc ml-4 mb-5">
+						<ProjectListing url="https://tanguay-eu.vercel.app/forays/321" title="FORAY: Get easy-peasy up and running in a React site" />
+					</ul>
+
 					<h5 className="text-red-400">Go</h5>
 					<ul className="list-disc ml-4 mb-5">
 						<ProjectListing url="https://github.com/edwardtanguay/go-showcase-examples" title="go-showcase-examples" />
 						<ProjectListing url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
 					</ul>
+
 					<h5 className="text-red-400">GraphQL</h5>
 					<ul className="list-disc ml-4 mb-5">
 						<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Showcase - backend" />
 						<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Showcase - frontend" />
 					</ul>
+
 				</section>
 			</section>
 		</main>
