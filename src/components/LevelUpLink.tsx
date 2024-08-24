@@ -12,8 +12,11 @@ interface IProps {
 }
 
 export const LevelUpLink = ({ what, url, title, status = "todo", github = '' }: IProps) => {
+	const getColor = () => {
+		return 'text-yellow-500';
+	}
 	return (
-		<div className="text-yellow-500 text-[.7rem] flex gap-1">
+		<div className={`${getColor()} text-[.7rem] flex gap-1`}>
 			{status === "todo" && (
 				<>☐</>
 			)}
