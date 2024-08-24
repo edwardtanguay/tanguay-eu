@@ -42,12 +42,7 @@ export default function Home() {
 				<ProjectListing url="https://github.com/edwardtanguay/nuxt-starter-site" title="This site is a Nuxt site created with npx nuxi init and has minimal page routing and Tailwind styling to serve as a simple base site for applications." />
 				<ProjectListing url="https://template-vue3-typescript-tailwind-router.vercel.app" title="Vue 3 starter template with TypeScript, Tailwind, Router, Vitest Unit-Testing" github="https://github.com/edwardtanguay/template-vue3-typescript-tailwind-router" />
 				<ProjectListing url="https://github.com/edwardtanguay/vue3-showcase-site" title="vue3-showcase-site with list/single book pages, 404 page, JSON file datasource" />
-				<ProjectListing url="https://github.com/edwardtanguay/go-showcase-examples" title="go-showcase-examples" />
-				<ProjectListing url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
-				<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Showcase - backend" />
-				<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Showcase - frontend" />
 				<ProjectListing url="https://github.com/edwardtanguay/python-showcase-examples" title="python-showcase-examples" />
-				<ProjectListing url="https://showcase-react-flow.vercel.app" title="React Flow Showcase" github="https://github.com/edwardtanguay/showcase-react-flow" />
 			</ul>
 
 			<h3 className="text-xl mb-3 text-yellow-100">Learning Resources</h3>
@@ -147,7 +142,37 @@ export default function Home() {
 					<a href="https://zubia.de/home">Zubia did here</a>
 				</li>
 			</ul>
-			<div>Version info: 182371</div>
+			<h3 className="text-xl mb-3 text-yellow-100">2024-08 Level Up</h3>
+			<section className="ml-6">
+				<h4 className="text-[1.2rem] text-orange-300">Projects</h4>
+				<section className="ml-6">
+					<h5 className="mt-3 text-red-500">Learniverse</h5>
+					<ul className="list-disc ml-4 mb-5">
+						<li>user moves around planets/places </li>
+					</ul>
+					<h5 className="mt-3 text-red-500">Learnmap</h5>
+					<ul className="list-disc ml-4 mb-5">
+						<li>linked mindmaps with Datapod-like items</li>
+					</ul>
+				</section>
+				<h4 className="text-[1.2rem] text-orange-300">Skills</h4>
+				<section className="ml-6">
+					<h5 className="text-red-400">React Flow</h5>
+					<ul className="list-disc ml-4 mb-5">
+						<ProjectListing url="https://showcase-react-flow.vercel.app" title="React Flow Showcase" github="https://github.com/edwardtanguay/showcase-react-flow" />
+					</ul>
+					<h5 className="text-red-400">Go</h5>
+					<ul className="list-disc ml-4 mb-5">
+						<ProjectListing url="https://github.com/edwardtanguay/go-showcase-examples" title="go-showcase-examples" />
+						<ProjectListing url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
+					</ul>
+					<h5 className="text-red-400">GraphQL</h5>
+					<ul className="list-disc ml-4 mb-5">
+						<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Showcase - backend" />
+						<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Showcase - frontend" />
+					</ul>
+				</section>
+			</section>
 		</main>
 	);
 }
