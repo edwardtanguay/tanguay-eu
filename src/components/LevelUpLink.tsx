@@ -28,7 +28,7 @@ export const LevelUpLink = ({ what, url, title, status = "todo", github = '' }: 
 				<>☐</>
 			)}
 			{status === "doing" && (
-				<span style={{marginLeft: '-.2rem'}} className="text-[.8rem] mt-1">🛠️</span>
+				<span className="text-[.6rem] md:text-[.8rem] md:mt-1 -ml-[.2rem]">🛠️</span>
 			)}
 			{status === "finished" && (
 				<>🗹</>
