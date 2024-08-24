@@ -23,7 +23,7 @@ export const LevelUpLink = ({ what, url, title, status = "todo", github = '' }: 
 		}
 	}
 	return (
-		<div className={`${getColor()} text-[.7rem] flex gap-1`}>
+		<div className={`${getColor()} text-[.7rem] md:text-[1rem] flex gap-1`}>
 			{status === "todo" && (
 				<>☐</>
 			)}

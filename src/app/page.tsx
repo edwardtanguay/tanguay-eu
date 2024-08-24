@@ -162,16 +162,18 @@ export default function Home() {
 
 					<LevelUpSkill title="ArangoDB">
 						<LevelUpLink status="doing" what="foray" url="https://tanguay-eu.vercel.app/forays/319" title="Get ArangoDB running locally on Windows" />
+						<LevelUpLink status="todo" what="courses" url="https://university.arangodb.com" title="official ArangoDB courses" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="GraphQL">
-						<LevelUpLink status="doing" what="showcase" url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Backend" />
-						<LevelUpLink status="doing" what="showcase" url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Frontend" />
+						<LevelUpLink status="doing" what="showcase" url="https://github.com/edwardtanguay/et002-graphql-backend" title="revisit this: GraphQL Backend" />
+						<LevelUpLink status="doing" what="showcase" url="https://github.com/edwardtanguay/et002-graphql-frontend" title="revisit this: GraphQL Frontend" />
+						<LevelUpLink status="doing" what="course" url="https://tanguay-eu.vercel.app/howtos/886" title="Ray Villalobos's Building a GraphQL Project with React.js course" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="MUI">
 						<LevelUpLink status="todo" what="course" url="https://www.youtube.com/watch?v=0KEpWHtG10M&list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58" title="Net Ninja Matieral UI (18 videos)" />
-						<LevelUpLink status="todo" what="tutorial" url="https://mui.com/system/getting-started/the-sx-prop" title="sx" />
+						<LevelUpLink status="doing" what="tutorial" url="https://mui.com/system/getting-started/the-sx-prop" title="sx" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="Unity">
@@ -184,9 +186,12 @@ export default function Home() {
 					</LevelUpSkill>
 
 					<LevelUpSkill title="Go">
+						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/forays/310" title="David Gassner's Learning Go course" />
 						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/howtos/881" title="Joe Marini's Learning the Go Standard Library course" />
-						<LevelUpLink what="showcase" url="https://github.com/edwardtanguay/go-showcase-examples" title="GitHub repository of all Go learning examples" />
-						<LevelUpLink what="project" url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
+						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/go-recipes-practical-projects/recipes-for-practical-projects-with-go" title="Miki Tebeca's Go Recipes: Practical Projects course (2023)" />
+						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/go-design-patterns/go-design-patterns" title="Joe Marini's Go Design Patterns (2021)" />
+						<LevelUpLink status="finished" what="showcase" url="https://github.com/edwardtanguay/go-showcase-examples" title="GitHub repository of all Go learning examples" />
+						<LevelUpLink status="finished" what="project" url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
 						<LevelUpLink what="course" url="https://www.youtube.com/watch?v=aLVJY-1dKz8" title="Build a CRUD Rest API in Go using Mux, Postgres, Docker and Docker Compose" />
 					</LevelUpSkill>
 
