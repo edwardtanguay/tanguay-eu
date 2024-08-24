@@ -177,7 +177,22 @@ export default function Home() {
 					<LevelUpSkill title="Go">
 						<LevelUpLink what="showcase" url="https://github.com/edwardtanguay/go-showcase-examples" title="GitHub repository of all Go learning examples" />
 						<LevelUpLink what="project" url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
+						<LevelUpLink what="course" url="https://www.youtube.com/watch?v=aLVJY-1dKz8" title="Build a CRUD Rest API in Go using Mux, Postgres, Docker and Docker Compose" />
 					</LevelUpSkill>
+
+					<LevelUpSkill title="VSCode workspaces">
+						<LevelUpLink what="main" url="https://code.visualstudio.com/docs/editor/workspaces" title="VSCode Workspaces" />
+						<LevelUpLink what="videos" url="https://www.youtube.com/results?search_query=vscode+workspaces" title="YouTube videos on this topic" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="react-dropzone">
+						<LevelUpLink what="main" url="https://react-dropzone.js.org" title="react-dropzone" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="react-hook-form">
+						<LevelUpLink what="main" url="https://react-hook-form.com" title="react-hook-form" />
+					</LevelUpSkill>
+
 
 				</section>
 
