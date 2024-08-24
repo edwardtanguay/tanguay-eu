@@ -1,4 +1,5 @@
 'use client';
+import { LevelUpLink } from "@/components/LevelUpLink";
 import { LevelUpSkill } from "@/components/LevelUpSkill";
 /* eslint-disable react/no-unescaped-entities */
 
@@ -151,30 +152,31 @@ export default function Home() {
 				<section className="ml-6">
 
 					<LevelUpSkill title="Easy Peasy">
-						<ProjectListing url="https://tanguay-eu.vercel.app/forays/321" title="FORAY: Get easy-peasy up and running in a React site" />
+						<LevelUpLink what="foray" url="https://tanguay-eu.vercel.app/forays/321" title="Get easy-peasy up and running in a React site" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="React Flow">
-						<ProjectListing url="https://tanguay-eu.vercel.app/forays/320" title="FORAY: Get a React Flow showcase up and running" />
-						<ProjectListing url="https://showcase-react-flow.vercel.app" title="SHOWCASE: React Flow" github="https://github.com/edwardtanguay/showcase-react-flow" />
+						<LevelUpLink what="foray" url="https://tanguay-eu.vercel.app/forays/320" title="Get a React Flow showcase up and running" />
+						<LevelUpLink what="showcase" url="https://showcase-react-flow.vercel.app" title="React Flow" github="https://github.com/edwardtanguay/showcase-react-flow" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="GraphQL">
-						<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Showcase - backend" />
-						<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Showcase - frontend" />
+						<LevelUpLink what="showcase" url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Backend" />
+						<LevelUpLink what="showcase" url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Frontend" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="MUI">
-						<li>sx</li>
+						<LevelUpLink what="course" url="https://www.youtube.com/watch?v=0KEpWHtG10M&list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58" title="Net Ninja Matieral UI (18 videos)" />
+						<LevelUpLink what="note" url="https://mui.com/system/getting-started/the-sx-prop" title="sx" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="Unity">
-					<ProjectListing url="https://www.youtube.com/watch?v=xw6DR7uuNz0&list=PL0eyrZgxdwhwQZ9zPUC7TnJ-S0KxqGlrN" title="17-Part Unity for Beginners Course"/>
+						<LevelUpLink what="course" url="https://www.youtube.com/watch?v=xw6DR7uuNz0&list=PL0eyrZgxdwhwQZ9zPUC7TnJ-S0KxqGlrN" title="Unity for Beginners (17 videos)" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="Go">
-						<ProjectListing url="https://github.com/edwardtanguay/go-showcase-examples" title="go-showcase-examples" />
-						<ProjectListing url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
+						<LevelUpLink what="nnn" url="https://github.com/edwardtanguay/go-showcase-examples" title="go-showcase-examples" />
+						<LevelUpLink what="nnn" url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
 					</LevelUpSkill>
 
 				</section>
