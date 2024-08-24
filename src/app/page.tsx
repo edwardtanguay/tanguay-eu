@@ -175,8 +175,8 @@ export default function Home() {
 					</LevelUpSkill>
 
 					<LevelUpSkill title="Go">
-						<LevelUpLink what="nnn" url="https://github.com/edwardtanguay/go-showcase-examples" title="go-showcase-examples" />
-						<LevelUpLink what="nnn" url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
+						<LevelUpLink what="showcase" url="https://github.com/edwardtanguay/go-showcase-examples" title="GitHub repository of all Go learning examples" />
+						<LevelUpLink what="project" url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
 					</LevelUpSkill>
 
 				</section>
