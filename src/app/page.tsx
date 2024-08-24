@@ -144,7 +144,33 @@ export default function Home() {
 				</li>
 			</ul>
 			<h3 className="text-xl mb-3 text-yellow-100">2024-08 Level Up</h3>
+
 			<section className="ml-6">
+
+				<h4 className="text-[1.2rem] text-orange-300">Skills</h4>
+				<section className="ml-6">
+
+					<LevelUpSkill title="Easy Peasy">
+						<ProjectListing url="https://tanguay-eu.vercel.app/forays/321" title="FORAY: Get easy-peasy up and running in a React site" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="React Flow">
+						<ProjectListing url="https://tanguay-eu.vercel.app/forays/320" title="FORAY: Get a React Flow showcase up and running" />
+						<ProjectListing url="https://showcase-react-flow.vercel.app" title="SHOWCASE: React Flow" github="https://github.com/edwardtanguay/showcase-react-flow" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="GraphQL">
+						<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Showcase - backend" />
+						<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Showcase - frontend" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="Go">
+						<ProjectListing url="https://github.com/edwardtanguay/go-showcase-examples" title="go-showcase-examples" />
+						<ProjectListing url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
+					</LevelUpSkill>
+
+				</section>
+
 				<h4 className="text-[1.2rem] text-orange-300">Projects</h4>
 				<section className="ml-6">
 					<h5 className="mt-3 text-green-500 w-fit bg-slate-700 px-2 rounded">Learniverse</h5>
@@ -156,30 +182,7 @@ export default function Home() {
 						<li>linked mindmaps with Datapod-like items</li>
 					</ul>
 				</section>
-				<h4 className="text-[1.2rem] text-orange-300">Skills</h4>
-				<section className="ml-6">
-					<LevelUpSkill title="React Flow">
-						<ProjectListing url="https://tanguay-eu.vercel.app/forays/320" title="FORAY: Get a React Flow showcase up and running" />
-						<ProjectListing url="https://showcase-react-flow.vercel.app" title="SHOWCASE: React Flow" github="https://github.com/edwardtanguay/showcase-react-flow" />
-					</LevelUpSkill>
-					<h5 className="text-green-400">Easy Peasy</h5>
-					<ul className="list-disc ml-4 mb-5">
-						<ProjectListing url="https://tanguay-eu.vercel.app/forays/321" title="FORAY: Get easy-peasy up and running in a React site" />
-					</ul>
 
-					<h5 className="text-green-400">Go</h5>
-					<ul className="list-disc ml-4 mb-5">
-						<ProjectListing url="https://github.com/edwardtanguay/go-showcase-examples" title="go-showcase-examples" />
-						<ProjectListing url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
-					</ul>
-
-					<h5 className="text-green-400">GraphQL</h5>
-					<ul className="list-disc ml-4 mb-5">
-						<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-backend" title="GraphQL Showcase - backend" />
-						<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Showcase - frontend" />
-					</ul>
-
-				</section>
 			</section>
 		</main>
 	);
