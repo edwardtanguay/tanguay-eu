@@ -164,6 +164,14 @@ export default function Home() {
 						<ProjectListing url="https://github.com/edwardtanguay/et002-graphql-frontend" title="GraphQL Showcase - frontend" />
 					</LevelUpSkill>
 
+					<LevelUpSkill title="MUI">
+						<li>sx</li>
+					</LevelUpSkill>
+
+					<LevelUpSkill title="Unity">
+					<ProjectListing url="https://www.youtube.com/watch?v=xw6DR7uuNz0&list=PL0eyrZgxdwhwQZ9zPUC7TnJ-S0KxqGlrN" title="17-Part Unity for Beginners Course"/>
+					</LevelUpSkill>
+
 					<LevelUpSkill title="Go">
 						<ProjectListing url="https://github.com/edwardtanguay/go-showcase-examples" title="go-showcase-examples" />
 						<ProjectListing url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
