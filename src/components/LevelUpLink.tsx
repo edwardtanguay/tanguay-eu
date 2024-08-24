@@ -13,7 +13,14 @@ interface IProps {
 
 export const LevelUpLink = ({ what, url, title, status = "todo", github = '' }: IProps) => {
 	const getColor = () => {
-		return 'text-yellow-500';
+		switch (status) {
+			case "todo":
+				return 'text-yellow-200';
+			case "doing":
+				return 'text-yellow-500';
+			case "finished":
+				return 'text-green-500';
+		}
 	}
 	return (
 		<div className={`${getColor()} text-[.7rem] flex gap-1`}>
