@@ -12,7 +12,94 @@ console.log(test);
 export default function Home() {
 	return (
 		<main>
-			<h3 className="text-xl mb-3 text-yellow-100">My projects, sites and tools</h3>
+		<h3 className="text-xl mb-3 text-yellow-100">2024-08 Level Up</h3>
+
+			<section className="ml-2 md:ml-6">
+
+				<h4 className="text-[1.2rem] text-orange-300">Skills</h4>
+				<section className="ml-2 md:ml-6">
+
+					<LevelUpSkill title="Easy Peasy">
+						<LevelUpLink status="doing" what="foray" url="https://tanguay-eu.vercel.app/forays/321" title="Get easy-peasy up and running in a React site" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="React Flow">
+						<LevelUpLink status="doing" what="foray" url="https://tanguay-eu.vercel.app/forays/320" title="Get a React Flow showcase up and running" />
+						<LevelUpLink status="doing" what="showcase" url="https://showcase-react-flow.vercel.app" title="React Flow" github="https://github.com/edwardtanguay/showcase-react-flow" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="ArangoDB">
+						<LevelUpLink status="doing" what="foray" url="https://tanguay-eu.vercel.app/forays/319" title="Get ArangoDB running locally on Windows" />
+						<LevelUpLink status="todo" what="courses" url="https://university.arangodb.com" title="official ArangoDB courses" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="GraphQL">
+						<LevelUpLink status="doing" what="showcase" url="https://github.com/edwardtanguay/et002-graphql-backend" title="revisit this: GraphQL Backend" />
+						<LevelUpLink status="doing" what="showcase" url="https://github.com/edwardtanguay/et002-graphql-frontend" title="revisit this: GraphQL Frontend" />
+						<LevelUpLink status="doing" what="course" url="https://tanguay-eu.vercel.app/howtos/886" title="Ray Villalobos's Building a GraphQL Project with React.js course" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="MUI">
+						<LevelUpLink status="todo" what="course" url="https://www.youtube.com/watch?v=0KEpWHtG10M&list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58" title="Net Ninja Matieral UI (18 videos)" />
+						<LevelUpLink status="doing" what="tutorial" url="https://mui.com/system/getting-started/the-sx-prop" title="sx" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="Unity">
+						<LevelUpLink status="todo" what="course" url="https://www.youtube.com/watch?v=xw6DR7uuNz0&list=PL0eyrZgxdwhwQZ9zPUC7TnJ-S0KxqGlrN" title="Unity for Beginners (17 videos)" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="KeyCloak">
+						<LevelUpLink status="todo" what="tutorial" url="https://www.keycloak.org/documentation" title="KeyCloak documentation" />
+						<LevelUpLink status="todo" what="youtube" url="https://www.youtube.com/results?search_query=keycloak" title="tutorials about KeyCloak" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="Go">
+						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/forays/310" title="David Gassner's Learning Go course" />
+						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/howtos/881" title="Joe Marini's Learning the Go Standard Library course" />
+						<LevelUpLink status="finished" what="showcase" url="https://github.com/edwardtanguay/go-showcase-examples" title="GitHub repository of all Go learning examples" />
+						<LevelUpLink status="finished" what="project" url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
+						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/go-recipes-practical-projects/recipes-for-practical-projects-with-go" title="Miki Tebeca's Go Recipes: Practical Projects course (2023)" />
+						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/go-design-patterns/go-design-patterns" title="Joe Marini's Go Design Patterns (2021)" />
+						<LevelUpLink status="todo" what="course" url="https://www.youtube.com/watch?v=aLVJY-1dKz8" title="Build a CRUD Rest API in Go using Mux, Postgres, Docker and Docker Compose" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="VSCode workspaces">
+						<LevelUpLink status="todo" what="tutorial" url="https://code.visualstudio.com/docs/editor/workspaces" title="VSCode Workspaces documentation" />
+						<LevelUpLink status="todo" what="youtube" url="https://www.youtube.com/results?search_query=vscode+workspaces" title="tutorials about VSCode Workspaces" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="react-i18next">
+						<LevelUpLink status="todo" what="tutorial" url="https://react.i18next.com" title="react-i18next documentation" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="react-dropzone">
+						<LevelUpLink status="todo" what="tutorial" url="https://react-dropzone.js.org" title="react-dropzone documentation" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="react-hook-form">
+						<LevelUpLink status="todo" what="tutorial" url="https://react-hook-form.com" title="react-hook-form" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="Macbook">
+						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/forays/317" title="Anton Ochsenkühn's macOS Sonoma Grundkurs" />
+						<LevelUpLink status="doing" what="course" url="https://tanguay-eu.vercel.app/howtos/889" title="Scott Simpson's course: Learning Zsh" />
+						<LevelUpLink status="todo" what="course" url="https://www.youtube.com/watch?v=GK7zLYAXdDs" title="Set up a Mac in 2024 for Power Users and Developers" />
+					</LevelUpSkill>
+				</section>
+
+				<h4 className="text-[1.2rem] text-orange-300">Projects</h4>
+				<section className="ml-6">
+					<h5 className="mt-3 text-green-500 w-fit bg-slate-700 px-2 rounded">Learniverse</h5>
+					<ul className="list-disc ml-4 mb-5">
+						<li>user moves around planets/places </li>
+					</ul>
+					<h5 className="mt-3 text-green-500 w-fit bg-slate-700 px-2 rounded">Learnmap</h5>
+					<ul className="list-disc ml-4 mb-5">
+						<li>linked mindmaps with Datapod-like items</li>
+					</ul>
+				</section>
+
+			</section>			<h3 className="text-xl mb-3 text-yellow-100">My projects, sites and tools</h3>
 			<ul className="list-disc ml-4 mb-5">
 				<ProjectListing url="https://starters.tanguay.eu" title="Starter sites" />
 				<ProjectListing url="https://jobs.tanguay.eu" title="Web developer jobs in Germany" />
@@ -144,90 +231,7 @@ export default function Home() {
 					<a href="https://zubia.de/home">Zubia's examples</a>
 				</li>
 			</ul>
-			<h3 className="text-xl mb-3 text-yellow-100">2024-08 Level Up</h3>
-
-			<section className="ml-2 md:ml-6">
-
-				<h4 className="text-[1.2rem] text-orange-300">Skills</h4>
-				<section className="ml-2 md:ml-6">
-
-					<LevelUpSkill title="Easy Peasy">
-						<LevelUpLink status="doing" what="foray" url="https://tanguay-eu.vercel.app/forays/321" title="Get easy-peasy up and running in a React site" />
-					</LevelUpSkill>
-
-					<LevelUpSkill title="React Flow">
-						<LevelUpLink status="doing" what="foray" url="https://tanguay-eu.vercel.app/forays/320" title="Get a React Flow showcase up and running" />
-						<LevelUpLink status="doing" what="showcase" url="https://showcase-react-flow.vercel.app" title="React Flow" github="https://github.com/edwardtanguay/showcase-react-flow" />
-					</LevelUpSkill>
-
-					<LevelUpSkill title="ArangoDB">
-						<LevelUpLink status="doing" what="foray" url="https://tanguay-eu.vercel.app/forays/319" title="Get ArangoDB running locally on Windows" />
-						<LevelUpLink status="todo" what="courses" url="https://university.arangodb.com" title="official ArangoDB courses" />
-					</LevelUpSkill>
-
-					<LevelUpSkill title="GraphQL">
-						<LevelUpLink status="doing" what="showcase" url="https://github.com/edwardtanguay/et002-graphql-backend" title="revisit this: GraphQL Backend" />
-						<LevelUpLink status="doing" what="showcase" url="https://github.com/edwardtanguay/et002-graphql-frontend" title="revisit this: GraphQL Frontend" />
-						<LevelUpLink status="doing" what="course" url="https://tanguay-eu.vercel.app/howtos/886" title="Ray Villalobos's Building a GraphQL Project with React.js course" />
-					</LevelUpSkill>
-
-					<LevelUpSkill title="MUI">
-						<LevelUpLink status="todo" what="course" url="https://www.youtube.com/watch?v=0KEpWHtG10M&list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58" title="Net Ninja Matieral UI (18 videos)" />
-						<LevelUpLink status="doing" what="tutorial" url="https://mui.com/system/getting-started/the-sx-prop" title="sx" />
-					</LevelUpSkill>
-
-					<LevelUpSkill title="Unity">
-						<LevelUpLink status="todo" what="course" url="https://www.youtube.com/watch?v=xw6DR7uuNz0&list=PL0eyrZgxdwhwQZ9zPUC7TnJ-S0KxqGlrN" title="Unity for Beginners (17 videos)" />
-					</LevelUpSkill>
-
-					<LevelUpSkill title="KeyCloak">
-						<LevelUpLink status="todo" what="tutorial" url="https://www.keycloak.org/documentation" title="KeyCloak documentation" />
-						<LevelUpLink status="todo" what="youtube" url="https://www.youtube.com/results?search_query=keycloak" title="tutorials about KeyCloak" />
-					</LevelUpSkill>
-
-					<LevelUpSkill title="Go">
-						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/forays/310" title="David Gassner's Learning Go course" />
-						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/howtos/881" title="Joe Marini's Learning the Go Standard Library course" />
-						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/go-recipes-practical-projects/recipes-for-practical-projects-with-go" title="Miki Tebeca's Go Recipes: Practical Projects course (2023)" />
-						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/go-design-patterns/go-design-patterns" title="Joe Marini's Go Design Patterns (2021)" />
-						<LevelUpLink status="finished" what="showcase" url="https://github.com/edwardtanguay/go-showcase-examples" title="GitHub repository of all Go learning examples" />
-						<LevelUpLink status="finished" what="project" url="https://showcase-go-use-api.vercel.app" title="Vercel-Hetzner-Go-MongoDBAtlas fullstack site" github="https://github.com/edwardtanguay/showcase-go-use-api" />
-						<LevelUpLink what="course" url="https://www.youtube.com/watch?v=aLVJY-1dKz8" title="Build a CRUD Rest API in Go using Mux, Postgres, Docker and Docker Compose" />
-					</LevelUpSkill>
-
-					<LevelUpSkill title="VSCode workspaces">
-						<LevelUpLink what="info" url="https://code.visualstudio.com/docs/editor/workspaces" title="VSCode Workspaces documentation" />
-						<LevelUpLink what="youtube" url="https://www.youtube.com/results?search_query=vscode+workspaces" title="tutorials about VSCode Workspaces" />
-					</LevelUpSkill>
-
-					<LevelUpSkill title="react-i18next">
-						<LevelUpLink what="info" url="https://react.i18next.com" title="react-i18next documentation" />
-					</LevelUpSkill>
-
-					<LevelUpSkill title="react-dropzone">
-						<LevelUpLink what="info" url="https://react-dropzone.js.org" title="react-dropzone documentation" />
-					</LevelUpSkill>
-
-					<LevelUpSkill title="react-hook-form">
-						<LevelUpLink what="info" url="https://react-hook-form.com" title="react-hook-form" />
-					</LevelUpSkill>
-
-
-				</section>
-
-				<h4 className="text-[1.2rem] text-orange-300">Projects</h4>
-				<section className="ml-6">
-					<h5 className="mt-3 text-green-500 w-fit bg-slate-700 px-2 rounded">Learniverse</h5>
-					<ul className="list-disc ml-4 mb-5">
-						<li>user moves around planets/places </li>
-					</ul>
-					<h5 className="mt-3 text-green-500 w-fit bg-slate-700 px-2 rounded">Learnmap</h5>
-					<ul className="list-disc ml-4 mb-5">
-						<li>linked mindmaps with Datapod-like items</li>
-					</ul>
-				</section>
-
-			</section>
+	
 		</main>
 	);
 }

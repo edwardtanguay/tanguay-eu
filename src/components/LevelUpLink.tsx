@@ -28,12 +28,14 @@ export const LevelUpLink = ({ what, url, title, status = "todo", github = '' }: 
 				<>☐</>
 			)}
 			{status === "doing" && (
-				<>🛠️</>
+				<span style={{marginLeft: '-.2rem'}} className="text-[.8rem] mt-1">🛠️</span>
 			)}
 			{status === "finished" && (
 				<>🗹</>
 			)}
-			<span className="font-mono">{what.toUpperCase()}:</span> <a target="_blank" href={url} className="text-gray-200">{title}</a>{github && (<> - <a className="text-xs text-orange-300" target="_blank" href={github}>GitHub</a></>)}
+			<div>
+				<span className="font-mono">{what.toUpperCase()}:</span> <a target="_blank" href={url} className="text-gray-200">{title}</a>{github && (<> - <a className="text-xs text-orange-300" target="_blank" href={github}>GitHub</a></>)}
+			</div>
 		</div>
 	)
 }

@@ -52,10 +52,11 @@ $highlightBlur: 15px;
 	}
 
 	a {
-		@apply border-dotted border-b border-slate-500;
+		// @apply border-dotted border-b border-slate-500;
 
 		&:hover {
-			@apply border-solid border-b border-slate-500;
+			// @apply border-solid border-b border-slate-500;
+			@apply underline;
 		}
 	}
 
