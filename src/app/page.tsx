@@ -82,8 +82,8 @@ export default function Home() {
 
 					<LevelUpSkill title="Macbook">
 						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/forays/317" title="Anton Ochsenkühn's macOS Sonoma Grundkurs" />
-						<LevelUpLink status="doing" what="course" url="https://tanguay-eu.vercel.app/howtos/889" title="Scott Simpson's course: Learning Zsh" />
-						<LevelUpLink status="todo" what="course" url="https://www.youtube.com/watch?v=GK7zLYAXdDs" title="Set up a Mac in 2024 for Power Users and Developers" />
+						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/howtos/889" title="Scott Simpson's course: Learning Zsh" />
+						<LevelUpLink status="doing" what="course" url="https://www.youtube.com/watch?v=GK7zLYAXdDs" title="Set up a Mac in 2024 for Power Users and Developers" />
 					</LevelUpSkill>
 				</section>
 
