@@ -45,6 +45,7 @@ export default function Home() {
 					</LevelUpSkill>
 
 					<LevelUpSkill title="Unity">
+						<LevelUpLink status="todo" what="Course" url="https://www.linkedin.com/learning/unity-2023-essential-training/creating-prefabs" title="Unity 2023 Essential Training" />
 						<LevelUpLink status="todo" what="video tutorial" url="https://www.youtube.com/watch?v=nCDGjLRecrs" title="Build a beautiful 3D open world in 5 minutes with Unity" />
 						<LevelUpLink status="todo" what="video tutorial" url="https://www.youtube.com/watch?v=ddy12WHqt-M" title="How to Make Beautiful Terrain in Unity 2020 | Beginner Tutorial" />
 						<LevelUpLink status="todo" what="video course (52 parts)" url="https://www.youtube.com/watch?v=Nxg0vQk05os&list=PLtLToKUhgzwnk4U2eQYridNnObc2gqWo-&pp=iAQB" title="3D Survival Game Tutorial | Unity" />
