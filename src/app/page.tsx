@@ -70,6 +70,8 @@ export default function Home() {
 					</LevelUpSkill>
 
 					<LevelUpSkill title="VSCode workspaces">
+
+						<LevelUpLink status="finished" what="site" url="https://github.com/edwardtanguay/reactnative002/blob/main/reactnative002.code-workspace" title="React site with workshop implemented" />
 						<LevelUpLink status="todo" what="tutorial" url="https://code.visualstudio.com/docs/editor/workspaces" title="VSCode Workspaces documentation" />
 						<LevelUpLink status="todo" what="youtube" url="https://www.youtube.com/results?search_query=vscode+workspaces" title="tutorials about VSCode Workspaces" />
 					</LevelUpSkill>
