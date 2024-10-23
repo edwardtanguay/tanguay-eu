@@ -59,6 +59,10 @@ export default function Home() {
 						<LevelUpLink status="todo" what="youtube" url="https://www.youtube.com/results?search_query=keycloak" title="tutorials about KeyCloak" />
 					</LevelUpSkill>
 
+					<LevelUpSkill title="Bash">
+						<LevelUpLink status="todo" what="tutorial" url="https://www.linkedin.com/learning/search?entityType=COURSE&keywords=bash" title="Bash courses" />
+					</LevelUpSkill>
+
 					<LevelUpSkill title="Go">
 						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/forays/310" title="David Gassner's Learning Go course" />
 						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/howtos/881" title="Joe Marini's Learning the Go Standard Library course" />
