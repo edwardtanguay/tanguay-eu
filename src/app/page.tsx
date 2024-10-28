@@ -42,7 +42,23 @@ export default function Home() {
 					</LevelUpSkill>
 
 					<LevelUpSkill title="GitLab">
-						<LevelUpLink status="doing" what="course" url="https://www.linkedin.com/learning/continuous-integration-and-continuous-delivery-with-gitlab" title="LinkedInLearning: CI/CD with GitLab" />
+						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/continuous-integration-and-continuous-delivery-with-gitlab" title="LinkedInLearning: CI/CD with GitLab" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="MongoDB">
+						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/mongodb-essential-training/an-introduction-to-mongodb-23754278" title="MongoDB Essential Training" />
+						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/advanced-mongodb-efficient-and-secure-data-management/advanced-mongodb" title="Advanced MongoDB: Efficient and Secure Data Management" />
+						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/data-modeling-in-mongodb/introduction-to-data-modeling" title="Data Modeling in MongoDB" />
+						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/mongodb-esencial/cambiar-el-tamano-de-lote-de-shell-mongo" title="MongoDB esencial" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="Redux Toolkit">
+						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/learning-redux-toolkit/why-you-should-take-this-course" title="Learning Redux Toolkit" />
+						<LevelUpLink status="todo" what="course" url="nnn" title="nnnn" />
+					</LevelUpSkill>
+
+					<LevelUpSkill title="Swagger">
+						<LevelUpLink status="todo" what="course" url="https://www.linkedin.com/learning/building-apis-with-swagger-and-the-openapi-specification/building-apis-with-swagger" title="LinkedInLearning: Building APIs with Swagger and the OpenAPI Specification" />
 					</LevelUpSkill>
 
 					<LevelUpSkill title="MUI">
