@@ -134,6 +134,7 @@ export default function Home() {
 			</section>
 			<h3 className="text-xl mb-3 text-yellow-100">My projects, sites and tools</h3>
 			<ul className="list-disc ml-4 mb-5">
+				<ProjectListing url="https://github.com/edwardtanguay/sveltekit5-showcase" title="sveltekit5-showcase" />
 				<ProjectListing url="https://tanguay.info/apps" title="React Native apps" />
 				<ProjectListing url="https://github.com/edwardtanguay/reactnative002" title="React Native showcase app (easy-peasy, etc.)" />
 				<ProjectListing url="https://langcore.vercel.app/dutchVerbs" title="Dutch Verbs" />
