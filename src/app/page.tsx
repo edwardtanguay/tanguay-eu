@@ -41,6 +41,10 @@ export default function Home() {
 						<LevelUpLink status="doing" what="course" url="https://tanguay-eu.vercel.app/howtos/886" title="Ray Villalobos's Building a GraphQL Project with React.js course" />
 					</LevelUpSkill>
 
+					<LevelUpSkill title="GitLab">
+						<LevelUpLink status="doing" what="course" url="https://www.linkedin.com/learning/continuous-integration-and-continuous-delivery-with-gitlab" title="LinkedInLearning: CI/CD with GitLab" />
+					</LevelUpSkill>
+
 					<LevelUpSkill title="MUI">
 						<LevelUpLink status="todo" what="course" url="https://www.youtube.com/watch?v=0KEpWHtG10M&list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58" title="Net Ninja Matieral UI (18 videos)" />
 						<LevelUpLink status="doing" what="tutorial" url="https://mui.com/system/getting-started/the-sx-prop" title="sx" />
