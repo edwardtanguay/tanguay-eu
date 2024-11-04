@@ -112,6 +112,10 @@ export default function Home() {
 						<LevelUpLink status="todo" what="tutorial" url="https://react-hook-form.com" title="react-hook-form" />
 					</LevelUpSkill>
 
+					<LevelUpSkill title="ink">
+						<LevelUpLink status="todo" what="documentation" url="https://www.inklestudios.com/ink" title="Foray: get Ink running" />
+					</LevelUpSkill>
+
 					<LevelUpSkill title="Macbook">
 						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/forays/317" title="Anton Ochsenkühn's macOS Sonoma Grundkurs" />
 						<LevelUpLink status="finished" what="course" url="https://tanguay-eu.vercel.app/howtos/889" title="Scott Simpson's course: Learning Zsh" />
