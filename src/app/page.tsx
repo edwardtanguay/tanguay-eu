@@ -163,6 +163,7 @@ export default function Home() {
 				<ProjectListing url="https://github.com/edwardtanguay/vite-react-menu-browserrouter" title="Vite-React Site with React Router 6.4 BrowserRouter" />
 				<ProjectListing url="https://github.com/edwardtanguay/vite-react-menu-createbrowserrouter" title="Vite-React Site with React Router 6.4 createBrowserRouter" />
 				<ProjectListing url="https://github.com/edwardtanguay/vite-react-menu-createbrowserrouter-context" title="Vite-React Site with React Router 6.4 createBrowserRouter + Context" />
+				<ProjectListing url="https://github.com/edwardtanguay/vite-react-menu-createbrowserrouter-easypeasy" title="Vite-React Site with React Router 6.4 createBrowserRouter + easy-peasy Redux" />
 				<ProjectListing url="https://github.com/edwardtanguay/template-api-node-express-typescript-es6-modules-lowdb" title="Node/Express API Starter Template" />
 				<ProjectListing url="https://github.com/edwardtanguay/template-node-express-ejs-website-typescript/tree/dev" title="Node/Express EJS Website Template with TypeScript" />
 				<ProjectListing url="https://github.com/edwardtanguay/template-simple-react-with-node-express-api-one-directory" title="Vite-React with simple Node/Express API in one directory" />
