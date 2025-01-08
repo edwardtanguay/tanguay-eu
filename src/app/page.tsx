@@ -112,6 +112,10 @@ export default function Home() {
 						<LevelUpLink status="todo" what="tutorial" url="https://react-hook-form.com" title="react-hook-form" />
 					</LevelUpSkill>
 
+					<LevelUpSkill title="usehooks">
+						<LevelUpLink status="todo" what="tool" url="https://usehooks.com" title="usehooks" />
+					</LevelUpSkill>
+
 					<LevelUpSkill title="ink">
 						<LevelUpLink status="todo" what="documentation" url="https://www.inklestudios.com/ink" title="Foray: get Ink running" />
 					</LevelUpSkill>
